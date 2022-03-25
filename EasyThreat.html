@@ -3,11 +3,15 @@
   <head>
   	<title>EasyThreat Tool</title>
   	<script src="script.js"></script>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .button {background-color: #4CAF50; /* Green */
+      .button2 {background-color: #008CBA;} /* Blue */
+    </style>
   </head>
 
  <body>
@@ -23,7 +27,7 @@
     <p>Multi-Blacklist Checkers: These are tools that take a domain or IP adddress and search accross multiple blacklists. 
       These will often have more data than just reputation. Read the details for more information.</p>
       <br>
-      <button type="button" onclick="multiBlacklistOpen()" class="btn-success">All Multi-Blacklist Checkers</button>
+      <button type="button" onclick="multiBlacklistOpen()">All Multi-Blacklist Checkers</button>
    <button type="button" onclick="buttonOpen('Hurricane Electric')" class="btn-success">HurricaneElectric</button>
    <button type="button" onclick="buttonOpen('VirusTotal')" class="btn-success">VirusTotal</button>
       <button type="button" onclick="buttonOpen('Cisco Talos')" class="btn-success">Cisco Talos</button>
