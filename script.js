@@ -1,4 +1,4 @@
-function validURL(str) {
+function validObject(str) {
      var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
@@ -9,15 +9,15 @@ function validURL(str) {
      }
 function buttonOpen(buttonValue)
         {
-        	userURL=document.getElementById("url").value;
-        	if(validURL(userURL)==false)
+        	userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
         	{
-                alert("Enter a valid URL, please");
+                alert("Enter a valid Threat Object, please");
            }
         	else
         	{
         	  const links = [];
         	  links["HurricaneElectric"]="https://bgp.he.net/search?commit=Search&search[search]=";
-        	  window.open(links[buttonValue]+userURL);
+        	  window.open(links[buttonValue]+userObject);
             }
 }
