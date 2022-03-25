@@ -68,6 +68,6 @@ function IPBlacklistOpen()
         	{
                const links = [];
                window.open("https://www.abuseipdb.com/check/"+userObject);
-               windows.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
+               window.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
           }
 }            
