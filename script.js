@@ -28,6 +28,8 @@ function buttonOpen(buttonValue)
             links["Blocklist.de"]="https://www.blocklist.de/en/search.html?action=search&send=start+search&ip=";
             /* Domain Blacklist Checkers */
             links["URLVoid"]="https://www.urlvoid.com/scan/";
+            links["SecuriSiteCheck"]="https://sitecheck.sucuri.net/?scan=";
+            links["MalwareDomains"]="https://www.malwaredomainlist.com/mdl.php?colsearch=All&quantity=50&search=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -89,5 +91,7 @@ function domainBlacklistOpen()
                const links = [];
                window.open("https://www.urlvoid.com/scan/"+userObject);
                window.open("https://reports.adguard.com/en/"+userObject+"/report.html");
+               window.open("https://sitecheck.sucuri.net/?scan="+userObject);
+               window.open("https://www.malwaredomainlist.com/mdl.php?colsearch=All&quantity=50&search="+userObject);
           }
 }            
