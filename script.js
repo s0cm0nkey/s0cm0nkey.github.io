@@ -26,6 +26,8 @@ function buttonOpen(buttonValue)
             /* IP Blacklist Checkers*/
             links["AbuseIPDB"]="https://www.abuseipdb.com/check/";
             links["Blocklist.de"]="https://www.blocklist.de/en/search.html?action=search&send=start+search&ip=";
+            /* Domain Blacklist Checkers */
+            links["URLVoid"]="https://www.urlvoid.com/scan/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -39,7 +41,11 @@ function standAlone(buttonValue)
             links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
          	  window.open(links[buttonValue]);
 }
-
+function adGuard()
+{
+     const links = [];
+     window.open("https://reports.adguard.com/en/"+userObject+"/report.html");
+}
 function multiBlacklistOpen()
 {
      userObject=document.getElementById("Object").value;
@@ -69,5 +75,19 @@ function IPBlacklistOpen()
                const links = [];
                window.open("https://www.abuseipdb.com/check/"+userObject);
                window.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
+          }
+}            
+function domainBlacklistOpen()
+{
+     userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
+        	{
+                alert("Enter a valid Threat Object, please");
+           }
+        	else
+        	{
+               const links = [];
+               window.open("https://www.urlvoid.com/scan/"+userObject);
+               window.open("https://reports.adguard.com/en/"+userObject+"/report.html");
           }
 }            
