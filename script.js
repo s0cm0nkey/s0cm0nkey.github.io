@@ -26,25 +26,3 @@ function validURL(str) {
         	  
             }
 }
-
-
-function buttonOpen(buttonValue)
-        {
-
-        	userURL=document.getElementById("url").value;
-
-        	if(validURL(userURL)==false)
-        	{
-               	 alert("Enter a valid URL, please");
-        		
-           }
-        	else
-        	{
-
-        	  const links = [];
-        	  links["HurricaneElectric"]="https://bgp.he.net/dns/";
-        	  window.open(links[buttonValue]+userURL);
-        	  
-            }
-}
-
