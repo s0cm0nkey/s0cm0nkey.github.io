@@ -17,11 +17,16 @@ function buttonOpen(buttonValue)
         	else
         	{
         	  const links = [];
+            /* Multi RBL Tools */
         	  links["Hurricane Electric"]="https://bgp.he.net/search?commit=Search&search[search]=";
-                    links["VirusTotal"]="https://www.virustotal.com/gui/search/";
-               links["Cisco Talos"]="https://www.talosintelligence.com/reputation_center/lookup?search=";
-               links["MXToolbox Supertool"]="https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a";
-               links["MultiRBL"]="https://multirbl.valli.org/lookup/";
+            links["VirusTotal"]="https://www.virustotal.com/gui/search/";
+            links["Cisco Talos"]="https://www.talosintelligence.com/reputation_center/lookup?search=";
+            links["MXToolbox Supertool"]="https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a";
+            links["MultiRBL"]="https://multirbl.valli.org/lookup/";
+            /* IP Blacklist Checkers*/
+            links["IPVoid"]="https://www.ipvoid.com/ip-blacklist-check/";
+            links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
+            links["AbuseIPDB"]="https://www.abuseipdb.com/check/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
