@@ -21,7 +21,7 @@ function validURL(str) {
         	{
 
         	  const links = [];
-        	  links["HurricaneElectric"]="https://bgp.he.net/search?search[search]=";
+        	  links["HurricaneElectric"]="https://bgp.he.net/dns/";
         	  window.open(links[buttonValue]+userURL);
         	  
             }
@@ -42,7 +42,7 @@ function buttonOpen(buttonValue)
         	{
 
         	  const links = [];
-        	  links["HurricaneElectric"]="https://bgp.he.net/search?search[search]=";
+        	  links["HurricaneElectric"]="https://bgp.he.net/dns/";
         	  window.open(links[buttonValue]+userURL);
         	  
             }
