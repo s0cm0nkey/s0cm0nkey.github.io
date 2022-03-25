@@ -7,22 +7,17 @@ function validURL(str) {
        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
       return !!pattern.test(str);
      }
-  	  function buttonOpen(buttonValue)
+function buttonOpen(buttonValue)
         {
-
         	userURL=document.getElementById("url").value;
-
         	if(validURL(userURL)==false)
         	{
-               	 alert("Enter a valid URL, please");
-        		
+                alert("Enter a valid URL, please");
            }
         	else
         	{
-
         	  const links = [];
         	  links["HurricaneElectric"]="https://bgp.he.net/search?commit=Search&search[search]=";
         	  window.open(links[buttonValue]+userURL);
-        	  
             }
 }
