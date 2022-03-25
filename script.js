@@ -18,6 +18,7 @@ function buttonOpen(buttonValue)
         	{
         	  const links = [];
         	  links["HurricaneElectric"]="https://bgp.he.net/search?commit=Search&search[search]=";
+            links["VirusTotal"]="https://www.virustotal.com/gui/search/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
