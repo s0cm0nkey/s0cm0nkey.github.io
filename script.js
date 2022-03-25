@@ -36,11 +36,19 @@ function buttonOpen(buttonValue)
 function standAlone(buttonValue)
 {
         	  const links = [];
+     /* Standalone IP tools */
         	  links["DNSBL"]="https://www.dnsbl.info/dnsbl-database-check.php";
             links["CymruIPBulkLookup"]="https://reputation.team-cymru.com/";
             links["InfoByIPBulkLookup"]="https://www.infobyip.com/ipbulklookup.php";
             links["IPVoid"]="https://www.ipvoid.com/ip-blacklist-check/";
             links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
+     /* Standalone domain tools */
+            links["URLScan"]="https://urlscan.io/";
+            links["MergiTools"]="https://megritools.com/blacklist-lookup";
+            links["Zulu"]="https://zulu.zscaler.com/";
+            links["Quttera"]"https://quttera.com/website-malware-scanner";
+            links["PhishTank"]"https://www.phishtank.com/";
+            links["LOTS"]="https://lots-project.com/";
          	  window.open(links[buttonValue]);
 }
 function adGuard()
