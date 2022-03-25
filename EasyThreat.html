@@ -1,0 +1,205 @@
+ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;} li a {display: block;color: #000;padding: 8px 16px;text-decoration: none;} li a:hover {background-color: #555;color: white;} li a.active {background-color: #303942;color: white;} li a.grey {background-color: #cdcdcd;color: black;} li a.blue {background-color: #b4c8da;color: black;} table td, table td \* {vertical-align: top;}  s0cm0nkey's Easy OSINT Tool
+
+S0cm0nkey's Easy OSINT Tool
+
+  
+
+Hello All! This is my Easy OSINT Tool. For those defenders who need OSINT and reputation data on external entities, and dont have an automation solution to do it for them. Some tools do for POST requests and do not make it easy to create direct links to searches, but I have included a few that you should still use when you can!
+
+For more details and tools for checking threat data, check you my Reference Guide!
+
+[S0cm0nkey's Reference Guide](https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/blue-defense/threat-data)  
+  
+function doPopAll(PopAll) {var pop = document.getElementById("PopAll"); for (j = 1; j <= 100; j++){ if (j < 10){ j = "0" + j.toString();} else {j = j.toString();} console.log(j) item = document.getElementById("Search" + j); if (item != null){ item.value = pop.value;}}}
+
+   
+
+  
+
+IP Address Lookup
+
+function doSearch01(Search01) {window.open('https://bgp.he.net/ip/' + Search01, 'Search01window');}
+
+   
+
+function doSearch02(Search02) {window.open('https://www.virustotal.com/gui/ip-address/' + Search02, 'Search02window');}
+
+   
+
+function doSearch03(Search03) {window.open('https://www.talosintelligence.com/reputation\_center/lookup?search=' + Search03, 'Search03window');}
+
+   
+
+function doSearch04(Search04) {window.open('https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a' + Search04 + '&run=toolpage', 'Search04window');}
+
+   
+
+function doSearch05(Search05) {window.open('https://multirbl.valli.org/lookup/' + Search05 + '.html', 'Search05window');}
+
+   
+
+function doSearch06(Search06) {window.open('https://www.ipvoid.com/ip-blacklist-check/', 'Search06window');}
+
+  
+
+function doSearch07(Search07) {window.open('http://www.ipspamlist.com/ip-lookup/' + Search07, 'Search07window');}
+
+   
+
+function doSearch08(Search08) {window.open('https://www.dnsbl.info/dnsbl-database-check.php' + Search08, 'Search08window');}
+
+   
+
+function doSearch09(Search09) {window.open('https://reputation.team-cymru.com/' + Search09, 'Search09window');}
+
+   
+
+function doSearch35(Search35) {window.open('https://www.abuseipdb.com/check/' + Search35, 'Search35window');}
+
+   
+
+  
+
+Domains
+
+function doSearch10(Search10) {window.open('https://bgp.he.net/dns/' + Search10, 'Search10window');}
+
+   
+
+function doSearch11(Search11) {window.open('https://www.virustotal.com/gui/domain/' + Search11, 'Search11window');}
+
+   
+
+function doSearch12(Search12) {window.open('https://www.talosintelligence.com/reputation\_center/lookup?search=' + Search12, 'Search03window');}
+
+   
+
+function doSearch13(Search13) {window.open('https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a' + Search13 + '&run=toolpage', 'Search13window');}
+
+   
+
+function doSearch14(Search14) {window.open('https://multirbl.valli.org/lookup/' + Search14 + '.html', 'Search14window');}
+
+   
+
+function doSearch15(Search15) {window.open('https://urlscan.io' + Search15, 'Search15window');}
+
+   
+
+function doSearch16(Search16) {window.open('https://www.urlvoid.com/scan/' + Search16, 'Search16window');}
+
+   
+
+function doSearch17(Search17) {window.open('https://quttera.com/website-malware-scanner?url\_submit=' + Search17, 'Search17window');}
+
+   
+
+function doSearch18(Search18) {window.open('http://www.malwaredomainlist.com/mdl.php?search=' + Search18 + '&colsearch=All&quantity=50', 'Search18window');}
+
+   
+
+function doSearch36(Search36) {window.open('https://www.abuseipdb.com/check/' + Search36, 'Search36window');}
+
+   
+
+  
+
+File Hashes
+
+function doSearch19(Search19) {window.open('https://www.virustotal.com/gui/file/' + Search19, 'Search19window');}
+
+   
+
+function doSearch20(Search20) {window.open('https://bazaar.abuse.ch/browse.php?search=md5:' + Search20, 'Search20window');}
+
+   
+
+function doSearch21(Search21) {window.open('https://bazaar.abuse.ch/browse.php?search=sha256:' + Search21, 'Search21window');}
+
+   
+
+function doSearch22(Search22) {window.open('https://hash.cymru.com', 'Search22window');}
+
+   
+
+function doSearch23(Search23) {window.open('https://talosintelligence.com/talos\_file\_reputation', 'Search23window');}
+
+   
+
+function doSearch24(Search24) {window.open('https://valkyrie.comodo.com/get\_info?sha1=' + Search24, 'Search24window');}
+
+   
+
+  
+
+Email Addresses
+
+function doSearch25(Search25) {window.open('https://emailrep.io/?search-input='+ Search25, 'Search25window');}
+
+   
+
+function doSearch26(Search26) {window.open('https://www.haveibeenemotet.com/?email-input=' + Search26, 'Search26window');}
+
+   
+
+  
+
+Multi-Search
+
+function doSearch27(Search27) {window.open('https://www.shodan.io/search?query=' + Search27, 'Search27window');}
+
+   
+
+function doSearch28(Search28) {window.open('https://spyse.com/search?query=' + Search28, 'Search28window');}
+
+   
+
+function doSearch29(Search29) {window.open('https://maltiverse.com/search;query=8.8.8.8' + Search29 + ';page=1;sort=creation\_time\_desc', 'Search29window');}
+
+   
+
+function doSearch30(Search30) {window.open('https://www.onyphe.io/search/?query=' + Search30, 'Search30window');}
+
+   
+
+function doSearch31(Search31) {window.open('https://www.threatminer.org/', 'Search31window');}
+
+   
+
+function doSearch32(Search32) {window.open('https://search.censys.io/search?q=' + Search32, 'Search32window');}
+
+   
+
+function doSearch33(Search33) {window.open('http://tweettioc.com/search', 'Search33window');}
+
+   
+
+function doSearch34(Search34) {window.open('https://www.threatcrowd.org/', 'Search34window');}
+
+   
+
+function doSearch37(Search37) {window.open('https://threatintelligenceplatform.com', 'Search37window');}
+
+   
+
+function doSearch38(Search38) {window.open('https://secure.dshield.org/', 'Search38window');}
+
+   
+
+function doSearch39(Search39) {window.open('https://check.spamhaus.org/not\_listed/?searchterm=' + Search39, 'Search39window');}
+
+   
+
+function doSearch40(Search40) {window.open('https://threatfox.abuse.ch/browse.php?search=ioc:' + Search40, 'Search40window');}
+
+   
+
+function doSearch41(Search41) {window.open('https://metadefender.opswat.com/?lang=en' + Search41, 'Search41window');}
+
+   
+
+function doSearch42(Search42) {window.open('https://malc0de.com/database/index.php?search=' + Search42, 'Search42window');}
+
+   
+
+function doSearch43(Search43) {window.open('https://www.greynoise.io/viz/query/?gnql=' + Search43, 'Search43window');}
