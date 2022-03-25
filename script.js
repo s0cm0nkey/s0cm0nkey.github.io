@@ -30,6 +30,16 @@ function buttonOpen(buttonValue)
         	  window.open(links[buttonValue]+userObject);
             }
 }
+function standAlone(buttonValue)
+{
+        	  const links = [];
+        	  links["DNSBL"]="https://www.dnsbl.info/dnsbl-database-check.php";
+            links["CymruIPBulkLookup"]="https://reputation.team-cymru.com/";
+            links["InfoByIPBulkLookup"]="https://www.infobyip.com/ipbulklookup.php";
+         	  window.open(links[buttonValue]);
+            }
+}
+
 function multiBlacklistOpen()
 {
      userObject=document.getElementById("Object").value;
@@ -46,5 +56,19 @@ function multiBlacklistOpen()
                window.open("https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a"+userObject);
                window.open("https://multirbl.valli.org/lookup/"+userObject);
           }
-}
-               
+}            
+function IPBlacklistOpen()
+{
+     userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
+        	{
+                alert("Enter a valid Threat Object, please");
+           }
+        	else
+        	{
+               const links = [];
+               window.open("https://www.ipvoid.com/ip-blacklist-check/"+userObject);
+               window.open("http://www.ipspamlist.com/ip-lookup/"+userObject);
+               window.open("https://www.abuseipdb.com/check/"+userObject);
+          }
+}            
