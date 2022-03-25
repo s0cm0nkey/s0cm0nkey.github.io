@@ -46,8 +46,8 @@ function standAlone(buttonValue)
             links["URLScan"]="https://urlscan.io/";
             links["MergiTools"]="https://megritools.com/blacklist-lookup";
             links["Zulu"]="https://zulu.zscaler.com/";
-            links["Quttera"]"https://quttera.com/website-malware-scanner";
-            links["PhishTank"]"https://www.phishtank.com/";
+            links["Quttera"]="https://quttera.com/website-malware-scanner";
+            links["PhishTank"]="https://www.phishtank.com/";
             links["LOTS"]="https://lots-project.com/";
          	  window.open(links[buttonValue]);
 }
