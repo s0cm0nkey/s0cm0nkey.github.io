@@ -21,7 +21,7 @@ function validURL(str) {
         	{
 
         	  const links = [];
-        	  links["HurricaneElectric"]="https://bgp.he.net/dns/";
+        	  links["HurricaneElectric"]="https://bgp.he.net/search?commit=Search&search[search]=";
         	  window.open(links[buttonValue]+userURL);
         	  
             }
