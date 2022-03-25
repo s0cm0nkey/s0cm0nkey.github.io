@@ -37,7 +37,6 @@ function standAlone(buttonValue)
             links["CymruIPBulkLookup"]="https://reputation.team-cymru.com/";
             links["InfoByIPBulkLookup"]="https://www.infobyip.com/ipbulklookup.php";
          	  window.open(links[buttonValue]);
-            }
 }
 
 function multiBlacklistOpen()
