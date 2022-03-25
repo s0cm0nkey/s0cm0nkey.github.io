@@ -27,6 +27,7 @@ function buttonOpen(buttonValue)
             links["IPVoid"]="https://www.ipvoid.com/ip-blacklist-check/";
             links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
             links["AbuseIPDB"]="https://www.abuseipdb.com/check/";
+            links["Blocklist.de"]="https://www.blocklist.de/en/search.html?action=search&send=start+search&ip=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -69,5 +70,6 @@ function IPBlacklistOpen()
                window.open("https://www.ipvoid.com/ip-blacklist-check/"+userObject);
                window.open("http://www.ipspamlist.com/ip-lookup/"+userObject);
                window.open("https://www.abuseipdb.com/check/"+userObject);
+               windows.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
           }
 }            
