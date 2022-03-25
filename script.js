@@ -21,7 +21,7 @@ function validURL(str) {
         	{
 
         	  const links = [];
-        	  links["GoogleCache"]="https://google.com/search?q=";
+        	  links["HurricaneElectric"]="https://bgp.he.net/search?search[search]=";
         	  window.open(links[buttonValue]+userURL);
         	  
             }
@@ -42,7 +42,7 @@ function buttonOpen(buttonValue)
         	{
 
         	  const links = [];
-        	  links["GoogleCache"]="https://google.com/search?q=";
+        	  links["HurricaneElectric"]="https://bgp.he.net/search?search[search]=";
         	  window.open(links[buttonValue]+userURL);
         	  
             }
