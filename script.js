@@ -17,8 +17,11 @@ function buttonOpen(buttonValue)
         	else
         	{
         	  const links = [];
-        	  links["HurricaneElectric"]="https://bgp.he.net/search?commit=Search&search[search]=";
+        	  links["Hurricane Electric"]="https://bgp.he.net/search?commit=Search&search[search]=";
                     links["VirusTotal"]="https://www.virustotal.com/gui/search/";
+               links["Cisco Talos"]="https://www.talosintelligence.com/reputation_center/lookup?search=";
+               links["MXToolbox Supertool"]="https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a";
+               links["MultiRBL"]="https://multirbl.valli.org/lookup/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
