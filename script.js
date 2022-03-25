@@ -25,3 +25,21 @@ function buttonOpen(buttonValue)
         	  window.open(links[buttonValue]+userObject);
             }
 }
+function multiBlacklistOpen()
+{
+     userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
+        	{
+                alert("Enter a valid Threat Object, please");
+           }
+        	else
+        	{
+               const links = [];
+               window.open("https://bgp.he.net/search?commit=Search&search[search]="+userObject);
+               window.open("https://www.virustotal.com/gui/search/"+userObject);
+               window.open("https://www.talosintelligence.com/reputation_center/lookup?search="+userObject);
+               window.open("https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a"+userObject);
+               window.open("https://multirbl.valli.org/lookup/"+userObject);
+          }
+}
+               
