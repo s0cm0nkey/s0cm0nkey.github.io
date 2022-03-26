@@ -40,6 +40,8 @@ function buttonOpen(buttonValue)
             links["Malcode"]="https://malc0de.com/database/index.php?search=";
             links["Abusix"]="https://lookup.abusix.com/search?q=";
             links["SANS"]="https://secure.dshield.org/ipinfo.html?ip=";
+            /* Cyber Search Tools */
+            links["Shodan"]="https://www.shodan.io/search?query=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -139,5 +141,18 @@ function ThreatEnrichmentOpen()
                window.open("https://malc0de.com/database/index.php?search="+userObject);
                window.open("https://lookup.abusix.com/search?q="+userObject);
                window.open("https://secure.dshield.org/ipinfo.html?ip="+userObject);
+          }
+} 
+function CyberSearchOpen()
+{
+     userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
+        	{
+                alert("Enter a valid Threat Object, please");
+           }
+        	else
+        	{
+               const links = [];
+               window.open("https://www.shodan.io/search?query="+userObject);
           }
 } 
