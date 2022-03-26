@@ -35,6 +35,7 @@ function buttonOpen(buttonValue)
             /* Threat Enrichment Tools */
             links["ThreatCrowd"]="https://www.threatcrowd.org/pivot.php?data=";
             links["ThreatFox"]="https://threatfox.abuse.ch/browse.php?search=ioc%3A";
+            links["ThreatIntelPlatform"]="https://threatintelligenceplatform.com/report/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -123,5 +124,6 @@ function ThreatEnrichmentOpen()
                const links = [];
                window.open("https://www.threatcrowd.org/pivot.php?data="+userObject);
                window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
+               window.open("https://threatintelligenceplatform.com/report/"+userObject);
           }
 } 
