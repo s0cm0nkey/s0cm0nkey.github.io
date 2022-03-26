@@ -32,6 +32,8 @@ function buttonOpen(buttonValue)
             links["URLVoid"]="https://www.urlvoid.com/scan/";
             links["SecuriSiteCheck"]="https://sitecheck.sucuri.net/?scan=";
             links["MalwareDomains"]="https://www.malwaredomainlist.com/mdl.php?colsearch=All&quantity=50&search=";
+            /* Threat Enrichment Tools */
+            links["ThreatCrowd"]="https://www.threatcrowd.org/pivot.php?data=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -51,6 +53,7 @@ function standAlone(buttonValue)
             links["Quttera"]="https://quttera.com/website-malware-scanner";
             links["PhishTank"]="https://www.phishtank.com/";
             links["LOTS"]="https://lots-project.com/";
+     /* Threat Enrichment Tools */
          	  window.open(links[buttonValue]);
 }
 function adGuard()
@@ -107,3 +110,16 @@ function domainBlacklistOpen()
                window.open("https://www.malwaredomainlist.com/mdl.php?colsearch=All&quantity=50&search="+userObject);
           }
 }            
+function ThreatEnrichmentOpen()
+{
+     userObject=document.getElementById("Object").value;
+        	if(validObject(userObject)==false)
+        	{
+                alert("Enter a valid Threat Object, please");
+           }
+        	else
+        	{
+               const links = [];
+               window.open("https://www.threatcrowd.org/pivot.php?data="+userObject);
+          }
+} 
