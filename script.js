@@ -27,6 +27,7 @@ function buttonOpen(buttonValue)
             links["AbuseIPDB"]="https://www.abuseipdb.com/check/";
             links["Blocklist.de"]="https://www.blocklist.de/en/search.html?action=search&send=start+search&ip=";
             links["ProjectHoneypot"]="https://www.projecthoneypot.org/ip_";
+            links["GreynoiseIP"]="https://www.greynoise.io/viz/ip/";
             /* Domain Blacklist Checkers */
             links["URLVoid"]="https://www.urlvoid.com/scan/";
             links["SecuriSiteCheck"]="https://sitecheck.sucuri.net/?scan=";
@@ -87,6 +88,7 @@ function IPBlacklistOpen()
                window.open("https://www.abuseipdb.com/check/"+userObject);
                window.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
                window.open("https://www.projecthoneypot.org/ip_"+userObject);
+               window.open("https://www.greynoise.io/viz/ip/"+userObject);
           }
 }            
 function domainBlacklistOpen()
