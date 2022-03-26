@@ -34,6 +34,7 @@ function buttonOpen(buttonValue)
             links["MalwareDomains"]="https://www.malwaredomainlist.com/mdl.php?colsearch=All&quantity=50&search=";
             /* Threat Enrichment Tools */
             links["ThreatCrowd"]="https://www.threatcrowd.org/pivot.php?data=";
+            links["ThreatFox"]="https://threatfox.abuse.ch/browse.php?search=ioc%3A";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -121,5 +122,6 @@ function ThreatEnrichmentOpen()
         	{
                const links = [];
                window.open("https://www.threatcrowd.org/pivot.php?data="+userObject);
+               window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
           }
 } 
