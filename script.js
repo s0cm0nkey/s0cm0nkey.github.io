@@ -42,6 +42,15 @@ function buttonOpen(buttonValue)
             links["SANS"]="https://secure.dshield.org/ipinfo.html?ip=";
             /* Cyber Search Tools */
             links["Shodan"]="https://www.shodan.io/search?query=";
+            links["Spyse"]="https://spyse.com/search?query=";
+            links["Maltiverse"]="https://maltiverse.com/search;query=";
+            links["Onyphe"]="https://www.onyphe.io/search/?query=";
+            links["IntelX"]="https://intelx.io/?s=";
+            links["Natlas"]="https://natlas.io/search?query=";
+            links["ThreatEncyclopedia"]="https://www.trendmicro.com/vinfo/us/threat-encyclopedia/search/";
+            links["BinaryEdge"]="https://app.binaryedge.io/services/query?query=";
+            links["Censys"]="https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q=";
+            links["LeakIX"]="https://leakix.net/search?q=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -154,5 +163,14 @@ function CyberSearchOpen()
         	{
                const links = [];
                window.open("https://www.shodan.io/search?query="+userObject);
+               window.open("https://spyse.com/search?query="+userObject);
+               window.open("https://maltiverse.com/search;query="+userObject);
+               window.open("https://www.onyphe.io/search/?query="+userObject);
+               window.open("https://intelx.io/?s="+userObject);
+               window.open("https://natlas.io/search?query="+userObject);
+               window.open("https://www.trendmicro.com/vinfo/us/threat-encyclopedia/search/"+userObject);
+               window.open("https://app.binaryedge.io/services/query?query="+userObject);
+               window.open("https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q="+userObject);
+               window.open("https://leakix.net/search?q="+userObject);
           }
 } 
