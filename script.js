@@ -37,6 +37,7 @@ function buttonOpen(buttonValue)
             links["ThreatFox"]="https://threatfox.abuse.ch/browse.php?search=ioc%3A";
             links["ThreatIntelPlatform"]="https://threatintelligenceplatform.com/report/";
             links["RiskIQ"]="https://community.riskiq.com/research?query=";
+            links["Malcode"]="https://malc0de.com/database/index.php?search=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -127,5 +128,6 @@ function ThreatEnrichmentOpen()
                window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
                window.open("https://threatintelligenceplatform.com/report/"+userObject);
                window.open("https://community.riskiq.com/research?query="+userObject);
+               window.open("https://malc0de.com/database/index.php?search="+userObject);
           }
 } 
