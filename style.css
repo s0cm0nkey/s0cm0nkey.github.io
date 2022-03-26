@@ -1,4 +1,4 @@
-.button {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */
-.button4 {background-color: #FFBF00;} /* Yellow */
+.button {border-radius: 4px; background-color: #4CAF50;} /* Green */
+.button2 {border-radius: 4px; background-color: #008CBA;} /* Blue */
+.button3 {border-radius: 4px; background-color: #f44336;} /* Red */
+.button4 {border-radius: 4px; background-color: #FFBF00;} /* Yellow */
