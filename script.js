@@ -38,7 +38,7 @@ function buttonOpen(buttonValue)
             links["ThreatIntelPlatform"]="https://threatintelligenceplatform.com/report/";
             links["RiskIQ"]="https://community.riskiq.com/research?query=";
             links["Malcode"]="https://malc0de.com/database/index.php?search=";
-            links["Abusix"]="https://lookup.abusix.com/search?q=;
+            links["Abusix"]="https://lookup.abusix.com/search?q=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
