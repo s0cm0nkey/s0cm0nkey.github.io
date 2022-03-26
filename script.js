@@ -39,6 +39,7 @@ function buttonOpen(buttonValue)
             links["RiskIQ"]="https://community.riskiq.com/research?query=";
             links["Malcode"]="https://malc0de.com/database/index.php?search=";
             links["Abusix"]="https://lookup.abusix.com/search?q=";
+            links["SANS"]="https://secure.dshield.org/ipinfo.html?ip=";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -131,5 +132,6 @@ function ThreatEnrichmentOpen()
                window.open("https://community.riskiq.com/research?query="+userObject);
                window.open("https://malc0de.com/database/index.php?search="+userObject);
                window.open("https://lookup.abusix.com/search?q="+userObject);
+               window.open("https://secure.dshield.org/ipinfo.html?ip="+userObject);
           }
 } 
