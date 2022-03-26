@@ -60,6 +60,12 @@ function standAlone(buttonValue)
             links["PhishTank"]="https://www.phishtank.com/";
             links["LOTS"]="https://lots-project.com/";
      /* Threat Enrichment Tools */
+            links["BrightCloud"]="https://www.brightcloud.com/tools/url-ip-lookup.php";
+            links["MetaDefender"]="https://metadefender.opswat.com/";
+            links["Pulsedive"]="https://pulsedive.com/";
+            links["ThreatShare"]="https://threatshare.io/malware/";
+            links["PhishStats"]="https://phishstats.info/";
+            links["TweetIOC"]="http://tweettioc.com/search";
          	  window.open(links[buttonValue]);
 }
 function adGuard()
