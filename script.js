@@ -77,6 +77,10 @@ function standAlone(buttonValue)
             links["ThreatShare"]="https://threatshare.io/malware/";
             links["PhishStats"]="https://phishstats.info/";
             links["TweetIOC"]="http://tweettioc.com/search";
+     /* Cyber Search Tools */
+            links["Synapsint"]="https://synapsint.com/";
+            links["Guardicore"]="https://threatintelligence.guardicore.com/";
+            links["ThreatMiner"]="https://www.threatminer.org/index.php";
          	  window.open(links[buttonValue]);
 }
 function adGuard()
