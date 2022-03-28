@@ -178,3 +178,8 @@ function CyberSearchOpen()
                window.open("https://leakix.net/search?q="+userObject);
           }
 } 
+function FileRepOpen()
+{
+               const links = [];
+               window.open("https://www.virustotal.com/gui/search/"+userObject);
+} 
