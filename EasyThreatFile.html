@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>EasyThreat Tool</title>
+  	<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+ <body style="background-color:#424949;">
+  	<div class="container">
+    <div class="jumbotron">
+  	<h2>Welcome to "EasyThreat"</h2>
+      <p> This tool is designed to point SOC Analysts and Threat Hunters in the right direction when looking to enrich an indicator for analysis.
+        Many defenders do not have the level of automation that they would like for this task. Use these tools to check for the presence of your target threat object, on 
+        various blacklists, and look up points of enrichment data. For more details on the tools and others, check out the Threat Data page of my Gitbook: </p>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/threat-data"> S0cm0nkey's Security Reference Guide: Threat Data</a>
+        <br>
+      <br>
+      <p><i> **Note: You must allow popups from this page for this tool to work correctly**</i></p>
+    <form>
+      <div class="form-group">
+        <label for="Object">Enter Threat Object in the search bar, then launch a tool to navigate directly to its report on the Threat Object.</label>
+        <input type="text" class="form-control" id="Object">
+      </div>
+    </form>
+      <p style="font-size:85%;"><i><b style="color:#008CBA;">Blue:</b> Single Tools, <b style="color:#4CAF50;">Green:</b> Launches Multiple Tools, <b style="color:#f44336;">Red:</b> Requires Manual Input, <b style="color:#FFBF00;">Yellow:</b> Manual Input Multiple Objects</i></p>
+      <br>
+      <p><b>Multi-Blacklist Checkers:</b> These are tools that take a domain or IP adddress and search accross multiple blacklists. 
+      These will often have more data than just reputation. Read the details for more information.</p>
+      <button type="button" onclick="multiBlacklistOpen()" class="button">All Multi-Blacklist Checkers</button>
+   <button type="button" onclick="buttonOpen('Hurricane Electric')" class="button button2">HurricaneElectric</button>
+   <button type="button" onclick="buttonOpen('VirusTotal')" class="button button2">VirusTotal</button>
+      <button type="button" onclick="buttonOpen('Cisco Talos')" class="button button2">Cisco Talos</button>
+      <button type="button" onclick="buttonOpen('MXToolbox Supertool')" class="button button2">MXToolbox Supertool</button>
+      <button type="button" onclick="buttonOpen('MultiRBL')" class="button button2">MultiRBL</button>
+      
+ </body>
+</html>
