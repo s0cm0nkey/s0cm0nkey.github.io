@@ -86,13 +86,13 @@ function standAlone(buttonValue)
             links["Synapsint"]="https://synapsint.com/";
             links["Guardicore"]="https://threatintelligence.guardicore.com/";
             links["ThreatMiner"]="https://www.threatminer.org/index.php";
-         	  window.open(links[buttonValue]);
      /* File Tools */
             links["TalosFile"]="https://talosintelligence.com/talos_file_reputation";
             links["CymruHash"]="https://hash.cymru.com:";
             links["Valkyrie"]="https://valkyrie.comodo.com/";
             links["Strontic"]="https://strontic.github.io/xcyclopedia/";
             links["Filesec"]="https://filesec.io/";
+            window.open(links[buttonValue]);
 }
 function adGuard()
 {
