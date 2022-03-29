@@ -16,8 +16,8 @@
   	<h2>Welcome to "EasyThreatFile"</h2>
       <p> This tool is designed to help SOC Analysts and Incident Responders gather data around a target file or file hash. Many times we might not have anutomated systems enriching files detected in alerts or found within investigations.
         This tool will allow you to parse through multiple resources quickly, and gather the data you need. For more details on the tools and others, check out the following pages of my Gitbook: </p>
-      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/threat-data"> S0cm0nkey's Security Reference Guide: Threat Data</a>
-      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/dfir-digital-forensics-and-incident-response/sandboxing"> S0cm0nkey's Security Reference Guide: Sandboxing</a>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/threat-data"> S0cm0nkey's Security Reference Guide: Threat Data</a><br>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/dfir-digital-forensics-and-incident-response/sandboxing"> S0cm0nkey's Security Reference Guide: Sandboxing</a><br>
       <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/dfir-digital-forensics-and-incident-response/file-analysis"> S0cm0nkey's Security Reference Guide: File Analysis</a>
         <br>
       <br>
@@ -32,6 +32,29 @@
       <br>
       <p><b>File Data Tools</b> These are tools are cyber search tools that allow the search of different types of objects and returns various points of enriched data for them. For these you can search either a file name or a file hash.</p>
       <button type="button" onclick="FileRepOpen()" class="button">All File Data Tools</button>
-   <button type="button" onclick="buttonOpen('VirusTotal')" class="button button2">VirusTotal</button>
+      <button type="button" onclick="buttonOpen('VirusTotal')" class="button button2">VirusTotal</button>
+      <button type="button" onclick="buttonOpen('ThreatFox')" class="button button2">ThreatFox</button>
+      <button type="button" onclick="buttonOpen('Maltiverse')" class="button button2">Maltiverse</button>
+      <button type="button" onclick="buttonOpen('ThreatEncyclopedia')" class="button button2">TrendMicro Threat Encyclopedia</button>
+      <button type="button" onclick="standAlone('ThreatMiner')" class="button button3">ThreatMiner</button>
+      <button type="button" onclick="standAlone('MetaDefender')" class="button button3">OPSWAT MetaDefender</button>
+      <button type="button" onclick="standAlone('Pulsedive')" class="button button3">Pulsedive Threat Intelligence</button>
+      <br>
+      <br>
+      <br>
+      <p><b>File Hash Tools</b> These are tools are cyber search tools that allow the search of various file hashes and returns reputation and context data. Note: Certain tools only accept certain file hashes.</p>
+      <button type="button" onclick="buttonOpen('BazaarMD5')" class="button button2">Malware Bazaar MD5 Search</button>
+      <button type="button" onclick="buttonOpen('BazaarSHA256')" class="button button2">Malware Bazaar SHA256 Search</button>
+      <button type="button" onclick="standAlone('TalosFile')" class="button button3">Talos File Reputation (SHA256 Only)</button>
+      <button type="button" onclick="standAlone('CymruHash')" class="button button3">Cymru Malware Hash Registry (MD5, SHA1, and SHA256)</button>
+      <button type="button" onclick="standAlone('Valkyrie')" class="button button3">Comodo Valkyrie (SHA1 Only)</button>
+      <br>
+      <br>
+      <br>
+      <p><b>Windows File Identification</b> These are tools that take a file name and search a detailed repository of Windows binaries. Successful searches will return various data points such as known good hashes and file paths..</p>
+      <button type="button" onclick="buttonOpen('WinBinDex')" class="button button2">Windows Binaries Index</button>
+      <button type="button" onclick="buttonOpen('EchoTrail')" class="button button2">EchoTrail</button>
+      <button type="button" onclick="standAlone('Strontic')" class="button button3">Strontic Encyclopedia of Executables</button>
+      <button type="button" onclick="standAlone('Filesec')" class="button button3">Filesec maliciious file extensions</button>
  </body>
 </html>
