@@ -51,6 +51,11 @@ function buttonOpen(buttonValue)
             links["BinaryEdge"]="https://app.binaryedge.io/services/query?query=";
             links["Censys"]="https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q=";
             links["LeakIX"]="https://leakix.net/search?q=";
+            /* File Tools */
+            links["BazaarMD5"]="https://bazaar.abuse.ch/browse.php?search=md5%3A";
+            links["BazaarSHA256"]="https://bazaar.abuse.ch/browse.php?search=sha256%3A";
+            links["WinBinDex"]="https://winbindex.m417z.com/?file=";
+            links["EchoTrail"]="https://www.echotrail.io/insights/search/";
         	  window.open(links[buttonValue]+userObject);
             }
 }
@@ -82,6 +87,12 @@ function standAlone(buttonValue)
             links["Guardicore"]="https://threatintelligence.guardicore.com/";
             links["ThreatMiner"]="https://www.threatminer.org/index.php";
          	  window.open(links[buttonValue]);
+     /* File Tools */
+            links["TalosFile"]="https://talosintelligence.com/talos_file_reputation";
+            links["CymruHash"]="https://hash.cymru.com:";
+            links["Valkyrie"]="https://valkyrie.comodo.com/";
+            links["Strontic"]="https://strontic.github.io/xcyclopedia/";
+            links["Filesec"]="https://filesec.io/";
 }
 function adGuard()
 {
@@ -182,4 +193,7 @@ function FileRepOpen()
 {
                const links = [];
                window.open("https://www.virustotal.com/gui/search/"+userObject);
+               window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
+               window.open("https://maltiverse.com/search;query="+userObject);
+               window.open("https://www.trendmicro.com/vinfo/us/threat-encyclopedia/search/"+userObject);
 } 
