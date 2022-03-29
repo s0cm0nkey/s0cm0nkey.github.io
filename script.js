@@ -57,6 +57,7 @@ function buttonOpen(buttonValue)
             links["Manalyzer"]="https://manalyzer.org/report/";
             links["WinBinDex"]="https://winbindex.m417z.com/?file=";
             links["EchoTrail"]="https://www.echotrail.io/insights/search/";
+            links["Malshare"]="https://malshare.com/search.php?query=";
             /* Sandboxes */
             links["HybridAnalysis"]="https://www.hybrid-analysis.com/search?query=";
             links["JoeSandbox"]="https://www.joesandbox.com/search?q=";
@@ -104,6 +105,7 @@ function standAlone(buttonValue)
             links["IrisH"]="https://iris-h.services/pages/submit";
             links["Pikker"]="https://sandbox.pikker.ee/analysis/search/";
             links["Inquest"]="https://labs.inquest.net/dfi";
+            links["FileScan"]="https://www.filescan.io/scan";
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -208,6 +210,7 @@ function FileRepOpen()
                window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
                window.open("https://maltiverse.com/search;query="+userObject);
                window.open("https://www.trendmicro.com/vinfo/us/threat-encyclopedia/search/"+userObject);
+               window.open("https://malshare.com/search.php?query="+userObject);
 }
 function SandboxOpen()
 {
