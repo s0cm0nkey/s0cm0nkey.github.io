@@ -56,7 +56,10 @@ function buttonOpen(buttonValue)
             links["BazaarSHA256"]="https://bazaar.abuse.ch/browse.php?search=sha256%3A";
             links["WinBinDex"]="https://winbindex.m417z.com/?file=";
             links["EchoTrail"]="https://www.echotrail.io/insights/search/";
-        	  window.open(links[buttonValue]+userObject);
+            /* Sandboxes */
+            links["HybridAnalysis"]="https://www.hybrid-analysis.com/search?query=";
+            links["JoeSandbox"]="https://www.joesandbox.com/search?q=";
+            window.open(links[buttonValue]+userObject);
             }
 }
 function standAlone(buttonValue)
@@ -92,6 +95,7 @@ function standAlone(buttonValue)
             links["Valkyrie"]="https://valkyrie.comodo.com/";
             links["Strontic"]="https://strontic.github.io/xcyclopedia/";
             links["Filesec"]="https://filesec.io/";
+     /* Sandboxes */
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -196,4 +200,10 @@ function FileRepOpen()
                window.open("https://threatfox.abuse.ch/browse.php?search=ioc%3A"+userObject);
                window.open("https://maltiverse.com/search;query="+userObject);
                window.open("https://www.trendmicro.com/vinfo/us/threat-encyclopedia/search/"+userObject);
-} 
+}
+function SandboxOpen()
+{
+               const links =[];
+               window.open("https://www.hybrid-analysis.com/search?query="+userObject);
+               window.open("https://www.joesandbox.com/search?q="+userObject);
+}
