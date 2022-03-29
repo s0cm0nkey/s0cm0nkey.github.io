@@ -51,10 +51,21 @@
       <br>
       <br>
       <br>
-      <p><b>Windows File Identification</b> These are tools that take a file name and search a detailed repository of Windows binaries. Successful searches will return various data points such as known good hashes and file paths..</p>
+      <p><b>Windows File Identification</b> These are tools that take a file name and search a detailed repository of Windows binaries. Successful searches will return various data points such as known good hashes and file paths.</p>
       <button type="button" onclick="buttonOpen('WinBinDex')" class="button button2">Windows Binaries Index</button>
       <button type="button" onclick="buttonOpen('EchoTrail')" class="button button2">EchoTrail</button>
       <button type="button" onclick="standAlone('Strontic')" class="button button3">Strontic Encyclopedia of Executables</button>
       <button type="button" onclick="standAlone('Filesec')" class="button button3">Filesec maliciious file extensions</button>
+      <br>
+      <br>
+      <br>
+      <p><b>Sandbox Reports</b>Sandbox utilities allow dynamic and static analysis of various files in a safe environment. 
+        We can also review public sandbox reports for any previous analysis performed on our target file. Start by looking for public reports on your target file name or hash. If it has not been seen previously, you can submit the file for analysis and recieve a detailed report.</p>
+      <br>
+      <br>
+      <p><i>**Note: Do not submit any file to a public sandbox if it might contain Personally Identifiable Informaiton (PII). Use local sandbox tools to prevent possible data disclosure.**</i>,/p>
+      <button type="button" onclick="SandboxOpen()" class="button button2">All Sandboxes</button>
+      <button type="button" onclick="buttonOpen('HybridAnalysis')" class="button button2">Hybrid Analysis - Falcon Sandbox</button>
+      <button type="button" onclick="buttonOpen('JoeSandbox')" class="button button2">JoeSandbox</button>
  </body>
 </html>
