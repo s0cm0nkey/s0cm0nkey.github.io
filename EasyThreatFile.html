@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>EasyThreat Tool</title>
+  	<title>EasyThreatFile Tool</title>
   	<script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
@@ -13,29 +13,25 @@
  <body style="background-color:#424949;">
   	<div class="container">
     <div class="jumbotron">
-  	<h2>Welcome to "EasyThreat"</h2>
-      <p> This tool is designed to point SOC Analysts and Threat Hunters in the right direction when looking to enrich an indicator for analysis.
-        Many defenders do not have the level of automation that they would like for this task. Use these tools to check for the presence of your target threat object, on 
-        various blacklists, and look up points of enrichment data. For more details on the tools and others, check out the Threat Data page of my Gitbook: </p>
+  	<h2>Welcome to "EasyThreatFile"</h2>
+      <p> This tool is designed to help SOC Analysts and Incident Responders gather data around a target file or file hash. Many times we might not have anutomated systems enriching files detected in alerts or found within investigations.
+        This tool will allow you to parse through multiple resources quickly, and gather the data you need. For more details on the tools and others, check out the following pages of my Gitbook: </p>
       <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/threat-data"> S0cm0nkey's Security Reference Guide: Threat Data</a>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/dfir-digital-forensics-and-incident-response/sandboxing"> S0cm0nkey's Security Reference Guide: Sandboxing</a>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/dfir-digital-forensics-and-incident-response/file-analysis"> S0cm0nkey's Security Reference Guide: File Analysis</a>
         <br>
       <br>
       <p><i> **Note: You must allow popups from this page for this tool to work correctly**</i></p>
     <form>
       <div class="form-group">
-        <label for="Object">Enter Threat Object in the search bar, then launch a tool to navigate directly to its report on the Threat Object.</label>
+        <label for="Object">Enter File Name or File Hash in the search bar, then launch a tool to navigate directly to its report on your target.</label>
         <input type="text" class="form-control" id="Object">
       </div>
     </form>
       <p style="font-size:85%;"><i><b style="color:#008CBA;">Blue:</b> Single Tools, <b style="color:#4CAF50;">Green:</b> Launches Multiple Tools, <b style="color:#f44336;">Red:</b> Requires Manual Input, <b style="color:#FFBF00;">Yellow:</b> Manual Input Multiple Objects</i></p>
       <br>
-      <p><b>Test</b> These are tools that take a domain or IP adddress and search accross multiple blacklists. 
-      These will often have more data than just reputation. Read the details for more information.</p>
-      <button type="button" onclick="multiBlacklistOpen()" class="button">All Multi-Blacklist Checkers</button>
-   <button type="button" onclick="buttonOpen('Hurricane Electric')" class="button button2">HurricaneElectric</button>
+      <p><b>File Data Tools</b> These are tools are cyber search tools that allow the search of different types of objects and returns various points of enriched data for them. For these you can search either a file name or a file hash.</p>
+      <button type="button" onclick="FileRepOpen()" class="button">All File Data Tools</button>
    <button type="button" onclick="buttonOpen('VirusTotal')" class="button button2">VirusTotal</button>
-      <button type="button" onclick="buttonOpen('Cisco Talos')" class="button button2">Cisco Talos</button>
-      <button type="button" onclick="buttonOpen('MXToolbox Supertool')" class="button button2">MXToolbox Supertool</button>
-      <button type="button" onclick="buttonOpen('MultiRBL')" class="button button2">MultiRBL</button>
  </body>
 </html>
