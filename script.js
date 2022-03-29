@@ -53,7 +53,8 @@ function buttonOpen(buttonValue)
             links["LeakIX"]="https://leakix.net/search?q=";
             /* File Tools */
             links["BazaarMD5"]="https://bazaar.abuse.ch/browse.php?search=md5%3A";
-            links["BazaarSHA256"]="https://bazaar.abuse.ch/browse.php?search=sha256%3A";
+            links["BazaarSHA256"]="https://bazaar.abuse.ch/browse.php?search=sha256%3A";";
+            links["Manalyzer"]="https://manalyzer.org/report/";
             links["WinBinDex"]="https://winbindex.m417z.com/?file=";
             links["EchoTrail"]="https://www.echotrail.io/insights/search/";
             /* Sandboxes */
@@ -102,6 +103,7 @@ function standAlone(buttonValue)
             links["IntezerAnalyze"]="https://analyze.intezer.com/";
             links["IrisH"]="https://iris-h.services/pages/submit";
             links["Pikker"]="https://sandbox.pikker.ee/analysis/search/";
+            links["Inquest"]="https://labs.inquest.net/dfi";
             window.open(links[buttonValue]);
 }
 function adGuard()
