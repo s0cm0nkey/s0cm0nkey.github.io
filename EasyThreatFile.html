@@ -59,11 +59,17 @@
       <br>
       <br>
       <br>
-      <p><b>Sandbox Reports</b>Sandbox utilities allow dynamic and static analysis of various files in a safe environment. 
+      <p><b>Sandbox Reports</b> Sandbox utilities allow dynamic and static analysis of various files in a safe environment. 
         We can also review public sandbox reports for any previous analysis performed on our target file. Start by looking for public reports on your target file name or hash. If it has not been seen previously, you can submit the file for analysis and recieve a detailed report.</p>
       <p><i>**Note: Do not submit any file to a public sandbox if it might contain Personally Identifiable Informaiton (PII). Use local sandbox tools to prevent possible data disclosure.**</i></p>
-      <button type="button" onclick="SandboxOpen()" class="button button2">All Sandboxes</button>
+      <button type="button" onclick="SandboxOpen()" class="button">All Sandboxes</button>
       <button type="button" onclick="buttonOpen('HybridAnalysis')" class="button button2">Hybrid Analysis - Falcon Sandbox</button>
       <button type="button" onclick="buttonOpen('JoeSandbox')" class="button button2">JoeSandbox</button>
+      <button type="button" onclick="buttonOpen('GateWatcher')" class="button button2">Gatewatcher Intelligence</button>
+      <button type="button" onclick="buttonOpen('TRAIGE')" class="button button2">Hatching Tria.ge</button>
+      <button type="button" onclick="standAlone('AnyRun')" class="button button3">Any.Run Public Sandbox</button>
+      <button type="button" onclick="standAlone('IntezerAnalyze')" class="button button3">Intezer Analyze Reports</button>
+      <button type="button" onclick="standAlone('IrisH')" class="button button3">Iris-H Digital Forensics Reports</button>
+      <button type="button" onclick="standAlone('Pikker')" class="button button3">Pikker Cuckoo Sandbox</button>
  </body>
 </html>
