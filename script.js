@@ -59,6 +59,8 @@ function buttonOpen(buttonValue)
             /* Sandboxes */
             links["HybridAnalysis"]="https://www.hybrid-analysis.com/search?query=";
             links["JoeSandbox"]="https://www.joesandbox.com/search?q=";
+            links["GateWatcher"]="https://intelligence.gatewatcher.com/sample_search/?q=";
+            links["TRIAGE"]="https://tria.ge/s?q=";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -96,6 +98,10 @@ function standAlone(buttonValue)
             links["Strontic"]="https://strontic.github.io/xcyclopedia/";
             links["Filesec"]="https://filesec.io/";
      /* Sandboxes */
+            links["AnyRun"]="https://app.any.run/submissions";
+            links["IntezerAnalyze"]="https://analyze.intezer.com/";
+            links["IrisH"]="https://iris-h.services/pages/submit";
+            links["Pikker"]="https://sandbox.pikker.ee/analysis/search/";
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -206,4 +212,6 @@ function SandboxOpen()
                const links =[];
                window.open("https://www.hybrid-analysis.com/search?query="+userObject);
                window.open("https://www.joesandbox.com/search?q="+userObject);
+               window.open("https://intelligence.gatewatcher.com/sample_search/?q="+userObject);
+               window.open("https://tria.ge/s?q="+userObject);
 }
