@@ -113,6 +113,11 @@ function adGuard()
      const links = [];
      window.open("https://reports.adguard.com/en/"+userObject+"/report.html");
 }
+function SystemLookup()
+{
+     const links = [];
+     window.open("https://www.systemlookup.com/search.php?list=&type=filename&search="+userObject+"&s=");
+}
 function multiBlacklistOpen()
 {
      userObject=document.getElementById("Object").value;
