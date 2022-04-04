@@ -158,7 +158,7 @@ function SystemLookup()
 function NerdyData()
 {
      const links =[];
-     window.open("https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22"+userObject+"%22%7D%5D,%22any%22%3A%5B%5D,%22none%22%3A%5B%5D%7D";
+     window.open("https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22"+userObject+"%22%7D%5D,%22any%22%3A%5B%5D,%22none%22%3A%5B%5D%7D");
 }
 function multiBlacklistOpen()
 {
