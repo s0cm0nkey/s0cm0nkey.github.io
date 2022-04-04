@@ -155,6 +155,11 @@ function SystemLookup()
      const links = [];
      window.open("https://www.systemlookup.com/search.php?list=&type=filename&search="+userObject+"&s=");
 }
+function NerdyData()
+{
+     const links =[];
+     window.open("https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22"+userObject+"%22%7D%5D,%22any%22%3A%5B%5D,%22none%22%3A%5B%5D%7D";
+}
 function multiBlacklistOpen()
 {
      userObject=document.getElementById("Object").value;
@@ -302,7 +307,7 @@ function ReconTools()
      window.open("https://viewdns.info/iphistory/?q="+userObject);
      window.open("https://spyonweb.com/"+userObject);
      window.open("https://analyzeid.com/id/"+userObject);
-     
+     window.open("https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22"+userObject+"%22%7D%5D,%22any%22%3A%5B%5D,%22none%22%3A%5B%5D%7D");
 }
 function WebScanners()
 {
