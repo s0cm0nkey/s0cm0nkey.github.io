@@ -84,11 +84,17 @@ function buttonOpen(buttonValue)
             links["Github"]="https://github.com/search?q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
             /* Recon Tools */
+            links["VDNSWHOIS"]="https://viewdns.info/whois/?domain=";
+            links["VDNSReverseIP"]="https://viewdns.info/reverseip/?host=";
+            links["VDNSReverseWHOIS"]="https://viewdns.info/reversewhois/?q=";
+            links["VDNSHistory"]="https://viewdns.info/iphistory/?q=";
             links["Netcraft"]="https://sitereport.netcraft.com/?url=";
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
             links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
             /* DNS Tools */
-            links["ViewDNSReverse"]="https://viewdns.info/reversewhois/?q=";
+            links["VDNSReport"]="https://viewdns.info/dnsreport/?domain=";
+            links["VDNSRecords"]="https://viewdns.info/dnsrecord/?domain=";
+            links["DNSSEC"]="https://viewdns.info/dnssec/?domain=";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -283,6 +289,10 @@ function ContentReference()
 function ReconTools()
 {
      const links =[];
+     window.open("https://viewdns.info/whois/?domain="+userObject);
+     window.open("https://viewdns.info/reverseip/?q="+userObject);
+     window.open("https://viewdns.info/reversewhois/?q="+userObject);
+     window.open("https://viewdns.info/iphistory/?q="+userObject);
      window.open("https://sitereport.netcraft.com/?url="+userObject);
      window.open("https://securityheaders.com/?q="+userObject);
      window.open("https://www.ssllabs.com/ssltest/analyze.html?d="+userObject);
@@ -290,5 +300,7 @@ function ReconTools()
 function DNSTools()
 {
      const links =[];
-     window.open("https://viewdns.info/reversewhois/?q="+userObject);
+     window.open("https://viewdns.info/dnsreport/?domain="+userObject);
+     window.open("https://viewdns.info/dnsrecord/?domain="+userObject);
+     window.open("https://viewdns.info/dnssec/?domain="+userObject);
 }
