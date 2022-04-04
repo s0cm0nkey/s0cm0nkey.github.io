@@ -247,5 +247,5 @@ function GoogleDorkOpen()
      window.open("https://www.google.ca/search?q=ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak+site:"+userObject);
      window.open("https://www.google.ca/search?q=ext:action+OR+struts+site:"+userObject);
      window.open("https://www.google.ca/search?q=site:pastebin.com+"+userObject);
-     
+}
      
