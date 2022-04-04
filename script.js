@@ -63,6 +63,7 @@ function buttonOpen(buttonValue)
             links["JoeSandbox"]="https://www.joesandbox.com/search?q=";
             links["GateWatcher"]="https://intelligence.gatewatcher.com/sample_search/?q=";
             links["TRIAGE"]="https://tria.ge/s?q=";
+            links["DorkLogin"]="https://www.google.ca/search?q=site:username+OR+password+OR+login+OR+root+OR+admin+"
             window.open(links[buttonValue]+userObject);
             }
 }
