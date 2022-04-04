@@ -84,10 +84,15 @@ function buttonOpen(buttonValue)
             links["Github"]="https://github.com/search?q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
             /* Recon Tools */
-            links["VDNSWHOIS"]="https://viewdns.info/whois/?domain=";
+            links["WHOIS"]="https://who.is/whois/";
+            links["Whoxy"]="https://www.whoxy.com/";
+            links["DomainBigData"]="https://domainbigdata.com/";
             links["VDNSReverseIP"]="https://viewdns.info/reverseip/?host=";
             links["VDNSReverseWHOIS"]="https://viewdns.info/reversewhois/?q=";
             links["VDNSHistory"]="https://viewdns.info/iphistory/?q=";
+            links["Spyonweb"]="https://spyonweb.com/";
+            links["AnalyzeID"]="https://analyzeid.com/id/";
+            /* Security Scanners */
             links["Netcraft"]="https://sitereport.netcraft.com/?url=";
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
             links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
@@ -289,10 +294,18 @@ function ContentReference()
 function ReconTools()
 {
      const links =[];
-     window.open("https://viewdns.info/whois/?domain="+userObject);
+     window.open("https://who.is/whois/"+userObject);
+     window.open("https://www.whoxy.com/"+userObject);
+     window.open("https://domainbigdata.com/"+userObject);
      window.open("https://viewdns.info/reverseip/?q="+userObject);
      window.open("https://viewdns.info/reversewhois/?q="+userObject);
      window.open("https://viewdns.info/iphistory/?q="+userObject);
+     window.open("https://spyonweb.com/"+userObject);
+     window.open("https://analyzeid.com/id/"+userObject);
+     
+}
+function WebScanners()
+{
      window.open("https://sitereport.netcraft.com/?url="+userObject);
      window.open("https://securityheaders.com/?q="+userObject);
      window.open("https://www.ssllabs.com/ssltest/analyze.html?d="+userObject);
