@@ -267,6 +267,7 @@ function Subdomains()
      window.open("https://www.google.ca/search?q=site:*.*."+userObject);
 }
 function ContentReference
+{
      const links =[];
      window.open("https://github.com/search?q="+userObject);
      window.open("https://www.openbugbounty.org/search/?search="+userObject);
