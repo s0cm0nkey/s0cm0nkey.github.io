@@ -88,7 +88,7 @@ function buttonOpen(buttonValue)
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
             links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
             /* DNS Tools */
-            links["ViewDNSReverse"}="https://viewdns.info/reversewhois/?q=";
+            links["ViewDNSReverse"]="https://viewdns.info/reversewhois/?q=";
             window.open(links[buttonValue]+userObject);
             }
 }
