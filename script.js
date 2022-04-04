@@ -79,9 +79,16 @@ function buttonOpen(buttonValue)
             /* Subdomains */
             links["DorkSub"]="https://www.google.ca/search?q=site:*.";
             links["DorkSubsub"]="https://www.google.ca/search?q=site:*.*.";
+            links["crt.sh"]="https://crt.sh/?q=%25.";
             /* Content References */
             links["Github"]="https://github.com/search?q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
+            /* Recon Tools */
+            links["Netcraft"]="https://sitereport.netcraft.com/?url=";
+            links["SecurityHeaders"]="https://securityheaders.com/?q=";
+            links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
+            /* DNS Tools */
+            links["ViewDNSReverse"}="https://viewdns.info/reversewhois/?q=";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -265,12 +272,23 @@ function Subdomains()
      const links =[];
      window.open("https://www.google.ca/search?q=site:*."+userObject);
      window.open("https://www.google.ca/search?q=site:*.*."+userObject);
+     window.open("https://crt.sh/?q=%25."+userObject);
 }
-function ContentReference
+function ContentReference()
 {
      const links =[];
      window.open("https://github.com/search?q="+userObject);
      window.open("https://www.openbugbounty.org/search/?search="+userObject);
 }
-
-
+function ReconTools()
+{
+     const links =[];
+     window.open("https://sitereport.netcraft.com/?url="+userObject);
+     window.open("https://securityheaders.com/?q="+userObject);
+     window.open("https://www.ssllabs.com/ssltest/analyze.html?d="+userObject);
+}
+function DNSTools()
+{
+     const links =[];
+     window.open("https://viewdns.info/reversewhois/?q="+userObject);
+}
