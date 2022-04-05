@@ -15,7 +15,9 @@
     <div class="jumbotron">
   	<h2>Welcome to "EasyRecon"</h2>
       <p> When performing passive recon on a target, there are dozens of tools we can use to gather various pieces of intel on our target. This tool will allow us to parse these utilities easily. For more details on the included resources and others, check out the following pages of my Gitbook: </p>
+      <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/osint/"> S0cm0nkey's Security Reference Guide: OSINT</a>
       <a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/cyber-intelligence/osint/search-engines/google-dorking-cheatsheet"> S0cm0nkey's Security Reference Guide: Google Dorks</a>
+      <a href="https://app.gitbook.com/s/-MQCNQTNhvnXD58Vo8Mf/cyber-intelligence/osint/files-media-breach-paste-code#github-dorking"> S0cm0nkey's Security Reference Guide: Github Dorks</a>
         <br>
       <br>
       <p><i> **Note: You must allow popups from this page for this tool to work correctly**</i></p>
@@ -27,34 +29,7 @@
     </form>
       <p style="font-size:85%;"><i><b style="color:#008CBA;">Blue:</b> Single Tools, <b style="color:#4CAF50;">Green:</b> Launches Multiple Tools, <b style="color:#f44336;">Red:</b> Requires Manual Input, <b style="color:#FFBF00;">Yellow:</b> Manual Input Multiple Objects</i></p>
       <br>
-      <p><b>Recon Google Dorks:</b> These are popular google dorks that can revieal interesting pages of your target domain.</p>
-      <button type="button" onclick="GoogleDorkOpen()" class="button">All Google Dorks</button>
-      <button type="button" onclick="buttonOpen('DorkIndex')" class="button button2">Google: Index Pages</button>
-      <button type="button" onclick="buttonOpen('DorkLogin')" class="button button2">Google: Login Pages</button>
-      <button type="button" onclick="buttonOpen('DorkBackdoor')" class="button button2">Google: Backdoors</button>
-      <button type="button" onclick="buttonOpen('DorkSetup')" class="button button2">Google: Install or Setup Files</button>
-      <button type="button" onclick="buttonOpen('DorkWordpress')" class="button button2">Google: Wordpress Files and Pages</button>
-      <button type="button" onclick="buttonOpen('DorkRedirects')" class="button button2">Google: Open Redirects</button>
-      <button type="button" onclick="buttonOpen('DorkFiles')" class="button button2">Google: Files by Extension</button>
-      <button type="button" onclick="buttonOpen('DorkDocs')" class="button button2">Google: Documents by Extension</button>
-      <button type="button" onclick="buttonOpen('DorkDb')" class="button button2">Google: Databases</button>
-      <button type="button" onclick="buttonOpen('DorkStruts')" class="button button2">Google: Apache Struts</button>
-      <button type="button" onclick="buttonOpen('DorkPastebin')" class="button button2">Google: Pastebin Entries</button>
-      <button type="button" onclick="buttonOpen('DorkMisc')" class="button button2">Google: htaccess/phpinfo/git</button>
-      <br>
-      <br>
-      <br>
-      <p><b>Recon Sub-Domains:</b> These are popular google dorks and osint tools that can revieal sub-domains of your target domain.</p>
-      <button type="button" onclick="Subdomains()" class="button">All Sub-domain tools</button>
-      <button type="button" onclick="buttonOpen('DorkSub')" class="button button2">Google: Subdomains</button>
-      <button type="button" onclick="buttonOpen('DorkSubsub')" class="button button2">Google: Sub-Subdomains</button>
-      <button type="button" onclick="buttonOpen('crt.sh')" class="button button2">CRT.sh Certificate Report</button>
-      <button type="button" onclick="standAlone('Crobat')" class="button button3">Rapid 7's Project Crobat</button>
-      <button type="button" onclick="standAlone('PTToolsSubs')" class="button button3">Pentest Tools Subdomain Finder</button>
-      <br>
-      <br>
-      <br>
-      <p><b>Recon Tools:</b> These are web based utilities that can  return various datapoints on your target.</p>
+        <p><b>Recon Tools:</b> These are web based utilities that can  return various datapoints on your target.</p>
       <button type="button" onclick="ReconTools()" class="button">All Recon Tools</button>
       <button type="button" onclick="Robots()" class="button button2">Robots.txt</button>
       <button type="button" onclick="buttonOpen('WHOIS')" class="button button2">WHOIS Entry</button>
@@ -73,6 +48,21 @@
       <button type="button" onclick="buttonOpen('Linkody')" class="button button2">Linkody Backlink Checker</button>
       <button type="button" onclick="buttonOpen('VisualSiteMapper')" class="button button2">Visual Site Mapper</button>
       <button type="button" onclick="standAlone('WhatCMS')" class="button button3">CMS Identifier</button>
+      <br>
+      <br>
+      <br>
+      <p><b>Cyber Search Engines and Internet Scanners:</b> These are tools can be used to return miscellaneous data for the target.</p>
+      <button type="button" onclick="CyberSearchOpen()" class="button ">All Cyber Search Engines and Internet Scanners</button>
+      <button type="button" onclick="buttonOpen('Shodan')" class="button button2">Shodan</button>
+      <button type="button" onclick="buttonOpen('Spyse')" class="button button2">Spyse</button>
+      <button type="button" onclick="buttonOpen('Maltiverse')" class="button button2">Maltiverse</button>
+      <button type="button" onclick="buttonOpen('Onyphe')" class="button button2">Onyphe</button>
+      <button type="button" onclick="buttonOpen('IntelX')" class="button button2">IntelX</button>
+      <button type="button" onclick="buttonOpen('Natlas')" class="button button2">Natlas Internet Scanner</button>
+      <button type="button" onclick="buttonOpen('ThreatEncyclopedia')" class="button button2">TrendMicro Threat Encyclopedia</button>
+      <button type="button" onclick="buttonOpen('BinaryEdge')" class="button button2">BinaryEdge</button>
+      <button type="button" onclick="buttonOpen('Censys')" class="button button2">Censys</button>
+      <button type="button" onclick="buttonOpen('LeakIX')" class="button button2">LeakIX</button>
       <br>
       <br>
       <br>
@@ -98,33 +88,54 @@
       <br>
       <br>
       <br>
+      <p><b>Recon Sub-Domains:</b> These are popular google dorks and osint tools that can revieal sub-domains of your target domain.</p>
+      <button type="button" onclick="Subdomains()" class="button">All Sub-domain tools</button>
+      <button type="button" onclick="buttonOpen('DorkSub')" class="button button2">Google: Subdomains</button>
+      <button type="button" onclick="buttonOpen('DorkSubsub')" class="button button2">Google: Sub-Subdomains</button>
+      <button type="button" onclick="buttonOpen('crt.sh')" class="button button2">CRT.sh Certificate Report</button>
+      <button type="button" onclick="standAlone('Crobat')" class="button button3">Rapid 7's Project Crobat</button>
+      <button type="button" onclick="standAlone('PTToolsSubs')" class="button button3">Pentest Tools Subdomain Finder</button>
+      <br>
+      <br>
+      <br>
+      <p><b>Recon Google Dorks:</b> These are popular google dorks that can revieal interesting pages of your target domain.</p>
+      <button type="button" onclick="GoogleDorkOpen()" class="button">All Google Dorks</button>
+      <button type="button" onclick="buttonOpen('DorkIndex')" class="button button2">Google: Index Pages</button>
+      <button type="button" onclick="buttonOpen('DorkLogin')" class="button button2">Google: Login Pages</button>
+      <button type="button" onclick="buttonOpen('DorkBackdoor')" class="button button2">Google: Backdoors</button>
+      <button type="button" onclick="buttonOpen('DorkSetup')" class="button button2">Google: Install or Setup Files</button>
+      <button type="button" onclick="buttonOpen('DorkWordpress')" class="button button2">Google: Wordpress Files and Pages</button>
+      <button type="button" onclick="buttonOpen('DorkRedirects')" class="button button2">Google: Open Redirects</button>
+      <button type="button" onclick="buttonOpen('DorkFiles')" class="button button2">Google: Files by Extension</button>
+      <button type="button" onclick="buttonOpen('DorkDocs')" class="button button2">Google: Documents by Extension</button>
+      <button type="button" onclick="buttonOpen('DorkDb')" class="button button2">Google: Databases</button>
+      <button type="button" onclick="buttonOpen('DorkStruts')" class="button button2">Google: Apache Struts</button>
+      <button type="button" onclick="buttonOpen('DorkPastebin')" class="button button2">Google: Pastebin Entries</button>
+      <button type="button" onclick="buttonOpen('DorkMisc')" class="button button2">Google: htaccess/phpinfo/git</button>
+      <br>
+      <br>
+      <br>    
       <p><b>Recon Referenced Content:</b> These are popular webpages that contain references to your target domain.</p>
       <button type="button" onclick="ContentReference()" class="button">All Refereced Content</button>
       <button type="button" onclick="buttonOpen('Github')" class="button button2">Search Github</button>
       <button type="button" onclick="buttonOpen('Gitlab')" class="button button2">Search Gitlab</button>
       <button type="button" onclick="buttonOpen('StackOverflow')" class="button button2">Search StackOverflow</button>
       <button type="button" onclick="buttonOpen('SourceForge')" class="button button2">Search SourceForge</button>
-      <button type="button" onclick="buttonOpen('OpenBug')" class="button button2">Search OpenBugBounty Reports</button>
-      <button type="button" onclick="buttonOpen('FireBounty')" class="button button2">Search FireBounty Reports</button>
+      <button type="button" onclick="buttonOpen('OpenBug')" class="button button2">penBugBounty Reports</button>
+      <button type="button" onclick="buttonOpen('FireBounty')" class="button button2">SFireBounty Reports</button>
+      <button type="button" onclick="buttonOpen('GrepApp')" class="button button2">SGrep.app</button>
+      <button type="button" onclick="buttonOpen('Searchcode')" class="button button2">Searchcode</button>
+      <a href="https://cipher387.github.io/code_repository_google_custom_search_engines/"> Cipher387's Code Repository Google CSE</a>
+      <br>
+      <br>
+      <br>
+      <p><b>Breach/Paste:</b> Search for entries related to your target accross public breach reports and paste sites.</p>
+      <a href="https://cipher387.github.io/pastebinsearchengines/"> Cipher387's Paste Bin Search Engines</a>
       <br>
       <br>
       <br>
       <p><b>Cached Content:</b> View cached and old versions of web pages for various goodies. Cipher387 made the best one here:</p>
       <a href="https://cipher387.github.io/quickcacheandarchivesearch/"> Cipher387's Quick Archive Search</a>
-      <br>
-      <br>
-      <br>
-      <p><b>Cyber Search Engines and Internet Scanners:</b> These are tools can be used to return miscellaneous data for the target.</p>
-      <button type="button" onclick="CyberSearchOpen()" class="button ">All Cyber Search Engines and Internet Scanners</button>
-      <button type="button" onclick="buttonOpen('Shodan')" class="button button2">Shodan</button>
-      <button type="button" onclick="buttonOpen('Spyse')" class="button button2">Spyse</button>
-      <button type="button" onclick="buttonOpen('Maltiverse')" class="button button2">Maltiverse</button>
-      <button type="button" onclick="buttonOpen('Onyphe')" class="button button2">Onyphe</button>
-      <button type="button" onclick="buttonOpen('IntelX')" class="button button2">IntelX</button>
-      <button type="button" onclick="buttonOpen('Natlas')" class="button button2">Natlas Internet Scanner</button>
-      <button type="button" onclick="buttonOpen('ThreatEncyclopedia')" class="button button2">TrendMicro Threat Encyclopedia</button>
-      <button type="button" onclick="buttonOpen('BinaryEdge')" class="button button2">BinaryEdge</button>
-      <button type="button" onclick="buttonOpen('Censys')" class="button button2">Censys</button>
-      <button type="button" onclick="buttonOpen('LeakIX')" class="button button2">LeakIX</button>
+           
  </body>
 </html>
