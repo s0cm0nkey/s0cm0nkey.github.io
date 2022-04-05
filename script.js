@@ -80,6 +80,7 @@ function buttonOpen(buttonValue)
             links["DorkSub"]="https://www.google.ca/search?q=site:*.";
             links["DorkSubsub"]="https://www.google.ca/search?q=site:*.*.";
             links["crt.sh"]="https://crt.sh/?q=%25.";
+            links["SpyseSubs"]="https://spyse.com/tools/subdomain-finder/search?query=";
             /* Content References */
             links["Github"]="https://github.com/search?q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
@@ -150,6 +151,10 @@ function standAlone(buttonValue)
             links["FileScan"]="https://www.filescan.io/scan";
      /* DNS Tools */
             links["DNSDumpster"]="https://dnsdumpster.com/";
+            links["Dig"]="https://toolbox.googleapps.com/apps/dig/";
+     /* Subdomains */
+            links["Crobat"]="https://omnisint.io/";
+            links["PTToolsSubs"]"https://pentest-tools.com/information-gathering/find-subdomains-of-domain;
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -301,6 +306,7 @@ function Subdomains()
      window.open("https://www.google.ca/search?q=site:*."+userObject);
      window.open("https://www.google.ca/search?q=site:*.*."+userObject);
      window.open("https://crt.sh/?q=%25."+userObject);
+     window.open("https://spyse.com/tools/subdomain-finder/search?query="+userObject);
 }
 function ContentReference()
 {
