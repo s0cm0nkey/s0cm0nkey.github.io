@@ -343,6 +343,7 @@ function ReconTools()
 }
 function WebScanners()
 {
+     const links =[];
      window.open("https://observatory.mozilla.org/analyze/"+userObject);
      window.open("https://sitereport.netcraft.com/?url="+userObject);
      window.open("https://securityheaders.com/?q="+userObject);
