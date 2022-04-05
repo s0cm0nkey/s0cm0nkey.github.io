@@ -83,7 +83,11 @@ function buttonOpen(buttonValue)
             links["SpyseSubs"]="https://spyse.com/tools/subdomain-finder/search?query=";
             /* Content References */
             links["Github"]="https://github.com/search?q=";
+            links["Gitlab"]="https://gitlab.com/explore?name=";
+            links["StackOverflow"]="https://stackoverflow.com/search?q=";
+            links["SourceForge"]="https://sourceforge.net/directory/?clear&q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
+            links["FireBounty"]="https://firebounty.com/?sort=created_at&order=desc&search_field=name&search=";
             /* Recon Tools */
             links["WHOIS"]="https://who.is/whois/";
             links["Whoxy"]="https://www.whoxy.com/";
@@ -319,7 +323,11 @@ function ContentReference()
 {
      const links =[];
      window.open("https://github.com/search?q="+userObject);
+     window.open("https://gitlab.com/explore?name="+userObject);
+     window.open("https://stackoverflow.com/search?q="+userObject);
+     window.open("https://sourceforge.net/directory/?clear&q="+userObject);
      window.open("https://www.openbugbounty.org/search/?search="+userObject);
+     window.open("https://firebounty.com/?sort=created_at&order=desc&search_field=name&search="+userObject);
 }
 function ReconTools()
 {
