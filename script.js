@@ -154,7 +154,7 @@ function standAlone(buttonValue)
             links["Dig"]="https://toolbox.googleapps.com/apps/dig/";
      /* Subdomains */
             links["Crobat"]="https://omnisint.io/";
-            links["PTToolsSubs"]="https://pentest-tools.com/information-gathering/find-subdomains-of-domain;
+            links["PTToolsSubs"]="https://pentest-tools.com/information-gathering/find-subdomains-of-domain";
             window.open(links[buttonValue]);
 }
 function adGuard()
