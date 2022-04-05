@@ -104,7 +104,7 @@ function buttonOpen(buttonValue)
             links["VDNSReport"]="https://viewdns.info/dnsreport/?domain=";
             links["VDNSRecords"]="https://viewdns.info/dnsrecord/?domain=";
             links["DNSSEC"]="https://viewdns.info/dnssec/?domain=";
-            links["DNSlytics"]"https://dnslytics.com/search?q=";
+            links["DNSlytics"]="https://dnslytics.com/search?q=";
             window.open(links[buttonValue]+userObject);
             }
 }
