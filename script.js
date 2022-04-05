@@ -115,6 +115,8 @@ function buttonOpen(buttonValue)
             links["VDNSRecords"]="https://viewdns.info/dnsrecord/?domain=";
             links["DNSSEC"]="https://viewdns.info/dnssec/?domain=";
             links["DNSlytics"]="https://dnslytics.com/search?q=";
+            /* Breach/Paste */
+            links["Dehashed"]="https://www.dehashed.com/search?query=";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -168,6 +170,15 @@ function standAlone(buttonValue)
             links["CSPEval"]="https://csp-evaluator.withgoogle.com/";
             links["Snyk"]="https://snyk.io/website-scanner/";
             links["WhatCMS"]="https://whatcms.org/";
+     /* Breach/Paste */
+            links["HIBP"]="https://haveibeenpwned.com/";
+            links["LeakLookup"]="https://leak-lookup.com/";
+            links["BreachDirectory"]="https://breachdirectory.org/";
+            links["LeakedSite"]="https://leaked.site/";
+            links["WeLeakInfo"]="https://weleakinfo.to/";
+            links["PSBDump"]="https://psbdmp.ws/";
+            links["Pastebin.ga"]="https://pastebin.ga/";
+            links["RedHunt"]="https://redhuntlabs.com/online-ide-search";
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -369,3 +380,12 @@ function DNSTools()
      window.open("https://viewdns.info/dnssec/?domain="+userObject);
      window.open("https://dnslytics.com/search?q="+userObject);
 }
+function BreachPaste()
+{
+     const links =[];
+     window.open("https://www.dehashed.com/search?query="+userObject);
+}
+
+
+
+
