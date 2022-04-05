@@ -100,7 +100,7 @@ function buttonOpen(buttonValue)
             links["VisualSiteMapper"]="http://visualsitemapper.com/map/";
             links["Wappalyzer"]="https://www.wappalyzer.com/lookup/";
             /* Security Scanners */
-            links["Mozilla"]="https://observatory.mozilla.org/analyze/;
+            links["Mozilla"]="https://observatory.mozilla.org/analyze/";
             links["Netcraft"]="https://sitereport.netcraft.com/?url=";
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
             links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
