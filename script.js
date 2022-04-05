@@ -86,12 +86,16 @@ function buttonOpen(buttonValue)
             /* Recon Tools */
             links["WHOIS"]="https://who.is/whois/";
             links["Whoxy"]="https://www.whoxy.com/";
+            links["RDAP"]="https://client.rdap.org/?type=domain&object=";
             links["DomainBigData"]="https://domainbigdata.com/";
             links["VDNSReverseIP"]="https://viewdns.info/reverseip/?host=";
             links["VDNSReverseWHOIS"]="https://viewdns.info/reversewhois/?q=";
             links["VDNSHistory"]="https://viewdns.info/iphistory/?q=";
             links["Spyonweb"]="https://spyonweb.com/";
             links["AnalyzeID"]="https://analyzeid.com/id/";
+            links["Builtwith"]="https://builtwith.com/";
+            links["HunterIO"]="https://hunter.io/try/search/";
+            links["Linkody"]="http://bc.linkody.com/en/seo-tools/free-backlink-checker/";
             /* Security Scanners */
             links["Netcraft"]="https://sitereport.netcraft.com/?url=";
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
@@ -100,6 +104,7 @@ function buttonOpen(buttonValue)
             links["VDNSReport"]="https://viewdns.info/dnsreport/?domain=";
             links["VDNSRecords"]="https://viewdns.info/dnsrecord/?domain=";
             links["DNSSEC"]="https://viewdns.info/dnssec/?domain=";
+            links["DNSlytics"]"https://dnslytics.com/search?q=";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -143,12 +148,19 @@ function standAlone(buttonValue)
             links["Pikker"]="https://sandbox.pikker.ee/analysis/search/";
             links["Inquest"]="https://labs.inquest.net/dfi";
             links["FileScan"]="https://www.filescan.io/scan";
+     /* DNS Tools */
+            links["DNSDumpster"]="https://dnsdumpster.com/";
             window.open(links[buttonValue]);
 }
 function adGuard()
 {
      const links = [];
      window.open("https://reports.adguard.com/en/"+userObject+"/report.html");
+}
+function Robots()
+{
+     const links =[];
+     window.open("https://"+userObject+"/robots.txt");
 }
 function SystemLookup()
 {
@@ -299,8 +311,10 @@ function ContentReference()
 function ReconTools()
 {
      const links =[];
+     window.open("https://"+userObject+"/robots.txt");
      window.open("https://who.is/whois/"+userObject);
      window.open("https://www.whoxy.com/"+userObject);
+     window.open("https://client.rdap.org/?type=domain&object="+userObject);
      window.open("https://domainbigdata.com/"+userObject);
      window.open("https://viewdns.info/reverseip/?q="+userObject);
      window.open("https://viewdns.info/reversewhois/?q="+userObject);
@@ -308,6 +322,9 @@ function ReconTools()
      window.open("https://spyonweb.com/"+userObject);
      window.open("https://analyzeid.com/id/"+userObject);
      window.open("https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22"+userObject+"%22%7D%5D,%22any%22%3A%5B%5D,%22none%22%3A%5B%5D%7D");
+     window.open("https://builtwith.com/"+userObject);
+     window.open("https://hunter.io/try/search/"+userObject);
+     window.open("http://bc.linkody.com/en/seo-tools/free-backlink-checker/"+userObject);
 }
 function WebScanners()
 {
@@ -321,4 +338,5 @@ function DNSTools()
      window.open("https://viewdns.info/dnsreport/?domain="+userObject);
      window.open("https://viewdns.info/dnsrecord/?domain="+userObject);
      window.open("https://viewdns.info/dnssec/?domain="+userObject);
+     window.open("https://dnslytics.com/search?q="+userObject);
 }
