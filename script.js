@@ -88,6 +88,8 @@ function buttonOpen(buttonValue)
             links["SourceForge"]="https://sourceforge.net/directory/?clear&q=";
             links["OpenBug"]="https://www.openbugbounty.org/search/?search=";
             links["FireBounty"]="https://firebounty.com/?sort=created_at&order=desc&search_field=name&search=";
+            links["GrepApp"]="https://grep.app/search?q=";
+            links["Searchcode"]="https://searchcode.com/?q=";
             /* Recon Tools */
             links["WHOIS"]="https://who.is/whois/";
             links["Whoxy"]="https://www.whoxy.com/";
@@ -328,6 +330,8 @@ function ContentReference()
      window.open("https://sourceforge.net/directory/?clear&q="+userObject);
      window.open("https://www.openbugbounty.org/search/?search="+userObject);
      window.open("https://firebounty.com/?sort=created_at&order=desc&search_field=name&search="+userObject);
+     window.open("https://grep.app/search?q="+userObject);
+     window.open("https://searchcode.com/?q="+userObject);
 }
 function ReconTools()
 {
