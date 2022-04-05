@@ -97,7 +97,10 @@ function buttonOpen(buttonValue)
             links["Builtwith"]="https://builtwith.com/";
             links["HunterIO"]="https://hunter.io/try/search/";
             links["Linkody"]="http://bc.linkody.com/en/seo-tools/free-backlink-checker/";
+            links["VisualSiteMapper"]="http://visualsitemapper.com/map/";
+            links["Wappalyzer"]="https://www.wappalyzer.com/lookup/";
             /* Security Scanners */
+            links["Mozilla"]="https://observatory.mozilla.org/analyze/;
             links["Netcraft"]="https://sitereport.netcraft.com/?url=";
             links["SecurityHeaders"]="https://securityheaders.com/?q=";
             links["SSLLabs"]="https://www.ssllabs.com/ssltest/analyze.html?d=";
@@ -155,6 +158,10 @@ function standAlone(buttonValue)
      /* Subdomains */
             links["Crobat"]="https://omnisint.io/";
             links["PTToolsSubs"]="https://pentest-tools.com/information-gathering/find-subdomains-of-domain";
+     /* Web Based Scanning tools */
+            links["CSPEval"]="https://csp-evaluator.withgoogle.com/";
+            links["Snyk"]="https://snyk.io/website-scanner/";
+            links["WhatCMS"]="https://whatcms.org/";
             window.open(links[buttonValue]);
 }
 function adGuard()
@@ -331,9 +338,12 @@ function ReconTools()
      window.open("https://builtwith.com/"+userObject);
      window.open("https://hunter.io/try/search/"+userObject);
      window.open("http://bc.linkody.com/en/seo-tools/free-backlink-checker/"+userObject);
+     window.open("http://visualsitemapper.com/map/"+userObject);
+     window.open("https://www.wappalyzer.com/lookup/"+userObject);
 }
 function WebScanners()
 {
+     window.open("https://observatory.mozilla.org/analyze/"+userObject);
      window.open("https://sitereport.netcraft.com/?url="+userObject);
      window.open("https://securityheaders.com/?q="+userObject);
      window.open("https://www.ssllabs.com/ssltest/analyze.html?d="+userObject);
