@@ -12,3 +12,8 @@ Here are a couple of tools for network defenders to make looking up indicators a
 [EasyThreat Tool](EasyThreat.html)
 
 [EasyThreatFile Tool](EasyThreatFile.html)
+
+## Pentest/Bug Bounty Tools
+This tool is great for the passive recon phase of a Pentest and bug bounty. The main goal was to have no interaction with your target, and to avoid the CLI.
+
+[EasyRecon Tool](EasyRecon.html)
