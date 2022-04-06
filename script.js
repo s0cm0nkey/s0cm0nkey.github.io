@@ -398,7 +398,7 @@ function IntelPlatforms()
 function OTX()
 {
      const links =[];
-     window.open("https://otx.alienvault.com/browse/global/pulses?q="+userObject+"include_inactive=0&sort=-modified&page=1&indicatorsSearch="+userObject);
+     window.open("https://otx.alienvault.com/browse/global/pulses?q="+userObject+"&sort=-modified&page=1&indicatorsSearch="+userObject);
 }
 function ThreatConnect()
 {
