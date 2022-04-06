@@ -65,13 +65,13 @@ function buttonOpen(buttonValue)
             links["TRIAGE"]="https://tria.ge/s?q=";
             /* Google Dorks */
             links["DorkIndex"]="https://www.google.ca/search?q=intitle:index.of+site:";
-            links["DorkLogin"]="https://www.google.ca/search?q=site:username+OR+password+OR+login+OR+root+OR+admin+site:";
-            links["DorkBackdoor"]="https://www.google.ca/search?q=site:inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor+site:";
-            links["DorkSetup"]="https://www.google.ca/search?q=site:inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config+site:";
-            links["DorkWordpress"]="https://www.google.ca/search?q=site:inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download+OR+inurl:wp-content+OR+inurl:wp-includes+site:";
-            links["DorkRedirects"]="https://www.google.ca/search?q=site:inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http+site:";
+            links["DorkLogin"]="https://www.google.ca/search?q=inurl:username+OR+inurl:password+OR+inurl:login+OR+inurl:root+OR+inurl:admin+OR+inurl:adminlogin+OR+inurl:cplogin+OR+inurl:weblogin+OR+inurl:quicklogin+OR+inurl:wp-admin+OR+inurl:wp-login+OR+inurl:portal+OR+inurl:userportal+OR+inurl:loginpanel+OR+inurl:memberlogin+OR+inurl:remote+OR+inurl:dashboard+OR+inurl:auth+OR+inurl:exchange+OR+inurl:ForgotPassword+OR+inurl:test+site:";
+            links["DorkBackdoor"]="https://www.google.ca/search?q=inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor+site:";
+            links["DorkSetup"]="https://www.google.ca/search?q=inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config+site:";
+            links["DorkWordpress"]="https://www.google.ca/search?q=inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download+OR+inurl:wp-content+OR+inurl:wp-includes+site:";
+            links["DorkRedirects"]="https://www.google.ca/search?q=inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http+site:";
             links["DorkFiles"]="https://www.google.ca/search?q=ext:cgi+OR+ext:php+OR+ext:asp+OR+ext:aspx+OR+ext:jsp+OR+ext:jspx+OR+ext:swf+OR+ext:fla+OR+ext:xml+OR+ext:conf+OR+ext:cnf+OR+ext:reg+OR+ext:inf+OR+ext:rdp+OR+ext:cfg+OR+ext:txt+OR+ext:ora+OR+ext:ini+OR+ext:swf+site:";
-            links["DorkDocs"]="https://www.google.ca/search?q=ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak+OR+ext:bkf+OR+ext:bkp+OR+ext:old+OR+ext:backup+site:";
+            links["DorkDocs"]="https://www.google.ca/search?q=ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak+OR+ext:bkf+OR+ext:bkp+OR+ext:old+OR+ext:backup+OR+ext:xls+OR+ext:xlsx+OR+ext:ppt+OR+ext:pptx+OR+ext:dat+site:";
             links["DorkDb"]="https://www.google.ca/search?q=ext:sql+OR+ext:dbf+OR+ext:mdb+site:";
             links["DorkMisc"]="https://www.google.ca/search?q=inurl:phpinfo+OR+inurl:htaccess+OR+ext:git+site:";
             links["DorkStruts"]="https://www.google.ca/search?q=ext:action+OR+struts+site:";
@@ -314,13 +314,13 @@ function GoogleDorkOpen()
 {
      const links =[];
      window.open("https://www.google.ca/search?q=intitle:index.of+site:"+userObject);
-     window.open("https://www.google.ca/search?q=site:username+OR+password+OR+login+OR+root+OR+admin+site:"+userObject);
-     window.open("https://www.google.ca/search?q=site:inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor+site:"+userObject);
-     window.open("https://www.google.ca/search?q=site:inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config+site:"+userObject);
-     window.open("https://www.google.ca/search?q=site:inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download+OR+inurl:wp-content+OR+inurl:wp-includes+site:"+userObject);
-     window.open("https://www.google.ca/search?q=site:inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http+site:"+userObject);
+     window.open("https://www.google.ca/search?q=inurl:username+OR+inurl:password+OR+inurl:login+OR+inurl:root+OR+inurl:admin+OR+inurl:adminlogin+OR+inurl:cplogin+OR+inurl:weblogin+OR+inurl:quicklogin+OR+inurl:wp-admin+OR+inurl:wp-login+OR+inurl:portal+OR+inurl:userportal+OR+inurl:loginpanel+OR+inurl:memberlogin+OR+inurl:remote+OR+inurl:dashboard+OR+inurl:auth+OR+inurl:exchange+OR+inurl:ForgotPassword+OR+inurl:test+site:"+userObject);
+     window.open("https://www.google.ca/search?q=inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor+site:"+userObject);
+     window.open("https://www.google.ca/search?q=inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config+site:"+userObject);
+     window.open("https://www.google.ca/search?q=inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download+OR+inurl:wp-content+OR+inurl:wp-includes+site:"+userObject);
+     window.open("https://www.google.ca/search?q=inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http+site:"+userObject);
      window.open("https://www.google.ca/search?q=ext:cgi+OR+ext:php+OR+ext:asp+OR+ext:aspx+OR+ext:jsp+OR+ext:jspx+OR+ext:swf+OR+ext:fla+OR+ext:xml+OR+ext:conf+OR+ext:cnf+OR+ext:reg+OR+ext:inf+OR+ext:rdp+OR+ext:cfg+OR+ext:txt+OR+ext:ora+OR+ext:ini+site:"+userObject);
-     window.open("https://www.google.ca/search?q=ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak+OR+ext:bkf+OR+ext:bkp+OR+ext:old+OR+ext:backup+site:"+userObject);
+     window.open("https://www.google.ca/search?q=ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak+OR+ext:bkf+OR+ext:bkp+OR+ext:old+OR+ext:backup+OR+ext:xls+OR+ext:xlsx+OR+ext:ppt+OR+ext:pptx+OR+ext:dat+site:"+userObject);
      window.open("https://www.google.ca/search?q=ext:sql+OR+ext:dbf+OR+ext:mdb+site:"+userObject);
      window.open("https://www.google.ca/search?q=ext:action+OR+struts+site:"+userObject);
      window.open("https://www.google.ca/search?q=site:pastebin.com+"+userObject);
