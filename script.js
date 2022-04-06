@@ -117,6 +117,8 @@ function buttonOpen(buttonValue)
             links["DNSlytics"]="https://dnslytics.com/search?q=";
             /* Breach/Paste */
             links["Dehashed"]="https://www.dehashed.com/search?query=";
+            /* Intel Platforms */
+            links["Xforce"]="https://exchange.xforce.ibmcloud.com/search/";
             window.open(links[buttonValue]+userObject);
             }
 }
@@ -385,7 +387,22 @@ function BreachPaste()
      const links =[];
      window.open("https://www.dehashed.com/search?query="+userObject);
 }
+function IntelPlatforms()
+{
+     const links =[];
+     window.open("https://exchange.xforce.ibmcloud.com/search/"+userObject);
+     window.open("https://otx.alienvault.com/browse/global/pulses?q="+userObject+"include_inactive=0&sort=-modified&page=1&indicatorsSearch="+userObject);
+     window.open("https://app.threatconnect.com/#/browse?owners=2491129209,631,1930973938,1930974303,1930974969,1930975114,1930977088,1930994355,2092,8373,4070,2094,3906,9367,1284062903,3576,1931001500,1931002777,3578,7316,1931013370,1931023406,2631,1943253936,1940687317,1943254027,1940764808,9205,1946179136,1946179227,1946179318,7317,1937489682,3907,7319,1937489411,7318,2093,1937489522,2412124678,7321,1901884975,9206,7322,2120189823,1937489104,10666,7981,7324,7325,4068,7979&intelType=indicators&filters=typeName%20in%20(%22Address%22,%20%22EmailAddress%22,%20%22File%22,%20%22Host%22,%20%22URL%22,%20%22ASN%22,%20%22CIDR%22,%20%22Email%20Subject%22,%20%22Hashtag%22,%20%22Mutex%22,%20%22Registry%20Key%22,%20%22User%20Agent%22)%20and%20summary%20contains%20%22"+userObject+"%22");
 
-
-
+}
+function OTX()
+{
+     const links =[];
+     window.open("https://otx.alienvault.com/browse/global/pulses?q="+userObject+"include_inactive=0&sort=-modified&page=1&indicatorsSearch="+userObject);
+}
+function ThreatConnect()
+{
+     const links =[];
+     window.open("https://app.threatconnect.com/#/browse?owners=2491129209,631,1930973938,1930974303,1930974969,1930975114,1930977088,1930994355,2092,8373,4070,2094,3906,9367,1284062903,3576,1931001500,1931002777,3578,7316,1931013370,1931023406,2631,1943253936,1940687317,1943254027,1940764808,9205,1946179136,1946179227,1946179318,7317,1937489682,3907,7319,1937489411,7318,2093,1937489522,2412124678,7321,1901884975,9206,7322,2120189823,1937489104,10666,7981,7324,7325,4068,7979&intelType=indicators&filters=typeName%20in%20(%22Address%22,%20%22EmailAddress%22,%20%22File%22,%20%22Host%22,%20%22URL%22,%20%22ASN%22,%20%22CIDR%22,%20%22Email%20Subject%22,%20%22Hashtag%22,%20%22Mutex%22,%20%22Registry%20Key%22,%20%22User%20Agent%22)%20and%20summary%20contains%20%22"+userObject+"%22");
+}
 
