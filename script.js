@@ -51,6 +51,7 @@ function buttonOpen(buttonValue)
             links["BinaryEdge"]="https://app.binaryedge.io/services/query?query=";
             links["Censys"]="https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q=";
             links["LeakIX"]="https://leakix.net/search?q=";
+            links["FullHunt"]="https://fullhunt.io/search?query=domain%3A";
             /* File Tools */
             links["BazaarMD5"]="https://bazaar.abuse.ch/browse.php?search=md5%3A";
             links["BazaarSHA256"]="https://bazaar.abuse.ch/browse.php?search=sha256%3A";
@@ -291,6 +292,7 @@ function CyberSearchOpen()
                window.open("https://app.binaryedge.io/services/query?query="+userObject);
                window.open("https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q="+userObject);
                window.open("https://leakix.net/search?q="+userObject);
+               window.open("https://fullhunt.io/search?query=domain%3A"+userObject);
           }
 } 
 function FileRepOpen()
