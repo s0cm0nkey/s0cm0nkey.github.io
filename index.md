@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/s0cm0nkey/s0cm0nkey.github.io/blob/main/proxy-image.jpeg" alt="The S0cm0nkey"/>
 </p>
-
+<br>
 <p style="text-align:center">I am the S0cm0nkey</p>
 
 ## Introduction
