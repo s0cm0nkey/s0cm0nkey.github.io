@@ -1,4 +1,4 @@
-![Avatar](proxy-image.jpg)
+![S0cm0nkey](proxy-image.jpeg)
 # I am the S0cm0nkey
 ## Introduction
 I'm the s0cm0nkey. I am a security analyst, threat hunter, pentester, researcher, and CTF enthusiast. By day, I run a SOC team and teach cyber security. By night, I play CTFs, hack things, and eat a professional volume of tacos. Ping me any time. I love to talk about all things security. 
