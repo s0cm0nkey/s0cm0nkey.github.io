@@ -22,4 +22,5 @@ This tool is great for the passive recon phase of a Pentest and bug bounty. The 
 
 ## Research Articles
 Here are a few of the research articles I have done. Take a look!
+
 [Port Scanner Shootout: Speed vs Functionality](https://s0cm0nkey.gitbook.io/port-scanner-shootout/)
