@@ -136,7 +136,7 @@ function standAlone(buttonValue)
             links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
      /* TOR/Proxy/VPN tools */
             links["Exonerator"]="https://metrics.torproject.org/exonerator.html";
-            links["Teoh"]="https://ip.teoh.io/vpn-detection";
+            links["VPNAPI"]="https://vpnapi.io/vpn-detection";
      /* Standalone domain tools */
             links["URLScan"]="https://urlscan.io/";
             links["MergiTools"]="https://megritools.com/blacklist-lookup";
