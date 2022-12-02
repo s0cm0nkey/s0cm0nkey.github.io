@@ -134,7 +134,7 @@ function standAlone(buttonValue)
             links["InfoByIPBulkLookup"]="https://www.infobyip.com/ipbulklookup.php";
             links["IPVoid"]="https://www.ipvoid.com/ip-blacklist-check/";
             links["IPSpamList"]="http://www.ipspamlist.com/ip-lookup/";
-            links{"Exonerator"]="https://metrics.torproject.org/exonerator.html";
+            links["Exonerator"]="https://metrics.torproject.org/exonerator.html";
      /* Standalone domain tools */
             links["URLScan"]="https://urlscan.io/";
             links["MergiTools"]="https://megritools.com/blacklist-lookup";
