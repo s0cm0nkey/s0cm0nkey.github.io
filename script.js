@@ -411,6 +411,6 @@ function ThreatConnect()
 }
 function VPN()
 {
-     const links[];
+     const links =[];
      window.open("https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/"+userObject);
 }
