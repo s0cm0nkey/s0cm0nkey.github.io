@@ -137,6 +137,7 @@ function standAlone(buttonValue)
      /* TOR/Proxy/VPN tools */
             links["Exonerator"]="https://metrics.torproject.org/exonerator.html";
             links["VPNAPI"]="https://vpnapi.io/vpn-detection";
+            links["IP2Proxy"]="https://www.ip2proxy.com/";
      /* Standalone domain tools */
             links["URLScan"]="https://urlscan.io/";
             links["MergiTools"]="https://megritools.com/blacklist-lookup";
