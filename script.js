@@ -24,6 +24,8 @@ function buttonOpen(buttonValue)
             links["MXToolbox Supertool"]="https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a";
             links["MultiRBL"]="https://multirbl.valli.org/lookup/";
             /* IP Blacklist Checkers*/
+            links["HackedIP"]="https://www.hackedip.org/check.php?ip=";
+            links["HoneyDB"]="https://honeydb.io/host/";
             links["AbuseIPDB"]="https://www.abuseipdb.com/check/";
             links["Blocklist.de"]="https://www.blocklist.de/en/search.html?action=search&send=start+search&ip=";
             links["ProjectHoneypot"]="https://www.projecthoneypot.org/ip_";
@@ -237,6 +239,8 @@ function IPBlacklistOpen()
         	else
         	{
                const links = [];
+               window.open("https://www.hackedip.org/check.php?ip="+userObject);
+               window.open("https://honeydb.io/host/"+userObject);
                window.open("https://www.abuseipdb.com/check/"+userObject);
                window.open("https://www.blocklist.de/en/search.html?action=search&send=start+search&ip="+userObject);
                window.open("https://www.projecthoneypot.org/ip_"+userObject);
