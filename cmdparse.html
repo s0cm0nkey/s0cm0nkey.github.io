@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Text analyzer</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="cmd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="cmd.css">
+  </head>
+
+<body>
+    <div class="container">
+        <main>
+            <h1>CMDParse</h1>
+            <p>This tool is a command line parser and analyzer that will identify and enrich different components of a command line entry.</p>
+            <form>
+                <div>
+                    <label for="user-text">Text to analyze</label>
+                    <textarea cols="100" rows="10" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Analyze it!</button>
+                </div>
+            </form>
+            <dl class="hidden text-report">
+                <dt>Word count</dt>
+                <dd></dd>
+
+                <dt>Unique word count</dt>
+                <dd></dd>
+
+                <dt>Average word length</dt>
+                <dd></dd>
+
+                <dt>Average sentence length</dt>
+                <dd></dd>
+            </dl>
+        </main>
+    </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+</body>
+</html>

@@ -1,29 +1,8 @@
 
-* {
-    box-sizing: border-box
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .container {
-    padding: 30px;
-  }
-  
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  label {
-    display: block;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .text-report dt:after {
-    content: ": ";
-  }
+* {box-sizing: border-box}
+  body {font-family: 'Roboto', sans-serif;}  
+  .container {padding: 30px;}
+  main {max-width: 960px;margin: 0 auto;}
+  label {display: block;}
+  .hidden {display: none;}
+  .text-report dt:after {content: ": ";}
