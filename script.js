@@ -7,6 +7,7 @@ function validObject(str) {
        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
       return !!pattern.test(str);
      }
+     /*scratch*/
 function buttonOpen(buttonValue)
         {
         	userObject=document.getElementById("Object").value;
