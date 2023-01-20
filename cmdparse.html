@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Text analyzer</title>
+    <title>CMD Parse</title>
     <meta charset="utf-8">
     <script type="text/javascript" src="cmd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <main>
-            <h1>CMDParse</h1>
+            <h1>CMD Parse</h1>
             <p>This tool is a command line parser and analyzer that will identify and enrich different components of a command line entry.</p>
             <form>
                 <div>
@@ -23,7 +23,7 @@
                     <textarea cols="100" rows="10" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
                 </div>
                 <div>
-                    <button type="submit">Analyze it!</button>
+                    <button type="submit" onclick="syntaxoutput()">Analyze it!</button>
                 </div>
             </form>
             <dl class="hidden text-report">
