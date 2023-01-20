@@ -20,13 +20,13 @@
             <form>
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="100" rows="6" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
+                    <input type="text" cols="100" rows="6" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
                 </div>
                 <div>
                     <button type="submit" onclick="syntaxoutput()">Analyze it!</button>
                 </div>
                 <div>
-                    <textarea cols="100" rows="6" id="output-text" name="output-text" placeholder="Parsed output will appear here." required></textarea>
+                    <output cols="100" rows="6" id="output-text" name="output-text" placeholder="Parsed output will appear here." required></textarea>
                 </div>
             </form>
         </main>
