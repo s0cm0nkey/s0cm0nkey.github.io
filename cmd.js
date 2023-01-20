@@ -1,12 +1,6 @@
 function syntaxoutput()
 {
-  userObject=document.getElementById("user-text").value;
-        	if(validObject(userObject)==false)
-        	{
-                alert("Enter a command string please");
-           }
-        	else
-        	{
-            document.write(user-text)
-          }
+  var txtIn = document.getElementById("user-text");
+  var txtOutput = document.getElementById("output-text");
+  txtOutput.value = txtIn.value
 }

@@ -20,25 +20,15 @@
             <form>
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="100" rows="10" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
+                    <textarea cols="100" rows="6" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
                 </div>
                 <div>
                     <button type="submit" onclick="syntaxoutput()">Analyze it!</button>
                 </div>
+                <div>
+                    <textarea cols="100" rows="6" id="output-text" name="output-text" placeholder="Parsed output will appear here." required></textarea>
+                </div>
             </form>
-            <dl class="hidden text-report">
-                <dt>Word count</dt>
-                <dd></dd>
-
-                <dt>Unique word count</dt>
-                <dd></dd>
-
-                <dt>Average word length</dt>
-                <dd></dd>
-
-                <dt>Average sentence length</dt>
-                <dd></dd>
-            </dl>
         </main>
     </div>
 </body>
