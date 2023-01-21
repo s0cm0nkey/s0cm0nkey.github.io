@@ -1,9 +1,4 @@
-function displayUpperCase() {
-  let textInput = document.getElementById("textInput").value;
-  let textOutput = textInput.toUpperCase();
-  document.getElementById("textOutput").innerHTML = textOutput;
-}
-function identifyIPAddress() {
+function highlight() {
   var textInput = document.getElementById("textInput").value;
   var Output = textInput
   //regular expression to identify Items
@@ -23,4 +18,5 @@ function identifyIPAddress() {
   var Output = Output.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
+  document.getElementById("ipAddresses").innerHTML = ipMatches;
 }
