@@ -12,23 +12,10 @@ function identifyIPAddress()
     const matches = textInput.match(ipRegex);
     if (matches && matches.length > 0) {
       matches.forEach(match => {
-       textOutput += textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
+       textOutput = textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
       });
     } else {
       textOutput =  textInput;
-    }
-    document.getElementById("textOutput").innerHTML = textOutput;
-  }
-function ipAddressHighlight(textInput) {
-    let textOutput = "";
-    const ipAddressRegex = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g;
-    const ipmatches = textInput.match(ipAddressRegex);
-    if (ipmatches) {
-      ipmatches.forEach(match => {
-        textOutput = textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
-      });
-    } else {
-      textOutput = textInput;
     }
     document.getElementById("textOutput").innerHTML = textOutput;
   }
