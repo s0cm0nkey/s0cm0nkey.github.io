@@ -12,7 +12,7 @@ function identifyIPAddress()
     const matches = textInput.match(ipRegex);
     if (matches && matches.length > 0) {
       matches.forEach(match => {
-       textOutput += textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
+       textOutput = textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
       }); 
     } 
     document.getElementById("textOutput").innerHTML = textOutput;
