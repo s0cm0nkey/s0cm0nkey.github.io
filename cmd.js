@@ -22,10 +22,10 @@ function identifyIPAddress()
 function ipAddressHighlight(textInput) {
     let textOutput = "";
     const ipAddressRegex = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g;
-    const matches = textInput.match(ipAddressRegex);
-    if (matches) {
-      matches.forEach(match => {
-        textOutput += textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
+    const ipmatches = textInput.match(ipAddressRegex);
+    if (ipmatches) {
+      ipmatches.forEach(match => {
+        textOutput = textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
       });
     } else {
       textOutput = textInput;
