@@ -17,18 +17,13 @@
         <main>
             <h1>CMD Parse</h1>
             <p>This tool is a command line parser and analyzer that will identify and enrich different components of a command line entry.</p>
-            <form>
-                <div>
-                    <label for="user-text">Text to analyze</label>
-                    <input type="text" cols="100" rows="6" id="user-text" name="user-text" placeholder="Paste command line string here." required></textarea>
-                </div>
-                <div>
-                    <button type="submit" onclick="syntaxoutput()">Analyze it!</button>
-                </div>
-                <div>
-                    <output cols="100" rows="6" id="output-text" name="output-text" placeholder="Parsed output will appear here." required></textarea>
-                </div>
-            </form>
+            <form oninput="cmdout.value = cmdin.value">
+                <input type="text" class="form-control" id="cmdin" name="cmdin" placeholder="Paste command line string here."/>
+                <br>
+                <output name="cmdout" for="cmdin" placeholder="Parsed output will appear here."></output>
+                <br>
+                <input type="submit">
+            </form>
         </main>
     </div>
 </body>

@@ -1,6 +1,6 @@
 function syntaxoutput()
 {
-  var txtIn = document.getElementById("user-text");
-  var txtOutput = document.getElementById("output-text");
+  var txtIn = document.getElementById("cmdin");
+  var txtOutput = document.getElementById("cmdout");
   txtOutput.value = txtIn.value
 }
