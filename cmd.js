@@ -7,13 +7,15 @@ function displayUpperCase()
 function identifyIPAddress() 
   {
     var textInput = document.getElementById("textInput").value;
-    var textOutput = textInput;
+    var textOutput = "";
     const ipRegex = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/;
     const matches = textInput.match(ipRegex);
-    if (matches > 0) {
+    if (matches && matches.length > 0) {
       matches.forEach(match => {
-       textOutput = textOutput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
+       textOutput = textInput.replace(match, `<span style="background-color: yellow;">${match}</span>`);
       });
-    } 
+    } else {
+      textOutput = textInput;
+    }
     document.getElementById("textOutput").innerHTML = textOutput;
   }
