@@ -18,9 +18,11 @@
             <h1>CMD Parse</h1>
             <p>This tool is a command line parser and analyzer that will identify and enrich different components of a command line entry.</p>
             <form oninput="cmdout.value = cmdin.value">
-                <input type="text" id="cmdin" name="cmdin" placeholder="Paste command line string here."/> =
-                <output type="text" id="cmdout" name="cmdout" for="cmdin"></output>
-            </form>
+                Input Text: <input type="text" id="textInput">
+                <input type="button" value="Submit" 
+                    onclick="displayUpperCase()">
+            </form>
+            <p>Output Text: <span id="textOutput"></span></p>
         </main>
     </div>
 </body>

@@ -1,6 +1,6 @@
-function syntaxoutput()
-{
-  var txtIn = document.getElementById("cmdin");
-  var txtOutput = document.getElementById("cmdout");
-  txtOutput.value = txtIn.value
-}
+function displayUpperCase() 
+  {
+    let textInput = document.getElementById("textInput").value;
+    let textOutput = textInput.toUpperCase();
+    document.getElementById("textOutput").innerHTML = textOutput;
+  }
