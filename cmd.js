@@ -23,8 +23,9 @@ function highlight() {
   const bashMatch = textInput.match(bashcmd);
   const gtfoMatch = textInput.match(gtfobins);
   const lolMatch = textInput.match(lolbas);
-  //replace all IP addresses in the textInput with spans of yellow highlighting
+  //replace all items in the textInput with spans of highlighting
   var Output = Output.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
+  ipMatches = ipMatches.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
