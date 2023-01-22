@@ -14,9 +14,27 @@ function highlight() {
   const lolbas = /\b(Microoft.Workflow.Compiler.exe|DeviceCredentialDeployment.exe|OneDriveStandaloneUpdater.exe|Syncappvpublihingerver.vb|SyncAppvPublihingServer.exe|ViualUiaVerifyNative.exe|Regiter-cimprovider.exe|ConfigSecurityPolicy.exe|OfflineScannerShell.exe|GfxDownloadWrapper.exe|Launch-VDevShell.p1|Infdefaultintall.exe|Dektopimgdownldr.exe|CL_Mutexverifier.p1|VSIISExeLauncher.exe|UtilityFunction.p1|Preentationhot.exe|Devtoollauncher.exe|SettingSyncHot.exe|Runcripthelper.exe|ProtocolHandler.exe|CutomShellHot.exe|CL_LoadAembly.p1|Apnet_Compiler.exe|AccCheckConole.exe|vjitdebugger.exe|CL_Invocation.p1|AgentExecutor.exe|Scriptrunner.exe|AppIntaller.exe|WorkFolder.exe|rdrleakdiag.exe|OpenConole.exe|Intallutil.exe|DefaultPack.EXE|DataSvcUtil.exe|SQLToolPS.exe|Manage-bde.wf|Dikhadow.exe|Createdump.exe|Ttdinject.exe|Sqldumper.exe|Mavinject.exe|Ieadvpack.dll|FiAnyCpu.exe|Extexport.exe|Bitadmin.exe|Verclid.exe|Unregmp2.exe|Tttracer.exe|Syetup.dll|Stordiag.exe|Squirrel.exe|Setupapi.dll|Schtak.exe|Rundll32.exe|Regvr32.exe|Raautou.exe|Procdump.exe|PrintBrm.exe|Powerpnt.exe|Odbcconf.exe|ntdutil.exe|MoHtmEd.exe|Mdeploy.exe|Mconfig.exe|MpCmdRun.exe|IMEWDBLD.exe|Ie4uinit.exe|Gpcript.exe|Forfile.exe|Extrac32.exe|Explorer.exe|Eventvwr.exe|Eentutl.exe|Certutil.exe|Atbroker.exe|Zipfldr.dll|Xwizard.exe|wuauclt.exe|Wreet.exe|Wcript.exe|Winword.exe|Tracker.exe|Shell32.dll|Shdocvw.dll|Runonce.exe|Rpcping.exe|Replace.exe|Regvc.exe|Regedit.exe|Pnputil.exe|Miexec.exe|Mbuild.exe|Mftrace.exe|Makecab.exe|Ieframe.dll|Findtr.exe|Ccript.exe|coregen.exe|Control.exe|Conhot.exe|Comvc.dll|CertReq.exe|Advpack.dll|Wlrmdr.exe|winget.exe|Update.exe|Setre.exe|Remote.exe|Regini.exe|Regam.exe|Pubprn.vb|Pktmon.exe|Pcwutl.dll|Pcwrun.exe|Pcalua.exe|Mhtml.dll|Ldifde.exe|Ieexec.exe|futil.exe|Finger.exe|Expand.exe|Dump64.exe|Dotnet.exe|Dncmd.exe|Diantz.exe|Dfhim.dll|cmdl32.exe|Cmdkey.exe|CertOC.exe|Bginfo.exe|Appvlp.exe|adplu.exe|winrm.vb|Sqlp.exe|Print.exe|Neth.exe|mxl.exe|Mpub.exe|Mhta.exe|Ilam.exe|fltMC.exe|Excel.exe|Dxcap.exe|Dfvc.exe|Cmtp.exe|Wmic.exe|rci.exe|Peter.bat|Mdt.exe|Dek.cpl|Bah.exe|Wl.exe|Wfc.exe|Wab.exe|vbc.exe|Url.dll|h.exe|Reg.exe|Pr.exe|Mmc.exe|Jc.exe|Ftp.exe|Fi.exe|dnx.exe|ci.exe|Cc.exe|Cmd.exe|Cdb.exe|wt.exe|te.exe|Sc.exe|Hh.exe|At.exe)\b/g;
   //match all IP addresses from the textInput & store in an array
   const ipMatches = textInput.match(ipRegEx);
+  const uriStrings = textInput.match(uriRegEx);
+  const dname = textInput.match(dnameRegEx);
+  const pathMatch = textInput.match(filepath);
+  const fileMatch = textInput.match(filename);
+  const wincmdMatch = textInput.match(wincmd);
+  const psMatch = textInput.match(pscmd);
+  const bashMatch = textInput.match(bashcmd);
+  const gtfoMatch = textInput.match(gtfobins);
+  const lolMatch = textInput.match(lolbas);
   //replace all IP addresses in the textInput with spans of yellow highlighting
   var Output = Output.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
+  document.getElementById("uriStrings").innerHTML = uriStrings;
+  document.getElementById("dNames").innerHTML = dname;
+  document.getElementById("filePaths").innerHTML = pathMatch;
+  document.getElementById("fileName").innerHTML = fileMatch;
+  document.getElementById("cmd").innerHTML = wincmdMatch;
+  document.getElementById("powershell").innerHTML = psMatch;
+  document.getElementById("bash").innerHTML = bashMatch;
+  document.getElementById("gtfobin").innerHTML = gtfoMatch;
+  document.getElementById("lolbas").innerHTML = lolMatch;
 }
