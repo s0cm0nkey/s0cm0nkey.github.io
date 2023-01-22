@@ -26,12 +26,12 @@ function highlight() {
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
   Output = Output.replace(dnameRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
-  //Output = Output.replace(uriRegEx, '<span style="background-color:blue;">$&</span>');
-  //Output = Output.replace(filepath, '<span style="background-color:green;">$&</span>');
-  //Output = Output.replace(filename, '<span style="background-color:green;">$&</span>');
-  //Output = Output.replace(wincmd, '<span style="background-color:orange;">$&</span>');
-  //Output = Output.replace(bashcmd, '<span style="background-color:orange;">$&</span>');
-  //Output = Output.replace(pscmd, '<span style="background-color:orange;">$&</span>');
+  Output = Output.replace(uriRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
+  Output = Output.replace(filepath, (match) => `<mark style="background-color:coral;">${match}</mark>`);
+  Output = Output.replace(filename, (match) => `<mark style="background-color:coral;">${match}</mark>`);
+  Output = Output.replace(wincmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
+  Output = Output.replace(bashcmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
+  Output = Output.replace(pscmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
