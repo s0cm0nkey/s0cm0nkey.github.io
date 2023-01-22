@@ -25,7 +25,7 @@ function highlight() {
   var lolMatch = textInput.match(lolbas);
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
-  //Output = Output.replace(dnameRegEx, '<span style="background-color:blue;">$&</span>');
+  Output = Output.replace(dnameRegEx, '<span style="background-color:blue;">$&</span>');
   //Output = Output.replace(uriRegEx, '<span style="background-color:blue;">$&</span>');
   //Output = Output.replace(filepath, '<span style="background-color:green;">$&</span>');
   //Output = Output.replace(filename, '<span style="background-color:green;">$&</span>');
