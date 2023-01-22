@@ -29,9 +29,9 @@ function highlight() {
   Output = Output.replace(uriRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
   Output = Output.replace(filepath, (match) => `<mark style="background-color:coral;">${match}</mark>`);
   Output = Output.replace(filename, (match) => `<mark style="background-color:coral;">${match}</mark>`);
-  //Output = Output.replace(wincmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
-  //Output = Output.replace(bashcmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
-  //Output = Output.replace(pscmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
+  Output = Output.replace(wincmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
+  Output = Output.replace(bashcmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
+  Output = Output.replace(pscmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
