@@ -25,7 +25,7 @@ function highlight() {
   var lolMatch = textInput.match(lolbas);
   //replace all items in the textInput with spans of highlighting
   var Output = Output.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
-  ipMatches = ipMatches.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
+  //ipMatches = ipMatches.replace(ipRegEx, '<span style="background-color:yellow;">$&</span>');
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
