@@ -24,6 +24,7 @@ function highlight() {
   var gtfoMatch = textInput.match(gtfobins);
   var lolMatch = textInput.match(lolbas);
   console.log(bashMatch);
+  console.log(typeof bashMatch)
   console.log(psMatch);
   console.log(wincmdMatch);
   //create deduplicated list of commands.
