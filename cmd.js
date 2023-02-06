@@ -48,8 +48,8 @@ function highlight() {
   document.getElementById("gtfobin").innerHTML = gtfoMatch;
   document.getElementById("lolbas").innerHTML = lolMatch;
   //create deduplicated list of commands
-  //var commandarray = [].concat(wincmdMatch, psMatch, bashMatch);
-  //console.log(commandarray);
+  var commandarray = [].concat(wincmdMatch, psMatch, bashMatch);
+  console.log(commandarray);
   //var commandlist = [...new Set(commandarray)];
   //document.getElementById("commands").innerHTML = commandarray;
 }
