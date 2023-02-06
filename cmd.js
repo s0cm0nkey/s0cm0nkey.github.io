@@ -44,4 +44,8 @@ function highlight() {
   document.getElementById("bash").innerHTML = bashMatch;
   document.getElementById("gtfobin").innerHTML = gtfoMatch;
   document.getElementById("lolbas").innerHTML = lolMatch;
+  //create deduplicated list of commands
+  var commandarray = [wincmdMatch, psMatch, bashMatch];
+  var commandlist = [Set(commandarray)];
+  document.getElementById("commands").innerHTML = commandlist;
 }
