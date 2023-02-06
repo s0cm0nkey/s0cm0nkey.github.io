@@ -30,7 +30,8 @@ function highlight() {
   //create deduplicated list of commands.
   var commandarray =  bashMatch.concat(wincmdMatch, psMatch);
   console.log(commandarray);
-  //var commandlist = [...new Set(commandarray)];
+  var commandlist = [...new Set(commandarray)];
+  console.log(commandlist);
   //document.getElementById("commands").innerHTML = commandarray;
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
