@@ -23,6 +23,9 @@ function highlight() {
   var bashMatch = textInput.match(bashcmd);
   var gtfoMatch = textInput.match(gtfobins);
   var lolMatch = textInput.match(lolbas);
+  console.log(bashMatch);
+  console.log(psMatch);
+  console.log(wincmdMatch);
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
   Output = Output.replace(dnameRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
