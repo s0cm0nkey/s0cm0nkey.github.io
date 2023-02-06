@@ -26,7 +26,7 @@ function highlight() {
   console.log(bashMatch);
   console.log(psMatch);
   console.log(wincmdMatch);
-  //create deduplicated list of commands
+  //create deduplicated list of commands.
   var commandarray =  bashMatch.concat(wincmdMatch, psMatch);
   console.log(commandarray);
   //var commandlist = [...new Set(commandarray)];
