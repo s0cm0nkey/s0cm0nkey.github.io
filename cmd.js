@@ -45,7 +45,7 @@ function highlight() {
   document.getElementById("gtfobin").innerHTML = gtfoMatch;
   document.getElementById("lolbas").innerHTML = lolMatch;
   //create deduplicated list of commands
-  var commandarray = [wincmdMatch, psMatch, bashMatch];
-  var commandlist = [Set(commandarray)];
+  var commandarray = [...wincmdMatch, ...psMatch, ...bashMatch];
+  var commandlist = [...new Set(commandarray)];
   document.getElementById("commands").innerHTML = commandlist;
 }
