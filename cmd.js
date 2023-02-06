@@ -47,5 +47,5 @@ function highlight() {
   //create deduplicated list of commands
   var commandarray = [...wincmdMatch, ...psMatch, ...bashMatch];
   var commandlist = [...new Set(commandarray)];
-  document.getElementById("commands").innerHTML = commandlist;
+  document.getElementById("commands").innerHTML = commandarray;
 }
