@@ -39,7 +39,6 @@ function highlight() {
   document.getElementById("dNames").innerHTML = dname;
   document.getElementById("filePaths").innerHTML = pathMatch;
   document.getElementById("fileName").innerHTML = fileMatch;
-  document.getElementById("commands").innerHTML = wincmdMatch+psMatch+bashMatch;
   document.getElementById("cmd").innerHTML = wincmdMatch;
   document.getElementById("powershell").innerHTML = psMatch;
   document.getElementById("bash").innerHTML = bashMatch;
