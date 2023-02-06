@@ -26,6 +26,11 @@ function highlight() {
   console.log(bashMatch);
   console.log(psMatch);
   console.log(wincmdMatch);
+  //create deduplicated list of commands
+  var commandarray =  bashMatch.concat(wincmdMatch, psMatch);
+  console.log(commandarray);
+  //var commandlist = [...new Set(commandarray)];
+  //document.getElementById("commands").innerHTML = commandarray;
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
   Output = Output.replace(dnameRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
@@ -47,9 +52,5 @@ function highlight() {
   document.getElementById("bash").innerHTML = bashMatch;
   document.getElementById("gtfobin").innerHTML = gtfoMatch;
   document.getElementById("lolbas").innerHTML = lolMatch;
-  //create deduplicated list of commands
-  var commandarray = [].concat(wincmdMatch, psMatch, bashMatch);
-  console.log(commandarray);
-  //var commandlist = [...new Set(commandarray)];
-  //document.getElementById("commands").innerHTML = commandarray;
+
 }
