@@ -54,5 +54,6 @@ function highlight() {
   document.getElementById("bash").innerHTML = bashMatch;
   document.getElementById("gtfobin").innerHTML = gtfoMatch;
   document.getElementById("lolbas").innerHTML = lolMatch;
+  document.getElementById("allCommands").innerHTML = commandlist;
 
 }
