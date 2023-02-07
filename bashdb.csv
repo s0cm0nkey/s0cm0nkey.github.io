@@ -1,0 +1,2757 @@
+Command,Description,Syntax,Parameters,Link,Category,Tags
+&,Start a new process in the background," bg [<i>job_id</i>...]
+",Not Available,https://ss64.com/bash/bg.html,System Administration,Process management
+alias,Create an alias •," alias [-p] [<i>name</i>[=<i>value</i>] ...]
+ unalias [-a] [<i>name</i> ... ]
+"," -p Print the current values
+ -a Remove All aliases</pre>
+",https://ss64.com/bash/alias.html,System Administration,Command Obfuscation
+apropos,Search Help manual pages (man -k)," apropos <i>keyword</i>
+ apropos [-dalv?V] [-e|-r|-w] [-s <i>list</i>] [-m <i>system</i>[,...]] [-M <i>path</i>] [-L <i>locale</i>] [-C <i>file</i>] <i>keyword</i> ...
+",Not Available,https://ss64.com/bash/apropos.html,System Administration,
+apt,Search for and install software packages (Debian/Ubuntu)," apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>list</b> <i>pkg</i> {=<i>pkg_version_number</i> | / <i>target_release</i>}]... 
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>search</b> <i>pkg</i> {=<i>pkg_version_number</i> | / <i>target_release</i>}]... 
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>show</b> <i>pkg</i> {=<i>pkg_version_number</i> | / <i>target_release</i>}]... 
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>update</b> <i>pkg</i> {=<i>pkg_version_number</i> | / <i>target_release</i>}]... 
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>install</b> <i>pkg</i> {=<i>pkg_version_number</i> | / <i>target_release</i>}]... 
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>remove</b> <i>pkg</i>...
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>upgrade</b>
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>full-upgrade</b>
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ <b>edit-sources</b>
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ {-v | <b>--version</b>}
+ apt [-h] [-o=<i>config_string</i>] [-c=<i>config_file</i>] [-t=<i>target_release</i>] [ -a=<i>architecture</i>]
+ {-h | <b>--help</b>}
+",Not Available,https://ss64.com/bash/apt.html,System Administration,
+apt-get,Search for and install software packages (Debian/Ubuntu)," apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>update</b> 
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>upgrade</b>
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>dselect-upgrade</b>
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>dist-upgrade</b> 
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>install</b> <i>pkg</i> [ { =<i>pkg_version_number</i> | /<i>target_release_name</i> | /<i>target_release_codename</i> } ] ...
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>remove</b> <i>pkg</i>... 
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>purge</b> <i>pkg</i>... 
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>source</b> <i>pkg</i> [ { =<i>pkg_version_number</i> | /<i>target_release_name</i> | /<i>target_release_codename</i> } ] ...
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>build-dep</b> <i>pkg</i>... 
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>check</b>
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>clean</b>
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>autoclean</b>
+ apt-get [-sqdyfmubV] [-o= <i>config_string</i> ] [-c= <i>config_file</i> ]
+ [-t= <i>target</i>] <b>autoremove</b>
+ apt-get {-v | --version} 
+ apt-get {-h | --help}}
+ Where <i>Target</i> = {<i>target_release_name</i> | <i>target_release_number_expression</i> | <i>target_release_codename</i>}
+",Not Available,https://ss64.com/bash/apt-get.html,System Administration,
+aptitude,Search for and install software packages (Debian/Ubuntu)," aptitude [<i>options</i>...] autoclean
+ aptitude [<i>options</i>...] clean
+ aptitude [<i>options</i>...] forget-new
+ aptitude [<i>options</i>...] keep-all
+ aptitude [<i>options</i>...] update
+ aptitude [<i>options</i>...] safe-upgrade
+ aptitude [<i>options</i>...] changelog <i>packages</i>...
+ aptitude [<i>options</i>...] full-upgrade <i>packages</i>...
+ aptitude [<i>options</i>...] forbid-version <i>packages</i>...
+ aptitude [<i>options</i>...] hold <i>packages</i>...
+ aptitude [<i>options</i>...] install <i>packages</i>...
+ aptitude [<i>options</i>...] markauto <i>packages</i>...
+ aptitude [<i>options</i>...] purge <i>packages</i>...
+ aptitude [<i>options</i>...] reinstall <i>packages</i>...
+ aptitude [<i>options</i>...] remove <i>packages</i>...
+ aptitude [<i>options</i>...] show <i>packages</i>...
+ aptitude [<i>options</i>...] unhold <i>packages</i>...
+ aptitude [<i>options</i>...] unmarkauto <i>packages</i>...
+ aptitude [<i>options</i>...] build-dep <i>packages</i>...
+ aptitude [<i>options</i>...] build-depends <i>packages</i>...
+ aptitude extract-cache-subset <i>output-directory packages</i>...
+ aptitude [<i>options</i>...] search <i>patterns</i>...
+ aptitude [<i>options</i>...] add-user-tag <i>tag</i> <i>packages</i>...
+ aptitude [<i>options</i>...] remove-user-tag <i>tag</i> <i>packages</i>...
+ aptitude [<i>options</i>...] {why | why-not} [<i>patterns</i>...] package
+ aptitude [-S <i>fname</i>] [-u | -i]
+ aptitude help
+",Not Available,https://ss64.com/bash/aptitude.html,,
+aspell,Spell Checker ," aspell check [<i>options</i>] <i>filename</i>
+"," -mode=<i>mode</i>
+ The mode to use when checking files.
+ The available modes are none, <u>url</u>, email, sgml, tex, texinfo, nroff and any
+ others available on your system. <a href=""http://aspell.net/man-html/The-Options.html#Filter-Options"">more..</a>
+ –dont-backup
+ Don't create a backup file. Normally, if there are any corrections the Aspell utility
+ will append .bak to the existing file name and then create a new file with corrections
+ made during spell checking.
+ -sug-mode=<i>mode</i>
+ The suggestion <i>mode</i> to use where mode is one of ultra, fast, normal, or bad-spellers.
+ For more information on these modes see Notes on the Different Suggestion Modes.
+ -lang=<i>name</i>
+ -l <i>name</i>
+ The language the document is written in. The default depends on the current locale.
+ -encoding=<i>name</i>
+ Encoding the document is expected to be in. The default depends on the current locale.
+ -master=<i>name</i>
+ -d <i>name</i>
+ The main dictionary to use.
+ -keymapping=<i>name</i>
+ The keymapping to use. Either aspell for the default mapping or ispell to use the same
+ mapping that the Ispell utility uses.</pre>
+",https://ss64.com/bash/aspell.html,System Administration,Text editing
+at,Schedule a command to run once at a particular time," at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] <i>TIME</i> # Execute commands at a specified time. 
+ at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] -t <i>time_arg</i> # Execute commands at a specified time. 
+ at -c <i>job</i> [<i>job</i>...]
+ atq [-V] [-q <i>queue</i>] # List the user's pending jobs, or for the superuser; list all jobs.
+ atrm [-V] <i>job</i> [<i>job</i>...] # Delete jobs, identified by their job number.
+ batch # Execute commands when system load levels permit.
+"," -c <a href=""cat.html"">Cat</a> the jobs listed on the command line to standard output.
+ -d Is an alias for atrm.
+ -f <i>file</i>
+ Read the job from <i>file</i> rather than standard input.
+ -l Is an alias for atq.
+ -m Send mail to the user when the job has completed even if there was no output.
+ -q <i>queue
+ </i> use the specified queue.
+ A queue designation consists of a single letter; valid queue designations range from a to z.
+ and A to Z. The a queue is the default for at and the b queue for batch.
+ Queues with higher letters run with increased niceness.
+ The special queue ""="" is reserved for jobs which are currently running. If a job is submitted to a queue
+ designated with an uppercase letter, the job is treated as if it were submitted to batch at the time of
+ the job. Once the time is reached, the batch processing rules with respect to load average apply.
+ If atq is given a specific queue, it will only show jobs pending in that queue.
+ -t <i>time_arg</i>
+ Submit the job to be run at the time specified by the <i>time_arg</i> option argument, which must have
+ the same format as specified for the <a href=""touch.html"">touch</a> utility's -t time option argument ([[<i>CC</i>]<i>YY</i>]<i>MMDDhhmm</i>). 
+ -v Show the time the job will be executed before reading the job. 
+ Times displayed will be in the format ""Thu Feb 20 14:50:00 1997"".
+ -V Print the version number to standard error.</pre>
+",https://ss64.com/bash/at.html,System Administration,Process management
+atq,"List the user's pending jobs, or for the superuser; list all jobs."," at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] <i>TIME</i> # Execute commands at a specified time. 
+ at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] -t <i>time_arg</i> # Execute commands at a specified time. 
+ at -c <i>job</i> [<i>job</i>...]
+ atq [-V] [-q <i>queue</i>] # List the user's pending jobs, or for the superuser; list all jobs.
+ atrm [-V] <i>job</i> [<i>job</i>...] # Delete jobs, identified by their job number.
+ batch # Execute commands when system load levels permit.
+"," -c <a href=""cat.html"">Cat</a> the jobs listed on the command line to standard output.
+ -d Is an alias for atrm.
+ -f <i>file</i>
+ Read the job from <i>file</i> rather than standard input.
+ -l Is an alias for atq.
+ -m Send mail to the user when the job has completed even if there was no output.
+ -q <i>queue
+ </i> use the specified queue.
+ A queue designation consists of a single letter; valid queue designations range from a to z.
+ and A to Z. The a queue is the default for at and the b queue for batch.
+ Queues with higher letters run with increased niceness.
+ The special queue ""="" is reserved for jobs which are currently running. If a job is submitted to a queue
+ designated with an uppercase letter, the job is treated as if it were submitted to batch at the time of
+ the job. Once the time is reached, the batch processing rules with respect to load average apply.
+ If atq is given a specific queue, it will only show jobs pending in that queue.
+ -t <i>time_arg</i>
+ Submit the job to be run at the time specified by the <i>time_arg</i> option argument, which must have
+ the same format as specified for the <a href=""touch.html"">touch</a> utility's -t time option argument ([[<i>CC</i>]<i>YY</i>]<i>MMDDhhmm</i>). 
+ -v Show the time the job will be executed before reading the job. 
+ Times displayed will be in the format ""Thu Feb 20 14:50:00 1997"".
+ -V Print the version number to standard error.</pre>
+",https://ss64.com/bash/at.html,System Administration,Process management
+atrm,"Delete jobs, identified by their job number."," at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] <i>TIME</i> # Execute commands at a specified time. 
+ at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] -t <i>time_arg</i> # Execute commands at a specified time. 
+ at -c <i>job</i> [<i>job</i>...]
+ atq [-V] [-q <i>queue</i>] # List the user's pending jobs, or for the superuser; list all jobs.
+ atrm [-V] <i>job</i> [<i>job</i>...] # Delete jobs, identified by their job number.
+ batch # Execute commands when system load levels permit.
+"," -c <a href=""cat.html"">Cat</a> the jobs listed on the command line to standard output.
+ -d Is an alias for atrm.
+ -f <i>file</i>
+ Read the job from <i>file</i> rather than standard input.
+ -l Is an alias for atq.
+ -m Send mail to the user when the job has completed even if there was no output.
+ -q <i>queue
+ </i> use the specified queue.
+ A queue designation consists of a single letter; valid queue designations range from a to z.
+ and A to Z. The a queue is the default for at and the b queue for batch.
+ Queues with higher letters run with increased niceness.
+ The special queue ""="" is reserved for jobs which are currently running. If a job is submitted to a queue
+ designated with an uppercase letter, the job is treated as if it were submitted to batch at the time of
+ the job. Once the time is reached, the batch processing rules with respect to load average apply.
+ If atq is given a specific queue, it will only show jobs pending in that queue.
+ -t <i>time_arg</i>
+ Submit the job to be run at the time specified by the <i>time_arg</i> option argument, which must have
+ the same format as specified for the <a href=""touch.html"">touch</a> utility's -t time option argument ([[<i>CC</i>]<i>YY</i>]<i>MMDDhhmm</i>). 
+ -v Show the time the job will be executed before reading the job. 
+ Times displayed will be in the format ""Thu Feb 20 14:50:00 1997"".
+ -V Print the version number to standard error.</pre>
+",https://ss64.com/bash/at.html,System Administration,Process management
+batch,Execute commands when system load levels permit.," at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] <i>TIME</i> # Execute commands at a specified time. 
+ at [-V] [-q <i>queue</i>] [-f <i>file</i>] [-mldbv] -t <i>time_arg</i> # Execute commands at a specified time. 
+ at -c <i>job</i> [<i>job</i>...]
+ atq [-V] [-q <i>queue</i>] # List the user's pending jobs, or for the superuser; list all jobs.
+ atrm [-V] <i>job</i> [<i>job</i>...] # Delete jobs, identified by their job number.
+ batch # Execute commands when system load levels permit.
+"," -c <a href=""cat.html"">Cat</a> the jobs listed on the command line to standard output.
+ -d Is an alias for atrm.
+ -f <i>file</i>
+ Read the job from <i>file</i> rather than standard input.
+ -l Is an alias for atq.
+ -m Send mail to the user when the job has completed even if there was no output.
+ -q <i>queue
+ </i> use the specified queue.
+ A queue designation consists of a single letter; valid queue designations range from a to z.
+ and A to Z. The a queue is the default for at and the b queue for batch.
+ Queues with higher letters run with increased niceness.
+ The special queue ""="" is reserved for jobs which are currently running. If a job is submitted to a queue
+ designated with an uppercase letter, the job is treated as if it were submitted to batch at the time of
+ the job. Once the time is reached, the batch processing rules with respect to load average apply.
+ If atq is given a specific queue, it will only show jobs pending in that queue.
+ -t <i>time_arg</i>
+ Submit the job to be run at the time specified by the <i>time_arg</i> option argument, which must have
+ the same format as specified for the <a href=""touch.html"">touch</a> utility's -t time option argument ([[<i>CC</i>]<i>YY</i>]<i>MMDDhhmm</i>). 
+ -v Show the time the job will be executed before reading the job. 
+ Times displayed will be in the format ""Thu Feb 20 14:50:00 1997"".
+ -V Print the version number to standard error.</pre>
+",https://ss64.com/bash/at.html,System Administration,Process management
+awk,"Find and Replace text, database sort/validate/index"," awk &lt;<i>options</i>&gt; '<i>Program</i>' <i>Input-File1 Input-File2</i> ...
+ awk -f <i>PROGRAM-FILE</i> &lt;<i>options</i>&gt; <i>Input-File1 Input-File2</i> ...
+"," -F <i>FS</i>
+ --field-separator <i>FS</i>
+ Use FS for the input field separator (the value of the '<i>FS</i>'
+ predefined variable).
+ -f <i>PROGRAM-FILE</i>
+ --file <i>PROGRAM-FILE</i>
+ Read the awk program source from the file <i>PROGRAM-FILE</i>, instead
+ of from the first command line argument.
+ -mf<i> NNN</i>
+ -mr<i> NNN</i>
+ The 'f' flag sets the maximum number of fields, and the 'r' flag
+ sets the maximum record size. These options are ignored by
+ 'gawk', since 'gawk' has no predefined limits; they are only for
+ compatibility with the Bell Labs research version of Unix awk.
+ -v <i>VAR</i>=<i>VAL</i>
+ --assign <i>VAR</i>=<i>VAL</i>
+ Assign the variable <i>VAR</i> the value <i>VAL</i> before program execution
+ begins.
+ -W traditional
+ -W compat
+ --traditional
+ --compat
+ Use compatibility mode, in which 'gawk' extensions are turned off.
+ -W lint
+ --lint
+ Give warnings about dubious or non-portable awk constructs.
+ -W lint-old
+ --lint-old
+ Warn about constructs that are not available in the original
+ Version 7 Unix version of awk.
+ -W posix
+ --posix
+ Use POSIX compatibility mode, in which 'gawk' extensions are
+ turned off and additional restrictions apply.
+ -W re-interval
+ --re-interval
+ Allow interval expressions, in regexps.
+ -W source=<i>PROGRAM-TEXT</i>
+ --source <i>PROGRAM-TEXT</i>
+ Use PROGRAM-TEXT as awk program source code. This option allows
+ mixing command line source code with source code from files, and is
+ particularly useful for mixing command line programs with library
+ functions.
+ --
+ Signal the end of options. This is useful to allow further
+ arguments to the awk program itself to start with a '-'. This
+ is mainly for consistency with POSIX argument parsing conventions.
+ '<i>Program</i>'
+ A series of patterns and actions: see below
+",https://ss64.com/bash/awk.html,System Administration,Text editing
+basename,Strip directory and suffix from filenames," basename <i>NAME</i> [<i>SUFFIX</i>]
+ basename <i>OPTION
+"," --help
+ Display help
+ --version
+ Output version information and exit</pre>
+",https://ss64.com/bash/basename.html,System Administration,Disk/Volume Management
+base32,Base32 encode/decode data and print to standard output," base32 [<i>OPTION</i>]... [<i>FILE</i>]
+"," -d
+ --decode
+ Decode data.
+ -i
+ --ignore-garbage
+ When decoding, ignore non-alphabet characters.
+ -w
+ --wrap=<i>COLS</i>
+ Wrap encoded lines after <i>COLS</i> character (default 76). 
+ Use 0 to disable line wrapping.
+ --help
+ Display this help and exit.
+ --version
+ Output version information and exit.</pre>
+",https://ss64.com/bash/base32.html,File Manipulation,Encryption
+base64,Base64 encode/decode data and print to standard output," base64 [<i>OPTION</i>]... [<i>FILE</i>]
+"," -d
+ --decode
+ Decode data.
+ -i
+ --ignore-garbage
+ When decoding, ignore non-alphabet characters.
+ -w
+ --wrap=<i>COLS</i>
+ Wrap encoded lines after <i>COLS</i> character (default 76). 
+ Use 0 to disable line wrapping.
+ --help
+ Display this help and exit.
+ --version
+ Output version information and exit.</pre>
+",https://ss64.com/bash/base64.html,File Manipulation,Encryption
+bash,GNU Bourne-Again SHell," bash [<i>options</i>] [<i>file</i>]
+"," <i>file</i> A file containing commands to run, by default bash will read commands from standard input.
+ In addition to the single-character shell options documented in the description of the <a href=""set.html"">set</a> builtin command,
+ bash interprets the following options when it is invoked:
+ -c <i>string</i> Read commands are read from <i>string</i>.
+ If there are arguments after <i>string</i>, they are assigned to the positional parameters, starting with $0.
+ -i Interactive shell.
+ -l Make bash act as if it had been invoked as a login shell, see INVOCATION below.
+ -r Restricted shell, see RESTRICTED SHELL below.
+ -s Commands are read from the standard input. The default if no <i>file</i> provided.
+ This option allows the positional parameters to be set when invoking an interactive shell.
+ -D A list of all double-quoted strings preceded by $ is printed on the standard output.
+ These are the strings that are subject to language translation when the current locale is not C
+ or POSIX. This implies the -n option; no commands will be executed.
+ [-+]O [shopt_option]
+ shopt_option is one of the shell options accepted by the <a href=""shopt.html"">shopt</a> builtin.
+ If shopt_option is present, -O sets the value of that option; +O unsets it. If shopt_option is not supplied,
+ the names and values of the shell options accepted by shopt are printed on the standard output.
+ If the invocation option is +O, the output is displayed in a format that may be reused as input.
+ -- A -- signals the end of options and disables further option processing.
+ Any arguments after the -- are treated as filenames and arguments. An argument of - is equivalent to --.
+ Bash also interprets a number of multi-character options. These options must appear on the command line
+ before the single-character options to be recognized.
+ --debugger Arrange for the debugger profile to be executed before the shell starts.
+ Turns on extended debugging mode (see the description of the extdebug option to the <a href=""shopt.html"">shopt</a> builtin)
+ and shell function tracing (see the description of the -o functrace option to the <a href=""set.html"">set</a> builtin). 
+ --dump-po-strings Equivalent to -D, but the output is in the GNU gettext po (portable object) file format.
+ --dump-strings Equivalent to -D. 
+ --help Display a usage message on standard output and exit successfully.
+ --init-file <i>file</i>
+ --rcfile <i>file</i>
+ Execute commands from <i>file</i> instead of the standard personal initialization file ~/.bashrc
+ if the shell is interactive, see INVOCATION below.
+ --login Equivalent to -l.
+ --noediting Do not use the GNU readline library to read command lines when the shell is interactive.
+ --noprofile Do not read either the system-wide startup file /etc/profile or any of the personal initialization
+ files ~/.bash_profile, ~/.bash_login, or ~/.profile.
+ By default, bash reads these files when it is invoked as a login shell (see INVOCATION below).
+ --norc Do not read and execute the personal initialization file ~/.bashrc if the shell is interactive.
+ This option is on by default if the shell is invoked as sh.
+ --posix Change the behavior of bash where the default operation differs from the POSIX standard to
+ match the standard (posix mode).
+ --restricted Restricted shell, see RESTRICTED SHELL below.
+ --rpm-requires Produce the list of files that are required for the shell script to run.
+ This implies '-n' and is subject to the same limitations as compile time error checking checking;
+ Backticks, [] tests, and evals are not parsed so some dependencies may be missed.
+ --verbose Equivalent to -v.
+ --version Show version information for this instance of bash on the standard output and exit successfully.</pre>
+",https://ss64.com/bash/bash.html,System Administration,
+bc,Arbitrary precision calculator language," bc <i>options</i> <i>file</i>... 
+",Not Available,https://ss64.com/bash/bc.html,System Utility,
+bg,Send to background," bg [<i>job_id</i>...]
+",Not Available,https://ss64.com/bash/bg.html,System Administration,Process management
+bind,Set or display readline key and function bindings &bull;," bind [-m <i>keymap</i>] [-lpsvPSVX] 
+ bind [-m <i>keymap</i>] [-q <i>function</i>] [-u <i>function</i>] [-r <i>keyseq</i>] 
+ bind [-m <i>keymap</i>] -f <i>filename</i> 
+ bind [-m <i>keymap</i>] -x <i>keyseq</i>:<i>shell-command</i> 
+ bind [-m <i>keymap</i>] <i>keyseq</i>:<i>function-name</i> or <i><a href=""https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"">readline-command</a></i>
+"," -m <i>keymap</i> Use <i>keymap</i> as the keymap to be affected by the subsequent bindings.
+ Acceptable keymap names are emacs, emacs-standard, emacs-meta, emacs-ctlx, vi,
+ vi-move, vi-command, and vi-insert. vi is equivalent to vi-command;
+ emacs is equivalent to emacs-standard.
+ -l List the <b>names</b> of all readline functions.
+ -p Display readline function names and bindings in such a way that they can be re-read.
+ -P List current readline function names and bindings.
+ -s Display readline key sequences bound to macros and the strings they output in such a way that
+ they can be re-read.
+ -S Display readline key sequences bound to macros and the strings they output.
+ -v Display readline variable names and values in such a way that they can be re-read.
+ -V List current readline variable <b>names</b> and <b>values</b>.
+ -f <i>filename</i> Read key bindings from <i>filename</i>.
+ -q <i>function</i> Query about which keys invoke the named function.
+ -u <i>function</i> Unbind all keys bound to the named function.
+ -r <i>keyseq</i> Remove any current binding for <i>keyseq</i>.
+ -x <i>keyseq</i>:<i>shell-command</i> Cause <i>shell-command</i> to be executed whenever keyseq is entered.
+ When shell-command is executed, the shell sets the READLINE_LINE variable to the
+ contents of the readline line buffer and the READLINE_POINT variable to the current
+ location of the insertion point. If the executed command changes the value of
+ READLINE_LINE or READLINE_POINT, those new values will be reflected in the editing state.
+ -X List all key sequences bound to shell commands and the associated commands in a format that
+ can be reused as input. </pre>
+",https://ss64.com/bash/bind.html,System Administration,
+break,Exit from a loop •,Not Available,Not Available,https://ss64.com/bash/break.html,System Administration,
+builtin,Run a shell builtin," builtin [<i>shell-builtin</i> [<i>args</i>]]</pre>
+",Not Available,https://ss64.com/bash/builtin.html,System Administration,
+bzip2,Compress or decompress named file(s)," bzip2 [ -cdfkqstvzVL123456789 ] [ <i>filenames</i> ... ]
+ bunzip2 [ -fkvsVL ] [ <i>filenames</i> ... ]
+ bzcat [ -s ] [ <i>filenames</i> ... ]
+ bzip2recover <i>filename</i>
+"," -c --stdout Compress or decompress to standard output.
+ -d --decompress Force decompression. bzip2, bunzip2 and bzcat are really the same program,
+ and the decision about what actions to take is done on the basis of which
+ name is used. This flag overrides that mechanism, and forces bzip2 to decompress.
+ -z --compress The complement to -d: forces compression, regardless of the invokation name.
+ -t --test Check integrity of the specified file(s), but don't decompress them.
+ This really performs a trial decompression and throws away the result.
+ -f --force Force overwrite of output files. Normally, bzip2 will not overwrite existing
+ output files. Also forces bzip2 to break hard links to files, which it otherwise
+ wouldn't do. bzip2 normally declines to decompress files which don't have the
+ correct magic header bytes. If forced (-f), however, it will pass such files
+ through unmodified. This is how GNU gzip behaves.
+ -k --keep Keep (don't delete) input files during compression or decompression.
+ -s --small Reduce memory usage, for compression, decompression and testing. Files are
+ decompressed and tested using a modified algorithm which only requires 2.5 bytes
+ per block byte. This means any file can be decompressed in 2300k of memory, albeit
+ at about half the normal speed. During compression, -s selects a block size of
+ 200k, which limits memory use to around the same figure, at the expense of your
+ compression ratio. In short, if your machine is low on memory (8 megabytes or less),
+ use -s for everything.
+ -q --quiet Suppress non-essential warning messages. Messages pertaining to I/O errors and
+ other critical events will not be suppressed.
+ -v --verbose Verbose mode -- show the compression ratio for each file processed. Further -v's
+ increase the verbosity level, spewing out lots of information which is primarily
+ of interest for diagnostic purposes.
+ -L --license
+ -V --version Display the software version, license terms and conditions.
+ -1 (or --fast) to -9 (or -best)
+ Set the block size to 100 k, 200 k ... 900 k when compressing. Has no effect when
+ decompressing. The --fast and --best aliases are primarily for GNU gzip
+ compatibility. In particular, --fast doesn't make things significantly faster.
+ And --best merely selects the default behaviour.
+ -- Treats all subsequent arguments as file names, even if they start with a dash.
+ This is so you can handle files with names beginning with a dash,
+ for example: bzip2 -- -myfilename.
+ --repetitive-fast, --repetitive-best
+ These flags are redundant in versions 0.9.5 and above. They provided some coarse
+ control over the behaviour of the sorting algorithm in earlier versions, bzip now
+ has an improved algorithm which renders these flags irrelevant.</pre>
+",https://ss64.com/bash/bzip2.html,File Manipulation,File Compression
+bunzip2,Compress or decompress named file(s)," bzip2 [ -cdfkqstvzVL123456789 ] [ <i>filenames</i> ... ]
+ bunzip2 [ -fkvsVL ] [ <i>filenames</i> ... ]
+ bzcat [ -s ] [ <i>filenames</i> ... ]
+ bzip2recover <i>filename</i>
+"," -c --stdout Compress or decompress to standard output.
+ -d --decompress Force decompression. bzip2, bunzip2 and bzcat are really the same program,
+ and the decision about what actions to take is done on the basis of which
+ name is used. This flag overrides that mechanism, and forces bzip2 to decompress.
+ -z --compress The complement to -d: forces compression, regardless of the invokation name.
+ -t --test Check integrity of the specified file(s), but don't decompress them.
+ This really performs a trial decompression and throws away the result.
+ -f --force Force overwrite of output files. Normally, bzip2 will not overwrite existing
+ output files. Also forces bzip2 to break hard links to files, which it otherwise
+ wouldn't do. bzip2 normally declines to decompress files which don't have the
+ correct magic header bytes. If forced (-f), however, it will pass such files
+ through unmodified. This is how GNU gzip behaves.
+ -k --keep Keep (don't delete) input files during compression or decompression.
+ -s --small Reduce memory usage, for compression, decompression and testing. Files are
+ decompressed and tested using a modified algorithm which only requires 2.5 bytes
+ per block byte. This means any file can be decompressed in 2300k of memory, albeit
+ at about half the normal speed. During compression, -s selects a block size of
+ 200k, which limits memory use to around the same figure, at the expense of your
+ compression ratio. In short, if your machine is low on memory (8 megabytes or less),
+ use -s for everything.
+ -q --quiet Suppress non-essential warning messages. Messages pertaining to I/O errors and
+ other critical events will not be suppressed.
+ -v --verbose Verbose mode -- show the compression ratio for each file processed. Further -v's
+ increase the verbosity level, spewing out lots of information which is primarily
+ of interest for diagnostic purposes.
+ -L --license
+ -V --version Display the software version, license terms and conditions.
+ -1 (or --fast) to -9 (or -best)
+ Set the block size to 100 k, 200 k ... 900 k when compressing. Has no effect when
+ decompressing. The --fast and --best aliases are primarily for GNU gzip
+ compatibility. In particular, --fast doesn't make things significantly faster.
+ And --best merely selects the default behaviour.
+ -- Treats all subsequent arguments as file names, even if they start with a dash.
+ This is so you can handle files with names beginning with a dash,
+ for example: bzip2 -- -myfilename.
+ --repetitive-fast, --repetitive-best
+ These flags are redundant in versions 0.9.5 and above. They provided some coarse
+ control over the behaviour of the sorting algorithm in earlier versions, bzip now
+ has an improved algorithm which renders these flags irrelevant.</pre>
+",https://ss64.com/bash/bzip2.html,File Manipulation,File Compression
+bzcat,Compress or decompress named file(s)," bzip2 [ -cdfkqstvzVL123456789 ] [ <i>filenames</i> ... ]
+ bunzip2 [ -fkvsVL ] [ <i>filenames</i> ... ]
+ bzcat [ -s ] [ <i>filenames</i> ... ]
+ bzip2recover <i>filename</i>
+"," -c --stdout Compress or decompress to standard output.
+ -d --decompress Force decompression. bzip2, bunzip2 and bzcat are really the same program,
+ and the decision about what actions to take is done on the basis of which
+ name is used. This flag overrides that mechanism, and forces bzip2 to decompress.
+ -z --compress The complement to -d: forces compression, regardless of the invokation name.
+ -t --test Check integrity of the specified file(s), but don't decompress them.
+ This really performs a trial decompression and throws away the result.
+ -f --force Force overwrite of output files. Normally, bzip2 will not overwrite existing
+ output files. Also forces bzip2 to break hard links to files, which it otherwise
+ wouldn't do. bzip2 normally declines to decompress files which don't have the
+ correct magic header bytes. If forced (-f), however, it will pass such files
+ through unmodified. This is how GNU gzip behaves.
+ -k --keep Keep (don't delete) input files during compression or decompression.
+ -s --small Reduce memory usage, for compression, decompression and testing. Files are
+ decompressed and tested using a modified algorithm which only requires 2.5 bytes
+ per block byte. This means any file can be decompressed in 2300k of memory, albeit
+ at about half the normal speed. During compression, -s selects a block size of
+ 200k, which limits memory use to around the same figure, at the expense of your
+ compression ratio. In short, if your machine is low on memory (8 megabytes or less),
+ use -s for everything.
+ -q --quiet Suppress non-essential warning messages. Messages pertaining to I/O errors and
+ other critical events will not be suppressed.
+ -v --verbose Verbose mode -- show the compression ratio for each file processed. Further -v's
+ increase the verbosity level, spewing out lots of information which is primarily
+ of interest for diagnostic purposes.
+ -L --license
+ -V --version Display the software version, license terms and conditions.
+ -1 (or --fast) to -9 (or -best)
+ Set the block size to 100 k, 200 k ... 900 k when compressing. Has no effect when
+ decompressing. The --fast and --best aliases are primarily for GNU gzip
+ compatibility. In particular, --fast doesn't make things significantly faster.
+ And --best merely selects the default behaviour.
+ -- Treats all subsequent arguments as file names, even if they start with a dash.
+ This is so you can handle files with names beginning with a dash,
+ for example: bzip2 -- -myfilename.
+ --repetitive-fast, --repetitive-best
+ These flags are redundant in versions 0.9.5 and above. They provided some coarse
+ control over the behaviour of the sorting algorithm in earlier versions, bzip now
+ has an improved algorithm which renders these flags irrelevant.</pre>
+",https://ss64.com/bash/bzip2.html,File Manipulation,File Compression
+bzip2recover,Compress or decompress named file(s)," bzip2 [ -cdfkqstvzVL123456789 ] [ <i>filenames</i> ... ]
+ bunzip2 [ -fkvsVL ] [ <i>filenames</i> ... ]
+ bzcat [ -s ] [ <i>filenames</i> ... ]
+ bzip2recover <i>filename</i>
+"," -c --stdout Compress or decompress to standard output.
+ -d --decompress Force decompression. bzip2, bunzip2 and bzcat are really the same program,
+ and the decision about what actions to take is done on the basis of which
+ name is used. This flag overrides that mechanism, and forces bzip2 to decompress.
+ -z --compress The complement to -d: forces compression, regardless of the invokation name.
+ -t --test Check integrity of the specified file(s), but don't decompress them.
+ This really performs a trial decompression and throws away the result.
+ -f --force Force overwrite of output files. Normally, bzip2 will not overwrite existing
+ output files. Also forces bzip2 to break hard links to files, which it otherwise
+ wouldn't do. bzip2 normally declines to decompress files which don't have the
+ correct magic header bytes. If forced (-f), however, it will pass such files
+ through unmodified. This is how GNU gzip behaves.
+ -k --keep Keep (don't delete) input files during compression or decompression.
+ -s --small Reduce memory usage, for compression, decompression and testing. Files are
+ decompressed and tested using a modified algorithm which only requires 2.5 bytes
+ per block byte. This means any file can be decompressed in 2300k of memory, albeit
+ at about half the normal speed. During compression, -s selects a block size of
+ 200k, which limits memory use to around the same figure, at the expense of your
+ compression ratio. In short, if your machine is low on memory (8 megabytes or less),
+ use -s for everything.
+ -q --quiet Suppress non-essential warning messages. Messages pertaining to I/O errors and
+ other critical events will not be suppressed.
+ -v --verbose Verbose mode -- show the compression ratio for each file processed. Further -v's
+ increase the verbosity level, spewing out lots of information which is primarily
+ of interest for diagnostic purposes.
+ -L --license
+ -V --version Display the software version, license terms and conditions.
+ -1 (or --fast) to -9 (or -best)
+ Set the block size to 100 k, 200 k ... 900 k when compressing. Has no effect when
+ decompressing. The --fast and --best aliases are primarily for GNU gzip
+ compatibility. In particular, --fast doesn't make things significantly faster.
+ And --best merely selects the default behaviour.
+ -- Treats all subsequent arguments as file names, even if they start with a dash.
+ This is so you can handle files with names beginning with a dash,
+ for example: bzip2 -- -myfilename.
+ --repetitive-fast, --repetitive-best
+ These flags are redundant in versions 0.9.5 and above. They provided some coarse
+ control over the behaviour of the sorting algorithm in earlier versions, bzip now
+ has an improved algorithm which renders these flags irrelevant.</pre>
+",https://ss64.com/bash/bzip2.html,File Manipulation,File Compression
+cal,Display a calendar," cal [-smjy13] [[[day] <i>month</i>] <i>year</i>] 
+ ncal [-smjy13] [[[day] <i>month</i>] <i>year</i>]
+"," -1 Display single month output. (default)
+ -3 Display prev/current/next month output.
+ -s Display Sunday as the first day of the week.
+ -m Display monday as the first day of the week.
+ -j Display julian dates (days one-based, numbered from January 1).
+ -y Display a calendar for the current year.
+ -V Display version information and exit.</pre>
+",https://ss64.com/bash/cal.html,System Utility,
+ncal,Display a calendar," cal [-smjy13] [[[day] <i>month</i>] <i>year</i>] 
+ ncal [-smjy13] [[[day] <i>month</i>] <i>year</i>]
+"," -1 Display single month output. (default)
+ -3 Display prev/current/next month output.
+ -s Display Sunday as the first day of the week.
+ -m Display monday as the first day of the week.
+ -j Display julian dates (days one-based, numbered from January 1).
+ -y Display a calendar for the current year.
+ -V Display version information and exit.</pre>
+",https://ss64.com/bash/cal.html,System Utility,
+caller,Return the context of any active subroutine call •," caller [<i>expr</i>]</pre>
+",Not Available,https://ss64.com/bash/caller.html,System Administration,Process management
+case,Conditionally perform a command," case <i>word</i> in [ [(] <i>pattern</i> [| <i>pattern</i>]...) <i>command-list</i> ;;]... esac</pre>
+",Not Available,https://ss64.com/bash/case.html,System Administration,Command Execution
+cat,Concatenate and print (display) the content of files," cat [<i>Options</i>] [<i>File</i>]...
+",Not Available,https://ss64.com/bash/cat.html,File Manipulation,
+cd,Change Directory," cd [<i>Options</i>] [<i>Directory</i>]
+"," -P Do not follow symbolic links
+ -L Follow symbolic links (default)</pre>
+",https://ss64.com/bash/cd.html,System Administration,
+cfdisk,Partition table manipulator for Linux," cfdisk [ -agvz ] [ -c <i>cylinders</i> ] [ -h <i>heads</i> ]
+ [ -s <i>sectors-per-track</i> ] [ -P <i>opt</i> ] [ <i>device</i> ] 
+",Not Available,https://ss64.com/bash/cfdisk.html,System Administration,Disk/Volume Management
+chattr,Change file attributes on a Linux file system," chattr [ -RVf ] [ -v <i>version</i> ] [ <i>mode</i> ] <i>files</i>...
+ The format of a symbolic <i>mode</i> is +-=[acdeijstuADST]
+"," -R Recursively change attributes of directories and their contents.
+ -V Be verbose with chattr's output and print the program version.
+ -f Suppress most error messages.
+ -v <i>version</i> Set the file's version/generation number.</pre>
+",https://ss64.com/bash/chattr.html,File Manipulation,
+chgrp,Change group ownership," chgrp [<i>Options</i>]... {<i>Group</i> | --reference=<i>File</i>} <i>File</i>...
+"," -c
+ --changes
+ Verbosely describe the action for each <i>File</i> whose group actually changes.
+ -f
+ --silent
+ --quiet
+ Do not print error messages about files whose group cannot be changed.
+ -f
+ --no-dereference
+ Act on symbolic links themselves instead of what they point to.
+ Only available if the 'lchown' system call is provided.
+ --reference=<i>FILE</i>
+ Use the group of the reference <i>FILE</i> instead of an explicit <i>GROUP</i>.
+ -v
+ --verbose
+ Verbosely describe the action or non-action taken for every <i>File</i>.
+ -R
+ --recursive
+ Recursively change the group ownership of directories and their
+ contents.</pre>
+",https://ss64.com/bash/chgrp.html,System Administration,
+chmod,Change access permissions," chmod [<i>Options</i>]... <i>Mode</i> [,<i>Mode</i>]... <i>file</i>...
+ chmod [<i>Options</i>]... <i>Numeric_Mode </i><i>file</i>...
+ chmod [<i>Options</i>]... --reference=<i>RFile</i> <i>file</i>...
+",Not Available,https://ss64.com/bash/chmod.html,File Manipulation,
+chown,Change file owner and group,Not Available,Not Available,https://ss64.com/bash/chown.html,File Manipulation,
+chpasswd,Update passwords in batch mode," chpasswd [<i>Options</i>...]
+",Not Available,https://ss64.com/bash/chpasswd.html,File Manipulation,Credential Management
+chroot,Run a command with a different root directory,Not Available,Not Available,https://ss64.com/bash/chroot.html,System Administration,Command Execution
+chkconfig,System services (runlevel)," chkconfig --list [<i>name</i>]<br> chkconfig --add <i>name</i><br> chkconfig --del <i>name</i><br> chkconfig [--level <i>levels</i>] <i>name</i> &lt;on|off|reset&gt;<br> chkconfig [--level <i>levels</i>] <i>name</i> 
+",Not Available,https://ss64.com/bash/chkconfig.html,System Administration,
+cksum,Print CRC checksum and byte counts," cksum [<i>Option</i>]... [<i>File</i>]...
+",Not Available,https://ss64.com/bash/cksum.html,System Utility,
+clear,Clear terminal screen,Not Available,Not Available,No link available,System Utility,
+cmp,Compare two files," cmp <i>options</i>... <i>FromFile</i> [<i>ToFile</i>]
+",Not Available,https://ss64.com/bash/cmp.html,System Utility ,File Analysis
+comm,Compare two sorted files line by line," comm [<i>options</i>]... <i>File1 File2</i>
+",Not Available,https://ss64.com/bash/comm.html,System Utility ,File Analysis
+command,Run a command - ignoring shell functions •," command [-pVv] <i>command</i> [<i>arguments</i> ...]
+"," -P Use a default path
+ -v Verbose
+ -V More verbose</pre>
+",https://ss64.com/bash/command.html,System Administration,Command Execution
+continue,Resume the next iteration of a loop •,Not Available,Not Available,https://ss64.com/bash/continue.html,System Administration,Process management
+cp,Copy one or more files to another location," cp [<i>options</i>]... <i>Source</i> <i>Dest</i>
+ cp [<i>options</i>]... <i>Source</i>... <i>Directory</i>
+"," -a, --archive same as -dpR
+ -b, --backup Make backup before removal.
+ If the copy will overwrite a file in the destination, then
+ the original file will be backed up as 'filename~' before
+ being overwritten.
+ -d, --no-dereference preserve links
+ -f, --force remove existing destinations, never prompt
+ -i, --interactive prompt before overwrite
+ -l, --link link files instead of copying
+ -p, --preserve preserve file attributes if possible
+ -P, --parents append source path to DIRECTORY
+ -r copy recursively, non-directories as files
+ --sparse=WHEN control creation of sparse files
+ -R, --recursive copy directories recursively
+ -s, --symbolic-link make symbolic links instead of copying
+ -S, --suffix=SUFFIX override the usual backup suffix
+ -u, --update copy only when the SOURCE file is newer
+ than the destination file or when the
+ destination file is missing
+ -v, --verbose explain what is being done
+ -V, --version-control=WORD override the usual version control
+ -x, --one-file-system stay on this file system
+ --help display this help and exit
+ --version output version information and exit.</pre>
+",https://ss64.com/bash/cp.html,File Manipulation,
+cpio,Copy files to and from archives," Copy-In mode:
+ cpio {-i|--extract} [-bcdfmnrtsuvBSV] [-C <i>bytes</i>] [-E <i>file</i>] [-H <i>format</i>] [-M <i>message</i>] [-R [<i>user</i>][:.][<i>group</i>]]
+ [-I [[<i>user@</i>]<i>host</i>:]<i>archive</i>] [-F [[<i>user@</i>]<i>host</i>:]<i>archive</i>] [--file=[[<i>user@</i>]<i>host</i>:]<i>archive</i>] [--make-directories]
+ [--nonmatching] [--preserve-modification-time] [--numeric-uid-gid] [--rename] [-t|--list] [--swap-bytes]
+ [--swap] [--dot] [--unconditional] [--verbose] [--block-size=<i>blocks</i>] [--swap-halfwords]
+ [--io-size=<i>bytes</i>] [--pattern-file=<i>file</i>] [--format=<i>format</i>] [--owner=[<i>user</i>][:.][<i>group</i>]]
+ [--no-preserve-owner] [--message=<i>message</i>] [--force-local] [--no-absolute-filenames]
+ [--absolute-filenames] [--sparse] [--only-verify-crc] [--to-stdout] [--quiet]
+ [--rsh-command=<i>command</i>] [--help] [--version] [<i>pattern</i>...] [< <i>archive</i>]
+ Copy-Out mode:
+ cpio {-o|--create} [-0acvABLV] [-C <i>bytes</i>] [-H <i>format</i>] [-M <i>message</i>] [-O [[user@]host:]<i>archive</i>]
+ [-F [[<i>user@</i>]<i>host</i>:]<i>archive</i>] [--file=[[<i>user@</i>]<i>host</i>:]<i>archive</i>] [--format=<i>format</i>] [--message=<i>message</i>]
+ [--null] [--reset-access-time] [--verbose] [--dot] [--append] [--block-size=<i>blocks</i>]
+ [--dereference] [--io-size=<i>bytes</i>] [--rsh-command=command] [--help] [--version] < <i>name-list</i> [> <i>archive</i>]
+ Pass-Thru mode:
+ cpio {-p|--pass-through} [-0adlmuvLV] [-R [<i>user</i>][:.][<i>group</i>]] [--null] [--reset-access-time]
+ [--make-directories] [--link] [--quiet] [--preserve-modification-time] [--unconditional] [--verbose]
+ [--dot] [--dereference] [--owner=[<i>user</i>][:.][<i>group</i>]] [--no-preserve-owner] [--sparse] [--help]
+ [--version] destination-directory < <i>name-list</i>
+ The first option to cpio is a mode indicator:
+ -i <b>Copy-in</b> mode. Read an archive from standard input (unless overriden) and extract the contents to disk
+ or (if the -t option is specified) list the contents to standard output.
+ If one or more file patterns are specified, only files matching one of the patterns will be extracted.
+ Unlike in the shell, an initial '.' in a filename does match a wildcard at the start of a pattern, and
+ a '/' in a filename can match wildcards.
+ -o <b>Copy-out</b> mode. Read a list of filenames, one per line, from standard input and produce a new archive on standard output
+ (unless overriden) containing the specified items.
+ -p <b>Pass-Thru</b> mode. Read a list of filenames from standard input and copy the files to the specified directory.
+ This combines the copy-out and copy-in steps without actually using an archive.
+",Not Available,https://ss64.com/bash/cpio.html,File Manipulation,
+cron,Daemon to execute scheduled commands," cron [-n | -p | -s | -m&lt;<i>mailcommand</i>&gt;]
+ cron -x [ext,sch,proc,pars,load,misc,test,bit] 
+"," -s This option will direct cron to send job output to the system log using syslog(3).
+ This is useful if your system has no sendmail(8), or if mail is disabled using -m off.
+ -m This option allows you to specify a shell command string to use for sending cron
+ mail output instead of sendmail(8). This command must accept a fully formatted mail
+ message (with headers) on stdin and send it as a mail message to the recipients
+ specified in the mail headers.
+ -n This option changes default behavior causing it to run crond in the foreground.
+ This can be useful when starting it out of init.
+ -p Permit any crontab, which user set.
+ -x This option sets debug flags.
+ As a special case, the string <b>off</b> will disable sending mail.
+",https://ss64.com/bash/cron.html,System Administration,Process management
+crontab,Schedule a command to run at a later time," crontab [ -u <i>user</i> ] <i>file</i>
+ crontab [ -u <i>user</i> ] { -l | -r | -e }
+"," -l List - display the current crontab entries.
+ -r Remove the current crontab.
+ -e Edit the current crontab using the editor specified by the 
+ VISUAL or EDITOR environment variables.
+ After you exit from the editor, the modified crontab will be installed automatically.</pre>
+",https://ss64.com/bash/crontab.html,System Administration,Process management
+csplit,Split a file into context-determined pieces," csplit [<i>options</i>]... <i>FILE</i> <i>PATTERN</i>...
+",Not Available,https://ss64.com/bash/csplit.html,File Manipulation,
+curl,Transfer data  from or to a server," curl [<i>options</i>] [<i>URL</i>...]
+"," <i>url</i> One or multiple URLs that will be fetched in sequence.
+ Multiple URLs or parts of URLs can be specified by writing part sets within braces as in:
+ https://site.<b>{</b>one,two,three<b>}</b>.com
+ or get sequences of alphanumeric series by using [] as in:
+ ftp://ftp.numericals.com/file<b>[</b>1-100<b>]</b>.txt
+ ftp://ftp.numericals.com/file<b>[</b>001-100<b>]</b>.txt (with leading zeros)
+ ftp://ftp.letters.com/file<b>[</b>a-z<b>]</b>.txt
+ -A &quot;<i>agent string</i>&quot;
+ --user-agent &quot;<i>agent string</i>&quot;
+ Specify the User-Agent string to send to the HTTP server.
+ To encode blanks in the string, surround the string with single
+ quote marks. This can also be set with -H, --header option. (HTTP)
+ -b <i>name</i>=<i>data</i>
+ --cookie <i>name</i>=<i>data
+",https://ss64.com/bash/curl.html,"File Manipulation, Remote Connectivity","File Transfer, Web Request"
+cut,Divide a file into several parts," cut [<i>OPTION</i>]... [<i>FILE</i>]...
+",Not Available,https://ss64.com/bash/cut.html,File Manipulation,
+date,Display or change the date &amp; time," date [<i>option</i>]... [+<i>Format</i>]
+ 
+ date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]</pre>
+",Not Available,https://ss64.com/bash/date.html,System Administration,
+dc,Desk Calculator," dc <i>options</i>
+",Not Available,https://ss64.com/bash/dc.html,System Utility,
+dd,"Data Duplicator - convert and copy a file, write disk headers, boot records"," dd [<i>Options</i>]
+"," if=<i>FILE</i>
+ Input file : Read from FILE instead of standard input.
+ of=<i>FILE</i>
+ Output file : Write to FILE instead of standard output. Unless 'conv=notrunc'
+ is given, 'dd' truncates FILE to zero bytes (or the size specified
+ with 'seek=').
+ ibs=<i>BYTES</i>
+ Read BYTES bytes at a time.
+ obs=<i>BYTES</i>
+ Write BYTES bytes at a time.
+ bs=<i>BYTES</i>
+ Block size, both read and write <i>BYTES</i> bytes at a time. This overrides 'ibs'
+ and 'obs'.
+ cbs=<i>BYTES</i>
+ Convert BYTES bytes at a time.
+ skip=<i>BLOCKS</i>
+ Skip BLOCKS 'ibs'-byte blocks in the input file before copying.
+ seek=<i>BLOCKS</i>
+ Skip BLOCKS 'obs'-byte blocks in the output file before copying.
+ count=<i>BLOCKS</i>
+ Copy BLOCKS 'ibs'-byte blocks from the input file, instead of
+ everything until the end of the file.
+ conv=<i>CONVERSION</i>[,<i>CONVERSION</i>]...
+ Convert the file as specified by the CONVERSION argument(s). 
+ (No spaces around any comma)
+ Conversions:
+ 'ascii' Convert EBCDIC to ASCII.
+ 'ebcdic' Convert ASCII to EBCDIC.
+ 'ibm' Convert ASCII to alternate EBCDIC.
+ 'block' For each line in the input, output 'cbs' bytes, replacing the
+ input newline with a space and padding with spaces as
+ necessary.
+ 'unblock' Replace trailing spaces in each 'cbs'-sized input block with a newline.
+ 'lcase' Change uppercase letters to lowercase.
+ 'ucase' Change lowercase letters to uppercase.
+ 'swab' Swap every pair of input bytes. GNU 'dd', unlike others, works when
+ an odd number of bytes are read--the last byte is copied
+ (since there is nothing to swap it with).
+ 'noerror' Continue after read errors.
+ 'notrunc' Do not truncate the output file.
+ 'sync' Pad every input block to size of 'ibs' with trailing zero bytes.</pre>
+",https://ss64.com/bash/dd.html,File Manipulation,
+ddrescue,Data recovery tool," ddrescue [<i>options</i>] <i>infile outfile</i> [<i>logfile</i>]
+",Not Available,https://ss64.com/bash/ddrescue.html,File Manipulation,Data Recovery
+declare,Declare variables and give them attributes •," declare [-aAfFgiIlnrtux] [-p] [<i>name</i>[=<i>value</i>]]
+"," -a Each name is an <a href=""syntax-arrays.html"">array</a> variable.
+ -A Each name is an associative <a href=""syntax-arrays.html"">array</a> variable
+ -f Use function names only.
+ -F Inhibit the display of function definitions; 
+ only the function name and attributes are printed. (implies -f)
+ -g Force variables to be created or modified at the global scope, even when declare is executed
+ in a shell function. It is ignored in all other cases. 
+ -i The variable is to be treated as an integer; arithmetic evaluation (see <a href=""syntax-math.html"">Shell Arithmetic</a>)
+ is performed when the variable is assigned a value.
+ -I Cause local variables to inherit the attributes (except the nameref attribute) and value
+ of any existing variable with the same name at a surrounding scope.
+ If there is no existing variable, the local variable is initially unset. 
+ -l When the variable is assigned a value, all upper-case characters are
+ converted to lower-case. The upper-case attribute is disabled.
+ -n Give each <i>name</i> the nameref attribute, making it a name reference to another variable.
+ That other variable is defined by the value of <i>name</i>.
+ All references, assignments, and attribute modifications to <i>name</i>, except for those using
+ or changing the -n attribute itself, are performed on the variable referenced by <i>name</i>’s value.
+ The nameref attribute cannot be applied to array variables.
+ -p Display the attributes and values of each <i>name</i>. 
+ When -p is used with name arguments, additional options, other than -f and -F, are ignored.
+ When -p is supplied without <i>name</i> arguments, declare will display the attributes and values
+ of all variables having the attributes specified by the additional options.
+ If no other options are supplied with -p, declare will display the attributes and values
+ of all shell variables. The -f option will restrict the display to shell functions. 
+ -r Make <i>name</i>s readonly. 
+ These names cannot then be assigned values by subsequent assignment statements 
+ or unset.
+ -t Give each <i>name</i> the trace attribute.
+ Traced functions inherit the DEBUG and RETURN traps from the calling shell.
+ The trace attribute has no special meaning for variables.
+ -u When the variable is assigned a value, all lower-case characters are converted to upper-case.
+ The lower-case attribute is disabled.
+ -x Mark each <i>name</i> for export to subsequent commands via the environment.
+",https://ss64.com/bash/declare.html,System Utility,
+df,Display free disk space,Not Available,Not Available,https://ss64.com/bash/df.html,System Administration,Disk/Volume Management
+diff,Display the differences between two files," diff [<i>options</i>] <i>FILES</i></pre>
+",Not Available,https://ss64.com/bash/diff.html,System Utility ,File Analysis
+diff3,Show differences among three files," diff3 [<i>options</i>] <i>MYFILE OLDFILE YOURFILE</i>
+",Not Available,https://ss64.com/bash/diff3.html,System Utility ,File Analysis
+dig,DNS lookup," dig [@<i>server</i>] [-b <i>address</i>] [-c <i>class</i>] [-f <i>filename</i>] [-k <i>filename</i>]
+ [-p <i>port#</i>] [-t <i>type</i>] [-x <i>addr</i>] [-y <i>name</i>:<i>key</i>] [-4] [-6]
+ [<i>name</i>] [<i>type</i>] [<i>class</i>] [<i>queryopt</i>...]<br> dig [-h]
+",Not Available,https://ss64.com/bash/dig.html,Enumeration,DNS
+dir,Briefly list directory contents," dir (also installed as 'd')</pre>
+",Not Available,https://ss64.com/bash/dir.html,Enumeration,
+dircolors,Colour setup for 'ls'," eval 'dircolors [<i>options</i>]... [<i>file</i>]'
+",Not Available,https://ss64.com/bash/dircolors.html,System Utility ,
+dirname,Convert a full pathname to just a path," dirname <i>pathname</i>
+",Not Available,https://ss64.com/bash/dirname.html,System Utility,
+dirs,Display list of remembered directories," dirs [+N | -N] [-clpv]
+",Not Available,https://ss64.com/bash/dirs.html,Enumeration,
+dos2unix,Windows/MAC to UNIX text file format converter," dos2unix [options] [-c <i>convmode</i>] [-o <i>file</i> ...] [-n <i>infile outfile</i> ...]
+"," -h --help Print online help. 
+ -k --keepdate Keep the date stamp of output file same as input file. 
+ -q --quiet Quiet mode. Suppress all warning and messages.
+ -V --version Prints version information.
+ -c --convmode <i>convmode</i>
+ Set conversion mode.
+ Where <i>convmode</i> is one of: ASCII, 7bit, ISO, Mac with ASCII being the default.
+ Simulates dos2unix under SunOS.
+ -o --oldfile <i>file</i> ...
+ Old file mode.
+ Convert the file and write output to it. The program defaults to run in this mode.
+ Wildcard names may be used.
+ -n --newfile <i>infile outfile</i> ...
+ New file mode. Convert the infile and write output to outfile.
+ File names must be given in pairs and wildcard names should NOT be used or you WILL lose your files.</pre>
+",https://ss64.com/bash/dos2unix.html,File Manipulation,
+dmesg,Print kernel &amp; driver messages ," dmesg [ -c ] [ -n <i>level</i> ] [ -s <i>bufsize</i> ]</pre>
+",Not Available,https://ss64.com/bash/dmesg.html,Enumeration,
+dpkg,Package manager  (Debian/Ubuntu).," dpkg [<i>options</i>] <i>action</i>
+",Not Available,https://ss64.com/bash/dpkg.html,System Administration,
+du,Estimate file space usage," du [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/du.html,Enumeration,
+echo,Display message on screen •," echo [<i>options</i>]... [<i>String</i>]...
+",Not Available,https://ss64.com/bash/echo.html,System Utility ,
+egrep,Search file(s) for lines that match an extended expression," egrep [ <i>options</i> ] '<i>PATTERN</i>' <i>files</i> ...
+",Not Available,https://ss64.com/bash/egrep.html,System Utility ,Search
+eject,Eject removable media," eject -h
+ eject [-vnrsfmqp] [<i>name</i>]
+ eject [-vn] -d
+ eject [-vn] -a on|off|1|0 [<i>name</i>]
+ eject [-vn] -c slot [<i>name</i>]
+ eject [-vn] -t [<i>name</i>]
+ eject [-vn] -T [<i>name</i>]
+ eject [-vn] -x <i>speed</i> [<i>name</i>]
+ eject [-vn] -X [<i>name</i>]
+ eject -V
+",Not Available,https://ss64.com/bash/eject.html,System Administration,Disk/Volume Management
+enable,Enable and disable builtin shell commands •," enable [-a] [-dnps] [-f <i>filename</i>] [<i>name</i> …]
+"," -a List each builtin with an indication of whether or not it is enabled.
+ 
+ -d Delete a builtin loaded with '-f'. 
+ -f Load the new builtin command <i>name</i> from shared object <i>filename</i>, on systems that
+ support dynamic loading.
+ -n Disable the <i>name</i>s listed, otherwise names are enabled.
+ -p Print a list of shell builtins, default if no <i>name</i> arguments appear.
+ With no other arguments, the list consists of all enabled shell builtins. 
+ -s Restrict to enable only POSIX special builtins</pre>
+",https://ss64.com/bash/enable.html,System Administration,Command Execution
+env,Environment variables," env [<i>OPTION</i>]... [NAME=<i>VALUE</i>]... [<i>COMMAND</i> [<i>ARGS</i>]...]
+",Not Available,https://ss64.com/bash/env.html,System Utility ,Variable
+ethtool,Ethernet card settings,Not Available,Not Available,No link available,"System Administration, Networking",
+eval,Evaluate several commands/arguments," eval [<i>arguments</i>]</pre>
+",Not Available,https://ss64.com/bash/eval.html,System Utility ,File Analysis
+exec,Execute a command," exec [-cl] [-a <i>name</i>] [<i>command</i> [<i>arguments</i>]]
+",Not Available,https://ss64.com/bash/exec.html,System Administration,Command Execution
+exit,Exit the shell," exit [<i>n</i>]
+"," <i>n</i> Set the exit status to <i>n</i> (default=0)</pre>
+",https://ss64.com/bash/exit.html,System Utility ,
+expand,Convert tabs to spaces," expand [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/expand.html,File Manipulation,
+export,Set an environment variable," export [-fn] [<i>name</i>[=<i>value</i>]]
+ export -p
+",Not Available,https://ss64.com/bash/export.html,System Utility ,Variable
+expr,Evaluate expressions," expr <i>expression</i>
+ expr <i>option
+",Not Available,https://ss64.com/bash/expr.html,System Utility ,File Analysis
+false,"Do nothing, unsuccessfully"," false</pre>
+",Not Available,https://ss64.com/bash/false.html,System Administration,Command Execution
+fdformat,Low-level format a floppy disk," fdformat [ -n ] <i>device
+",Not Available,https://ss64.com/bash/fdformat.html,System Administration,Disk/Volume Management
+fdisk,Partition table manipulator for Linux," fdisk [-u] <i>device</i>
+ fdisk -l [-u] <i>device</i> ...
+ fdisk -s <i>partition</i> ...
+ fdisk -v
+",Not Available,https://ss64.com/bash/fdisk.html,System Administration,Disk/Volume Management
+fg,Send job to foreground," fg [<i>job_id</i>...]
+",Not Available,https://ss64.com/bash/fg.html,System Administration,Process management
+fgrep,Search file(s) for lines that match a fixed string," fgrep <i>options</i> ...
+",Not Available,https://ss64.com/bash/fgrep.html,System Utility ,Search
+file,Determine file type," file [-bchikLNnprsvz0] [--apple] [--mime-encoding] [--mime-type] [-e <i>testname</i>]
+ [-F <i>separator</i>] [-f <i>namefile</i>] [-m <i>magicfiles</i>] <i>file</i> ... 
+ file -C [-m <i>magicfiles</i>]
+ file [--help]
+"," -b, --brief Do not prepend filenames to output lines (brief mode).
+ -C, --compile Write a magic.mgc output file that contains a pre-parsed version of the magic file or directory.
+ -c, --checking-printout
+ Cause a checking printout of the parsed form of the magic file.
+ This is usually used in conjunction with the -m flag to debug a
+ new magic file before installing it.
+ -e, --exclude <i>testname</i>
+ Exclude the test named in <i>testname</i> from the list of tests made to determine the file type.
+ Valid test names are:
+ apptype EMX application type (only on EMX).
+ text Various types of text files (this test will try to guess the text encoding,
+ irrespective of the setting of the 'encoding' option).
+ encoding Different text encodings for soft magic tests.
+ tokens Look for known tokens inside text files.
+ cdf Print details of Compound Document Files.
+ compress Check for, and looks inside, compressed files.
+ elf Print ELF file details.
+ soft Consult magic files.
+ tar Examine tar files.
+ -F, --separator <i>separator</i>
+ Use the specified string as the separator between the filename and
+ the file result returned. Defaults to ':'.
+ -f, --files-from <i>namefile
+",https://ss64.com/bash/file.html,System Utility ,File Analysis
+find,Search for files that meet a desired criteria," find [-H] [-L] [-P] [<i>path</i>...] [<i>expression</i>]</pre>
+",Not Available,https://ss64.com/bash/find.html,System Utility ,Search
+fmt,Reformat paragraph text," fmt [<i>option(s)</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/fmt.html,System Utility ,
+fold,Wrap text to fit a specified width," fold [<i>options</i>]... [<i>FILE</i>]...
+",Not Available,https://ss64.com/bash/fold.html,System Utility ,
+for,"Expand <i>words</i>, and execute <i>commands</i>"," for <i>name</i> [in <i>words</i> ...]; do <i>commands</i>; done</pre>
+",Not Available,https://ss64.com/bash/for.html,System Administration,Process management
+format,Format disks or tapes,Not Available,Not Available,No link available,System Administration,Disk/Volume Management
+free,Display memory usage,Not Available,Not Available,No link available,Enumeration,
+fsck,File system consistency check and repair," fsck [<i>options</i>] [<i>filesystem</i>] ...
+",Not Available,https://ss64.com/bash/fsck.html,System Administration,Disk/Volume Management
+ftp,File Transfer Protocol," ftp [-<i>options</i>] [-s:<i>filename</i>] [-w:<i>buffer</i>] [<i>host</i>]
+"," -s:<i>filename</i> Run a text file containing FTP commands.
+ <i>host</i> Host name or IP address of the remote host.
+ This can include a user in the format ftp://<i>username</i>:[<i>password</i>]@<i>hostname</i>
+ -g Disable filename wildcards.
+ -n No auto-login.
+ -i No interactive prompts during ftp.
+ -v Hide remote server responses.
+ -w:<i>buffer</i> Set buffer size to <i>buffer</i>
+ (default=4096)
+ -d Debug
+ 
+ -a Use any local interface when binding data connection.
+",https://ss64.com/bash/ftp.html,"File Manipulation, Remote Connectivity",File Transfer
+function,Define Function Macros,Not Available,Not Available,https://ss64.com/bash/function.html,System Utility ,Macro
+fuser,Identify/kill the process that is accessing a file," fuser [-a|-s|-c] [-4|-6] [-n <i>space</i> ] [-k [-i] [-<i>signal</i> ] ] [-muvf] <i>name</i>
+ fuser -l
+ fuser -V 
+",Not Available,https://ss64.com/bash/fuser.html,System Administration,Process management
+gawk,Find and Replace text within file(s)," awk &lt;<i>options</i>&gt; '<i>Program</i>' <i>Input-File1 Input-File2</i> ...
+ awk -f <i>PROGRAM-FILE</i> &lt;<i>options</i>&gt; <i>Input-File1 Input-File2</i> ...
+"," -F <i>FS</i>
+ --field-separator <i>FS</i>
+ Use FS for the input field separator (the value of the '<i>FS</i>'
+ predefined variable).
+ -f <i>PROGRAM-FILE</i>
+ --file <i>PROGRAM-FILE</i>
+ Read the awk program source from the file <i>PROGRAM-FILE</i>, instead
+ of from the first command line argument.
+ -mf<i> NNN</i>
+ -mr<i> NNN</i>
+ The 'f' flag sets the maximum number of fields, and the 'r' flag
+ sets the maximum record size. These options are ignored by
+ 'gawk', since 'gawk' has no predefined limits; they are only for
+ compatibility with the Bell Labs research version of Unix awk.
+ -v <i>VAR</i>=<i>VAL</i>
+ --assign <i>VAR</i>=<i>VAL</i>
+ Assign the variable <i>VAR</i> the value <i>VAL</i> before program execution
+ begins.
+ -W traditional
+ -W compat
+ --traditional
+ --compat
+ Use compatibility mode, in which 'gawk' extensions are turned off.
+ -W lint
+ --lint
+ Give warnings about dubious or non-portable awk constructs.
+ -W lint-old
+ --lint-old
+ Warn about constructs that are not available in the original
+ Version 7 Unix version of awk.
+ -W posix
+ --posix
+ Use POSIX compatibility mode, in which 'gawk' extensions are
+ turned off and additional restrictions apply.
+ -W re-interval
+ --re-interval
+ Allow interval expressions, in regexps.
+ -W source=<i>PROGRAM-TEXT</i>
+ --source <i>PROGRAM-TEXT</i>
+ Use PROGRAM-TEXT as awk program source code. This option allows
+ mixing command line source code with source code from files, and is
+ particularly useful for mixing command line programs with library
+ functions.
+ --
+ Signal the end of options. This is useful to allow further
+ arguments to the awk program itself to start with a '-'. This
+ is mainly for consistency with POSIX argument parsing conventions.
+ '<i>Program</i>'
+ A series of patterns and actions: see below
+",https://ss64.com/bash/awk.html,System Utility ,
+getopts,Parse positional parameters," getopts <i>optstring</i> <i>name</i> [<i>args</i>]
+",Not Available,https://ss64.com/bash/getopts.html,System Utility ,
+getfacl,Get file access control lists," getfacl [-aceEsRLPtpndvh] <i>file</i> ...
+ getfacl [-aceEsRLPtpndvh] - 
+"," -a, --access
+ Display the file access control list.
+ -d, --default
+ Display the default access control list.
+ -c, --omit-header
+ Do not display the comment header (the first three lines of each file's output).
+ -e, --all-effective
+ Print all effective rights comments, even if identical to the rights defined by the ACL entry.
+ -E, --no-effective
+ Do not print effective rights comments.
+ -s, --skip-base
+ Skip files that only have the base ACL entries (owner, group, others).
+ -R, --recursive
+ List the ACLs of all files and directories recursively.
+ -L, --logical
+ Logical walk, follow symbolic links to directories.
+ The default behavior is to follow symbolic link arguments, and skip symbolic links encountered in subdirectories.
+ Only effective in combination with -R.
+ -P, --physical
+ Physical walk, do not follow symbolic links to directories.
+ This also skips symbolic link arguments. Only effective in combination with -R.
+ -t, --tabular
+ Use an alternative tabular output format. The ACL and the default ACL are displayed side by side.
+ Permissions that are ineffective due to the ACL mask entry are displayed capitalized.
+ The entry tag names for the ACL_USER_OBJ and ACL_GROUP_OBJ entries are also displayed in capital letters,
+ which helps in spotting those entries.
+ -p, --absolute-names
+ Do not strip leading slash characters ('/'). The default behavior is to strip leading slash characters.
+ -n, --numeric
+ List numeric user and group IDs.
+ -v, --version
+ Print the version of getfacl and exit.
+ -h, --help
+ Print help explaining the command line options.
+ -- End of command line options.
+ All remaining parameters are interpreted as file names, even if they start with a dash character.
+ - If the file name parameter is a single dash character, getfacl reads a list of files from standard input.
+",https://ss64.com/bash/getfacl.html,"Enumeration, Networking",
+grep,Search file(s) for lines that match a given pattern," grep [<i>options</i>] <i>PATTERN</i> [<i>FILE</i>...]
+",Not Available,https://ss64.com/bash/grep.html,System Utility ,Search
+groupadd,Add a user security group," groupadd [options] <i>group</i> </pre>
+",Not Available,https://ss64.com/bash/groupadd.html,System Administration,User/Group Management
+groupdel,Delete a group," groupdel <i>group</i> </pre>
+",Not Available,https://ss64.com/bash/groupdel.html,System Administration,User/Group Management
+groupmod,Modify a group," groupmod [<i>options</i>] <i>GROUP</i> </pre>
+",Not Available,https://ss64.com/bash/groupmod.html,System Administration,User/Group Management
+groups,Print group names a user is in," groups [<i>username</i>]...</pre>
+",Not Available,https://ss64.com/bash/groups.html,System Administration,User/Group Management
+gzip,Compress or decompress named file(s)," gzip <i>options</i> ...
+",Not Available,https://ss64.com/bash/gzip.html,File Manipulation,File Compression
+hash,Remember the full pathname of a name argument," hash [-r] [-p <i>filename</i>] [<i>name</i>] 
+",Not Available,https://ss64.com/bash/hash.html,System Utility,
+head,Output the first part of file(s)," head [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/head.html,System Utility,
+help,Display help for a built-in command •,Not Available,Not Available,No link available,System Utility,
+history,Command History," history 
+ history [n]
+ history -c
+ history -d <i>offset</i>
+ history [-anrw] [<i>filename</i>]
+ history -ps <i>arg</i>
+"," -c Clear the history list. This can be combined with the other
+ options to replace the history list completely.
+ -d offset 
+ Delete the history entry at position offset. 
+ offset should be specified as it appears when the history is displayed. 
+ -a Append the new history lines (history lines entered since 
+ the beginning of the current Bash session) to the history file. 
+ -n Append the history lines not already read from the history file 
+ to the current history list. These are lines appended to the 
+ history file since the beginning of the current Bash session. 
+ -r Read the current history file and append its contents to the history list. 
+ -w Write out the current history to the history file. 
+ -p Perform history substitution on the args and display the result 
+ on the standard output, without storing the results in the history list. 
+ -s The args are added to the end of the history list as a single entry. 
+ </pre>
+",https://ss64.com/bash/history.html,System Utility,
+hostname,Print or set system name," hostname [<i>name</i>]
+",Not Available,https://ss64.com/bash/hostname.html,Enumeration,
+htop,Interactive process viewer," htop <i>options</i>
+",Not Available,https://ss64.com/bash/htop.html,System Administration,Process management
+iconv,Convert the character set of a file," iconv [<i>Option...</i>] -f <i>encoding</i> -t <i>encoding inputfile</i> 
+ iconv -l
+",Not Available,https://ss64.com/bash/iconv.html,File Manipulation,
+id,Print user and group id's," id [<i>options</i>]... [<i>username</i>]
+",Not Available,https://ss64.com/bash/id.html,Enumeration,
+if,Conditionally perform a command," <b>if</b> <i><a href=""test.html"">test-commands</a></i>; then
+ <i>consequent-commands</i><b>;</b>
+ [<b>elif</b> <i><a href=""test.html"">more-test-commands</a></i><b>;</b> then
+ <i>more-consequents</i>;]
+ [<b>else</b> <i>alternate-consequents</i>;]
+ <b>fi</b>
+",Not Available,https://ss64.com/bash/if.html,System Administration,Process management
+ifconfig,Configure a network interface," ifconfig [<i>interface</i>]
+ ifconfig <i>interface</i> [<i>aftype</i>] <i>options</i> | <i>address </i>...
+",Not Available,https://ss64.com/bash/ifconfig.html,"Enumeration, Networking",
+ifdown,Stop a network interface," ifup [<i>options</i>] -a | <i>IFACE</i>...
+ 
+ ifdown [<i>options</i>] -a|IFACE...
+",Not Available,https://ss64.com/bash/ifup.html,Networking,
+ifup,Start a network interface up," ifup [<i>options</i>] -a | <i>IFACE</i>...
+ 
+ ifdown [<i>options</i>] -a|IFACE...
+",Not Available,https://ss64.com/bash/ifup.html,Networking,
+import,Capture an X server screen and save the image to file," import [ <i>options</i> ... ] [ file ]
+",Not Available,https://ss64.com/bash/import.html,File Manipulation,
+install,Copy files and set attributes," install [<i>options</i>]... <i>SOURCE DEST</i>
+ install [<i>options</i>]... <i>SOURCE</i>... <i>DIRECTORY</i>
+ install -d [<i>options</i>]... <i>DIRECTORY</i>...
+",Not Available,https://ss64.com/bash/install.html,System Administration,
+iostat,Report CPU and i/o statistics," iostat [<i>option(s)</i>] [ <i>device</i> [...] | ALL ]
+ [ -p [ <i>device</i> [,...] | ALL ] ] [ <i>interval</i> [ <i>count</i> ] ]
+",Not Available,https://ss64.com/bash/iostat.html,Enumeration,
+ip,"Routing, devices and tunnels"," <b>ip</b> [ <i>OPTIONS</i> ] <i>OBJECT</i> { <i>COMMAND</i> | help }
+ <i>OBJECT</i> := { link | addr | addrlabel | route | rule | neigh | tunnel | maddr | mroute | monitor }
+ <i>OPTIONS</i> := { -V[ersion] | -s[tatistics] | -r[esolve] | -f[amily] { inet | inet6 | ipx | dnet | link } | -o[neline] }
+ <b><a href=""ip-link-set.html"">ip link set</a></b> <i>DEVICE</i> { up | down | arp { on | off } |
+ promisc { on | off } | allmulticast { on | off } |
+ dynamic { on | off } | multicast { on | off } |
+ txqueuelen <i>PACKETS</i> | name <i>NEWNAME</i> |
+ address <i>LLADDR</i> | broadcast <i>LLADDR</i> | mtu <i>MTU</i> | netns <i>PID</i> | 
+ alias <i>NAME </i>| vf <i>NUM </i>[ mac <i>LLADDR</i> ] [ vlan <i>VLANID</i> [ qos <i>VLAN-QOS</i> ] ] [ rate <i>TXRATE</i> ] }
+ <b>ip link show</b> [ <i>DEVICE</i> ]
+ dev <i>NAME</i> (default) - <i>NAME</i> specifies the network device to show.
+ If this argument is omitted all devices are listed.
+ up - Only display running interfaces, e.g. $ ip link ls up 
+ <b><a href=""ip-address.html"">ip address</a></b> { add | del } <i>IFADDR</i> dev <i>STRING</i>
+ <b><a href=""ip-address-show.html"">ip address</a></b> { show | flush } [ dev <i>STRING</i> ] [ scope <i>SCOPE-ID</i> ] [ to <i>PREFIX</i> ] [ <i>FLAG-LIST</i> ] [ label <i>PATTERN</i> ]
+ IFADDR := <i>PREFIX</i> | <i>ADDR</i> peer <i>PREFIX</i> [ broadcast <i>ADDR</i> ] [ anycast <i>ADDR</i> ] [ label <i>STRING</i> ] [ scope <i>SCOPE-ID</i> ]
+ SCOPE-ID := [ host | link | global | <i>NUMBER</i> ]
+ FLAG-LIST := [ <i>FLAG-LIST</i> ] <i>FLAG</i>
+ FLAG := [ permanent | dynamic | secondary | primary | tentative | deprecated ]
+ <b><a href=""ip-addrlabel.html"">ip addrlabel</a></b> { add | del } prefix <i>PREFIX</i> [ dev <i>DEV</i> ] [ label <i>NUMBER</i> ]
+ <b><a href=""ip-addrlabel.html"">ip addrlabel</a></b> { list | flush }
+ <b><a href=""ip-route.html"">ip route</a></b> { list | flush } <i>SELECTOR</i>
+ <b><a href=""ip-route.html"">ip route get</a></b> <i>ADDRESS</i> [ from <i>ADDRESS</i> iif <i>STRING</i> ] [ oif <i>STRING</i> ] [ tos <i>TOS</i> ]
+ <b><a href=""ip-route.html"">ip route</a></b> { add | del | change | append | replace | monitor } <i>ROUTE</i>
+ SELECTOR := [ root <i>PREFIX</i> ] [ match <i>PREFIX</i> ] [ exact <i>PREFIX</i> ] [ table <i>TABLE_ID</i> ]
+ [ proto <i>RTPROTO</i> ] [ type <i>TYPE</i> ] [ scope <i>SCOPE</i> ]
+ ROUTE := NODE_SPEC [ <i>INFO_SPEC</i> ]
+ NODE_SPEC := [ <i>TYPE</i> ] <i>PREFIX</i> [ tos <i>TOS</i> ] [ table <i>TABLE_ID</i> ] [ proto <i>RTPROTO</i> ] [ scope <i>SCOPE</i> ] [ metric <i>METRIC</i> ]
+ INFO_SPEC := <i>NH OPTIONS FLAGS</i> [ nexthop <i>NH</i> ] ...
+ NH := [ via <i>ADDRESS</i> ] [ dev <i>STRING</i> ] [ weight <i>NUMBER</i> ] <i>NHFLAGS</i>
+ OPTIONS := <i>FLAGS</i> [ mtu <i>NUMBER</i> ] [ advmss <i>NUMBER</i> ] [ rtt <i>TIME</i> ] [ rttvar <i>TIME</i> ]
+ [ window <i>NUMBER</i> ] [ cwnd <i>NUMBER</i> ] [ initcwnd <i>NUMBER</i> ] [ ssthresh <i>REALM</i> ]
+ [ realms <i>REALM</i> ] [ rto_min <i>TIME</i> ] [ initrwnd <i>NUMBER</i> ]
+ TYPE := [ unicast | local | broadcast | multicast | throw | unreachable | prohibit | blackhole | nat ]
+ TABLE_ID := [ local| main | default | all | <i>NUMBER</i> ]
+ SCOPE := [ host | link | global | <i>NUMBER</i> ]
+ FLAGS := [ equalize ]
+ NHFLAGS := [ onlink | pervasive ]
+ RTPROTO := [ kernel | boot | static | <i>NUMBER</i> ]
+ <b><a href=""ip-rule.html"">ip rule</a></b> [ list | add | del | flush ] <i>SELECTOR</i> <i>ACTION</i>
+ SELECTOR := [ from <i>PREFIX</i> ] [ to <i>PREFIX</i> ] [ tos <i>TOS</i> ] [ fwmark <i>FWMARK</i>[/<i>MASK</i>] ] [ dev <i>STRING</i> ] [ pref <i>NUMBER</i> ]
+ ACTION := [ table <i>TABLE_ID</i> ] [ nat <i>ADDRESS</i> ] [ prohibit | reject | unreachable ] [ realms [<i>SRCREALM</i>/]<i>DSTREALM</i> ]
+ TABLE_ID := [ local | main | default | <i>NUMBER</i> ]
+ <b><a href=""ip-neighbour.html"">ip neighbour</a></b> { add | del | change | replace } { <i>ADDR</i> [ lladdr <i>LLADDR</i> ]
+ [ nud { permanent | noarp | stale | reachable } ] | proxy <i>ADDR</i> } [ dev <i>DEV</i> ]
+ <b><a href=""ip-neighbour.html"">ip neighbour</a></b> { show | flush } [ to <i>PREFIX</i> ] [ dev <i>DEV</i> ] [ nud <i>STATE</i> ]
+ <b><a href=""ip-tunnel.html"">ip tunnel</a></b> { add | change | del | show | prl } [ <i>NAME</i> ] [ mode <i>MODE </i>] [ remote <i>ADDR </i>]
+ [ local <i>ADDR</i> ] [ [i|o]seq ] [ [i|o]key <i>KEY </i>] [ [i|o]csum ] ] [ encaplimit <i>ELIM </i>] [ ttl <i>TTL </i>]
+ [ tos <i>TOS</i> ] [ flowlabel <i>FLOWLABEL </i>] [ prl-default <i>ADDR </i>] [ prl-nodefault <i>ADDR </i>] [ prl-delete <i>ADDR</i> ]
+ [ [no]pmtudisc ] [ dev <i>PHYS_DEV</i> ] [ dscp inherit ]
+ MODE := { ipip | gre | sit | isatap | ip6ip6 | ipip6 | any }
+ ADDR := { <i>IP_ADDRESS</i> | any }
+ TOS := { <i>NUMBER</i> | inherit }
+ ELIM := { none | 0..255 }
+ TTL := { 1..255 | inherit }
+ KEY := { <i>DOTTED_QUAD</i> | <i>NUMBER</i> }
+ TIME := NUMBER[s|ms|us|ns|j]
+ <b><a href=""ip-maddress.html"">ip maddr</a></b> [ add | del ] <i>MULTIADDR</i> dev <i>STRING</i>
+ <b><a href=""ip-maddress.html"">ip maddr show</a></b> [ dev STRING ]
+ <b><a href=""ip-mroute.html"">ip mroute show</a></b> [ <i>PREFIX</i> ] [ from <i>PREFIX</i> ] [ iif <i>DEVICE</i> ]
+ <b><a href=""ip-monitor.html"">ip monitor</a></b> [ all | <i>LISTofOBJECTS</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm</a></b> <i>XFRM_OBJECT</i> { <i>COMMAND</i> }
+ XFRM_OBJECT := { state | policy | monitor }
+ <b><a href=""ip-xfrm.html"">ip xfrm state</a></b> { add | update } ID [ <i>XFRM_OPT</i> ] [ mode <i>MODE</i> ] [ reqid <i>REQID </i>] [ seq <i>SEQ </i>] [ replay-window <i>SIZE</i> ]
+ [ flag <i>FLAG-LIST</i> ] [ encap <i>ENCAP</i> ] [ sel <i>SELECTOR</i> ] [ <i>LIMIT-LIST </i>]
+ <b><a href=""ip-xfrm.html"">ip xfrm state allocspi</a></b> ID [ mode <i>MODE</i> ] [ reqid <i>REQID</i> ] [ seq <i>SEQ</i> ] [ min <i>SPI</i> max <i>SPI</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm state</a></b> { delete | get } <i>ID</i>
+ <b><a href=""ip-xfrm.html"">ip xfrm state</a></b> { deleteall | list } [ <i>ID</i> ] [ mode <i>MODE</i> ] [ reqid <i>REQID </i>] [ flag <i>FLAG_LIST</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm state flush</a></b> [ proto <i>XFRM_PROTO</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm state count</a></b>
+ ID := [ src <i>ADDR</i> ] [ dst <i>ADDR</i> ] [ proto <i>XFRM_PROTO</i> ] [ spi SPI ]
+ XFRM_PROTO := [ esp | ah | comp | route2 | hao ]
+ MODE := [ transport | tunnel | ro | beet ] (default=transport)
+ FLAG-LIST := [ <i>FLAG-LIST</i> ] <i>FLAG</i>
+ FLAG := [ noecn | decap-dscp | wildrecv ]
+ ENCAP := <i>ENCAP-TYPE SPORT DPORT OADDR</i>
+ ENCAP-TYPE := espinudp | espinudp-nonike
+ ALGO-LIST := [ <i>ALGO-LIST</i> ] | [ <i>ALGO</i> ]
+ ALGO := <i>ALGO_TYPE ALGO_NAME ALGO_KEY</i>
+ ALGO_TYPE := [ enc | auth | comp ]
+ SELECTOR := src <i>ADDR</i>[/<i>PLEN</i>] dst <i>ADDR</i>[/<i>PLEN</i>] [ <i>UPSPEC</i> ] [ dev <i>DEV</i> ]
+ UPSPEC := proto <i>PROTO</i> [[ sport <i>PORT</i> ] [ dport <i>PORT</i> ] | [ type <i>NUMBER</i> ] [ code <i>NUMBER</i> ]]
+ LIMIT-LIST := [ <i>LIMIT-LIST</i> ] | [ limit <i>LIMIT</i> ]
+ LIMIT := [ [time-soft|time-hard|time-use-soft|time-use-hard] SECONDS ] |
+ [ [byte-soft|byte-hard] <i>SIZE</i> ] | [ [packet-soft|packet-hard] <i>COUNT</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm policy</a></b> { add | update } dir <i>DIR SELECTOR</i> [ index <i>INDEX</i> ]
+ [ ptype <i>PTYPE</i> ] [ action <i>ACTION</i> ] [ priority <i>PRIORITY</i> ]
+ [ <i>LIMIT-LIST</i> ] [ <i>TMPL-LIST</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm policy</a></b> { delete | get } dir <i>DIR</i> [ <i>SELECTOR</i> | index <i>INDEX</i> ] [ ptype <i>PTYPE</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm policy</a></b> { deleteall | list } [ dir <i>DIR</i> ] [ <i>SELECTOR</i> ] [ index <i>INDEX </i>]
+ [ action <i>ACTION </i>] [ priority <i>PRIORITY </i>]
+ <b><a href=""ip-xfrm.html"">ip xfrm policy flush</a></b> [ ptype <i>PTYPE</i> ]
+ <b><a href=""ip-xfrm.html"">ip xfrm count</a></b>
+ PTYPE := [ main | sub ] (default=main)
+ DIR := [ in | out | fwd ]
+ SELECTOR := src <i>ADDR</i>[/<i>PLEN</i>] dst <i>ADDR</i>[/<i>PLEN</i>] [ <i>UPSPEC</i> ] [ dev <i>DEV</i> ]
+ UPSPEC := proto <i>PROTO</i> [ [ sport <i>PORT</i> ] [ dport <i>PORT</i> ] |
+ [ type <i>NUMBER</i> ] [ code <i>NUMBER</i> ] ]
+ ACTION := [ allow | block ] (default=allow)
+ LIMIT-LIST := [ <i>LIMIT-LIST</i> ] | [ limit <i>LIMIT</i> ]
+ LIMIT := [ [time-soft|time-hard|time-use-soft|time-use-hard] <i>SECONDS</i> ] |
+ [ [byte-soft|byte-hard] <i>SIZE</i> ] | [packet-soft|packet-hard] <i>NUMBER</i> ]
+ TMPL-LIST := [ <i>TMPL-LIST</i> ] | [ tmpl <i>TMPL</i> ]
+ TMPL := ID [ mode <i>MODE</i> ] [ reqid <i>REQID</i> ] [ level <i>LEVEL</i> ]
+ ID := [ src <i>ADDR</i> ] [ dst <i>ADDR</i> ] [ proto <i>XFRM_PROTO</i> ] [ spi <i>SPI</i> ]
+ XFRM_PROTO := [ esp | ah | comp | route2 | hao ]
+ MODE := [ transport | tunnel | beet ] (default=transport)
+ LEVEL := [ required | use ] (default=required)
+ <b><a href=""ip-xfrm.html"">ip xfrm monitor</a></b> [ all | <i>LISTofOBJECTS</i> ] 
+",Not Available,https://ss64.com/bash/ip.html,Networking,
+jobs,List active jobs &bull;," jobs [<i>OPTIONS</i>] [<i>PID</i>]
+",Not Available,https://ss64.com/bash/jobs.html,"System Administration, Enumeration",
+join,Join lines on a common field," join [<i>Options</i>]... <i>File1</i> <i>File2</i>
+",Not Available,https://ss64.com/bash/join.html,File Manipulation,
+kill,Kill a process by specifying its PID," kill [-s <i>sigspec</i>] [-n <i>signum</i>] [-<i>sigspec</i>] <i>jobspec</i> or <i>pid</i>
+ kill -l [<i>exit_status</i>]
+ kill -l [<i>sigspec</i>]
+"," -l List the signal names
+ -s Send a specific signal
+ -n Send a specific signal number</pre>
+",https://ss64.com/bash/kill.html,System Administration,Process management
+killall,Kill processes by name," killall [<i>option(s)</i>] [--] <i>name</i> ...
+ killall -l
+ killall -V,--version 
+",Not Available,https://ss64.com/bash/killall.html,System Administration,Process management
+klist,List cached Kerberos tickets," klist [-e] [[-c] [-l] [-A] [-f] [-s] [-a [-n]]] [-k [-t] [-K]] [<i>cache_name</i> | <i>keytab_name</i>] 
+"," 
+ -e Display the encryption types of the session key and the ticket for each credential
+ in the credential cache, or each key in the keytab file.
+ -c List tickets held in a credentials cache. This is the default if neither -c nor -k is specified.
+ -l If a cache collection is available, display a table summarizing the caches present in the collection.
+ -A If a cache collection is available, displays the contents of all of the caches in the collection.
+ -f Show the flags present in the credentials, using the following abbreviations:
+ F Forwardable
+ f forwarded
+ P Proxiable
+ p proxy
+ D postDateable
+ d postdated
+ R Renewable
+ I Initial
+ i invalid
+ H Hardware authenticated
+ A preAuthenticated
+ a anonymous
+ T Transit policy checked
+ O Okay as delegate
+ -s Cause klist to run silently (produce no output), but to still set the exit status according
+ to whether it finds the credentials cache.
+ The exit status is '0' if klist finds a credentials cache, and '1' if it does not
+ or if the tickets are expired.
+ -a Display list of addresses in credentials.
+ -n Show numeric addresses instead of reverse-resolving addresses.
+ -k List keys held in a keytab file.
+ -t Display the time entry timestamps for each keytab entry in the keytab file.
+ -K Display the value of the encryption key in each keytab entry in the keytab file.
+ -V Display the Kerberos version number and exit. </pre>
+",https://ss64.com/bash/klist.html,Enumeration,Kerberos
+less,Display output one screen at a time," <b>less</b> [<i>options</i>]
+ <i>command</i> | <b>less</b> [<i>options</i>]</pre>
+",Not Available,https://ss64.com/bash/less.html,System Utility,
+let,Perform arithmetic on shell variables •," let <i>expression</i> [<i>expression</i>]</pre>
+",Not Available,https://ss64.com/bash/let.html,System Utility,
+link,Create a link to a file ," link <i>FILE1 FILE2</i>
+ link <i>OPTION</i>
+",Not Available,https://ss64.com/bash/link.html,File Manipulation,
+ln,Create a symbolic link to a file," ln [OPTION]... [-T] <i>OriginalSourceFile NewLinkFile</i> (1st form)
+ ln [OPTION]... <i>OriginalSourceFile </i> (2nd form)
+ ln [OPTION]... <i>OriginalSourceFile</i>... <i>DIRECTORY</i> (3rd form)
+ ln [OPTION]... -t <i>DIRECTORY OriginalSourceFile</i>... (4th form)
+",Not Available,https://ss64.com/bash/ln.html,File Manipulation,
+local,Create a function variable •,Not Available,Not Available,https://ss64.com/bash/local.html,System Utility ,Variable
+locate,Find files," locate [<i>options</i>]<i> pattern</i>
+",Not Available,https://ss64.com/bash/locate.html,System Utility ,Search
+logname,Print current login name,Not Available,Not Available,https://ss64.com/bash/logname.html,"Logging, Enumeration",
+logout,Exit a login shell •," logout [<i>n</i>]</pre>
+",Not Available,https://ss64.com/bash/logout.html,System Utility ,
+look,Display lines beginning with a given string," look [-df] [-t <i>termchar</i>] <i>string</i> [<i>file</i>]
+ As look performs a binary search, the lines in <i>file</i> must be sorted.
+",Not Available,https://ss64.com/bash/look.html,System Utility ,
+lpc,Line printer control program," lpc [<i>command</i> [<i>argument</i> ...]]
+",Not Available,https://ss64.com/bash/lpc.html,"System Administration, Printing",
+lpr,Print files," lpr [-P<i>printer</i>] [-#<i>num</i>] [-C <i>class</i>] [-J <i>job</i>] [-T <i>title</i>] [-U <i>user</i>] [-i [<i>numcols</i>]]
+ [-1234 <i>font</i>] [-w<i>num</i>] [-cdfghlnmprstv] [name ...]
+"," -c The files are assumed to contain data produced by cifplot(1)
+ -d The files are assumed to contain data from tex (DVI format from
+ Stanford).
+ -f Use a filter which interprets the first character of each line as
+ a standard FORTRAN carriage control character.
+ -g The files are assumed to contain standard plot data as produced
+ by the plot routines (see also plot for the filters used by the
+ printer spooler).
+ -l Use a filter which allows control characters to be printed and
+ suppresses page breaks.
+ -n The files are assumed to contain data from ditroff (device independent
+ troff).
+ -p Use pr(1) to format the files (equivalent to print).
+ -t The files are assumed to contain data from troff(1) (cat photo-
+ typesetter commands).
+ -v The files are assumed to contain a raster image for devices like
+ the Benson Varian.
+ These options apply to the handling of the print job:
+ -P Force output to a specific printer. Normally, the default printer
+ is used (site dependent), or the value of the environment
+ variable PRINTER is used.
+ -h Suppress the printing of the burst page.
+ -m Send mail upon completion.
+ -r Remove the file upon completion of spooling. Can not be used with
+ the -s option, due to security concerns.
+ -s Use symbolic links. Usually files are copied to the spool directory.
+ The -s option will use symlink(2) to link data files
+ rather than trying to copy them so large files can be printed.
+ This means the files should not be modified or removed until they
+ have been printed.
+ The remaining options apply to copies, the page display, and headers:
+ -#<i>num</i> The quantity num is the number of copies desired of each file
+ named. For example,
+ lpr -#3 foo.c bar.c more.c
+ would result in 3 copies of the file foo.c, followed by 3 copies
+ of the file bar.c, etc. On the other hand,
+ cat foo.c bar.c more.c | lpr -#3
+ will give three copies of the concatenation of the files. Often a
+ site will disable this feature to encourage use of a photocopier
+ instead.
+ -[1234]<i>font</i>
+ Specifies a font to be mounted on font position i. The daemon
+ will construct a .railmag file referencing the font pathname.
+ -C <i>class</i>
+ Job classification to use on the burst page. For example,
+ lpr -C EECS foo.c
+ causes the system name (the name returned by hostname(1)) to be
+ replaced on the burst page by EECS, and the file foo.c to be printed.
+ -J <i>job</i> Job name to print on the burst page. Normally, the first file's name is used.
+ -T <i>title</i>
+ Title name for pr(1), instead of the file name.
+ -U <i>user</i>
+ User name to print on the burst page, also for accounting purposes.
+ This option is only honored if the real user-id is daemon
+ (or that specified in the printcap file instead of daemon), and
+ is intended for those instances where print filters wish to requeue jobs.
+ -i [<i>numcols</i>]
+ The output is indented. If the next argument is numeric (<i>numcols</i>),
+ it is used as the number of blanks to be printed before each line;
+ otherwise, 8 characters are printed.
+ -w<i>num</i> Uses <i>num</i> as the page width for pr(1).</pre>
+",https://ss64.com/bash/lpr.html,"System Administration, Printing",
+lprint,Print a file,Not Available,Not Available,No link available,"System Administration, Printing",
+lprintd,Delete a print job,Not Available,Not Available,No link available,"System Administration, Printing",
+lprintq,List the print queue,Not Available,Not Available,No link available,"System Administration, Printing",
+lprm,Remove jobs from the print queue," lprm [-P<i>printer</i>] [-] [<i>job# </i>...] [<i>user</i> ...]
+",Not Available,https://ss64.com/bash/lprm.html,"System Administration, Printing",
+lsattr,List file attributes on a Linux second extended file system," lsattr [ -RVadv ] [ <i>files</i>... ]
+"," -d List directories like other files, rather than listing their contents. -v 
+ -R Recursively list attributes of directories and their contents.
+ -V Display the program version.
+ -a List all files in directories, including files that start with '.'
+ -v <i></i> List the file's version/generation number.</pre>
+",https://ss64.com/bash/lsattr.html,"File Manipulation, Enumeration",
+lsblk,List block devices," lsblk [<i>options</i>] [<i>device</i>...]
+",Not Available,https://ss64.com/bash/lsblk.html,Enumeration,
+ls,List information about file(s)," ls [<i>Options</i>]... [<i>File</i>]...
+"," -a, --all List all entries including those starting with a dot .
+ -A, --almost-all List all entries including those starting with a dot .
+ Except for . and .. (implied).
+ -b, --escape Print octal escapes for nongraphic characters.
+ --block-size=<i>SIZE</i> Use <i>SIZE</i>-byte blocks.
+ -B, --ignore-backups Do not list implied entries ending with ~
+ -c Sort by change time; with -l: show ctime.
+ -C List entries by columns.
+ --color[=<i>WHEN</i>] Control whether color is used to distinguish file
+ types. <i>WHEN</i> can be 'never', 'always', or 'auto'
+ -d, --directory List directory entries instead of contents.
+ -D, --dired Generate output designed for Emacs' dired mode.
+ -f Do not sort, enable -aU, disable -lst
+ -F, --classify Append indicator (one of */=@|) to entries.
+ --format=<i>WORD</i> Across -x, commas -m, horizontal -x, long -l,
+ single-column -1, verbose -l, vertical -C
+ --full-time List both full date and full time
+ -g (ignored)
+ -G, --no-group Inhibit display of group information.
+ -h, --human-readable Print sizes in human readable format (e.g., 1K 234M 2G)
+ -H, --si Likewise, but use powers of 1000 not 1024
+ --indicator-style=<i>WORD</i> Append indicator with style <i>WORD</i> to entry names:
+ none (default), classify (-F), file-type (-p)
+ -i, --inode Print index number of each file.
+ -I, --ignore=<i>PATTERN</i> Do not list implied entries matching shell <i>PATTERN</i>
+ -k, --kilobytes Like --block-size=1024
+ -l Use a long listing format.
+ -L, --dereference List entries pointed to by symbolic links.
+ -m Fill width with a comma separated list of entries.
+ -n, --numeric-uid-gid List numeric UIDs and GIDs instead of names.
+ -N, --literal Print raw entry names (don't treat e.g. control
+ characters specially).
+ -o Use long listing format without group info.
+ -p, --file-type Append indicator (one of /=@|) to entries.
+ -q, --hide-control-chars Print ? instead of non graphic characters.
+ --show-control-chars Show non graphic characters as-is (default)
+ -Q, --quote-name Enclose entry names in double quotes
+ --quoting-style=<i>WORD</i> Use quoting style <i>WORD</i> for entry names:
+ literal, shell, shell-always, c, escape.
+ -r, --reverse Reverse order while sorting.
+ -R, --recursive List subdirectories recursively.
+ -s, --size Print size of each file, in blocks.
+ -S Sort by file size.
+ --sort=<i>WORD</i> time -t, version -v, status -c 
+ size -S, extension -X, none -U
+ atime -u, access -u, use -u
+ 
+ --time=<i>WORD</i> Show time as <i>WORD</i> instead of modification time:
+ atime, access, use, ctime or status; 
+ also use this as a sort key if --sort=time
+ -t Sort by modification time.
+ -T, --tabsize=<i>COLS</i> Assume tab stops at each <i>COLS</i> instead of 8.
+ -u Sort by last access time; with -l: show atime.
+ -U Do not sort; list entries in directory order.
+ -v Sort by version.
+ -w, --width=<i>COLS</i> Assume screen width instead of current value.
+ -x List entries by lines instead of by columns.
+ -X Sort alphabetically by entry extension.
+ -1 List one file per line.
+ --help Display help and exit.
+ --version Output version information and exit.
+",https://ss64.com/bash/ls.html,System Utility,
+lsof,List open files," lsof [ -?abChlnNOPRstUvVX ] [ -A A ] [ -c c ] [ +c c ] [ +|-d d ]
+ [ +|-D D ] [ +|-f [cfgGn] ] [ -F [f] ] [ -g [s] ] [ -i[i] ]
+ [ -k k ] [ +|-L [l] ] [ +|-m m ] [ +|-M ] [ -o [o] ] [ -p s ]
+ [ +|-r [t] ] [ -S [t] ] [ -T [t] ] [ -u s ] [ +|-w ]
+ [ -x [fl] ] [ -z [z] ] [ -Z [Z] ] [ -- ] [<i>filenames</i>] </pre>
+",Not Available,https://ss64.com/bash/lsof.html,System Utility,
+lspci,List all PCI devices," lspci [<i>options</i>] 
+",Not Available,https://ss64.com/bash/lspci.html,Enumeraiton,
+man,Help manual," man [-acdfFhkKtwW] [--path] [-m <i>system</i>] [-p <i>string</i>] [-C <i>config_file</i>]
+ [-M <i>pathlist</i>] [-P <i>pager</i>] [-B <i>browser</i>] [-H <i>htmlpager</i>] [-S <i>section_list</i>]
+ [<i>section</i>] <i>name</i> ... 
+"," -C <i>config_file</i> The configuration file to use; the default is /etc/man.config. (See man.config(5).) 
+ -M <i>path</i> The list of directories to search for man pages. Separate the directories with colons.
+ An empty list is the same as not specifying -M at all. See SEARCH PATH FOR MANUAL PAGES. 
+ -P <i>pager</i> Which pager to use. This option overrides the MANPAGER environment variable, which in turn
+ overrides the PAGER variable. By default, man uses /usr/bin/less -is. 
+ -B Which browser to use on HTML files. This option overrides the BROWSER environment variable.
+ By default, man uses /usr/bin/less-is,
+ -H Specify a command that renders HTML files as text. This option overrides the HTMLPAGER environment variable.
+ By default, man uses /bin/cat,
+ -S <i>section_list</i> List is a colon separated list of manual sections to search. This option overrides the MANSECT environment variable.
+ -a By default, man will exit after displaying the first manual page it finds.
+ Using this option forces man to display all the manual pages that match name, not just the first.
+ -c Reformat the source man page, even when an up-to-date cat page exists.
+ This can be meaningful if the cat page was formatted for a screen with a different number of columns,
+ or if the preformatted page is corrupted.
+ -d Don't actually display the man pages, but do print gobs of debugging information.
+ -D Both display and print debugging info.
+ -f Equivalent to whatis.
+ -F
+ --preformat Format only - do not display. 
+ -h Print a help message and exit.
+ -k Equivalent to apropos.
+ -K Search for the specified string in *all* man pages.
+ Warning: this can be very slow and can match multiple pages! It helps to specify a section.
+ -m <i>system</i> Specify an alternate set of man pages to search based on the system name given.
+ -p <i>string</i> Specify the sequence of preprocessors to run before nroff or troff.
+ Not all installations will have a full set of preprocessors.
+ Some of the preprocessors and the letters used to designate
+ them: eqn (e), grap (g), pic (p), tbl (t), vgrind (v), refer (r).
+ This option overrides the MANROFFSEQ environment variable.
+ -t Use /usr/bin/groff -Tps -mandoc to format the manual page, passing the output to stdout.
+ The default output format of /usr/bin/groff -Tps -mandoc is Postscript, refer to the
+ manual page of /usr/bin/groff -Tps -mandoc for ways to pick an alternate format.
+ Depending on the selected format and the availability of printing devices, the output may
+ need to be passed through some filter or another before being printed.
+ -w
+ --path Don't actually display the man pages, but do print the location(s) of the files that
+ would be formatted or displayed. If no argument is given: display (on stdout) the list
+ of directories that is searched by man for man pages. If manpath is a link to man, then
+ ""manpath"" is equivalent to ""man --path"". 
+ -W Like -w, but print file names one per line, without additional information.
+ This is useful in shell commands like man -aW man | xargs ls -l 
+",https://ss64.com/bash/man.html,System Utility,
+mapfile,Read lines from standard input into an indexed array variable •," mapfile [-d <i>delim</i>] [-n <i>count</i>] [-O <i>origin</i>] [-s <i>count</i>] [-t] [-u <i>fd</i>] [-C <i>callback</i>] [-c <i>quantum</i>] [<i>array</i>]
+ readarray [-d <i>delim</i>] [-n <i>count</i>] [-O <i>origin</i>] [-s <i>count</i>] [-t] [-u <i>fd</i>] [-C <i>callback</i>] [-c <i>quantum</i>] [<i>array</i>]
+"," -d The first character of delim is used to terminate each input line, rather than newline.
+ If delim is the empty string, mapfile will terminate a line when it reads a NUL character. 
+ -n Copy at most <i>count</i> lines. If <i>count</i> is 0, all lines are copied.
+ -O Begin assigning to array at index <i>origin</i>. The default index is 0.
+ -s Discard the first <i>count</i> lines read.
+ -t Remove a trailing newline from each line read.
+ -u Read lines from file descriptor <i>fd</i> instead of the standard input.
+ -C Evaluate <i>callback</i> each time quantum lines are read. The -c option specifies quantum.
+ -c Specify the number of lines read between each call to callback. </pre>
+ 
+",https://ss64.com/bash/mapfile.html,File Manipulation,
+mkdir,Create new folder(s)," mkdir [<i>Options</i>] <i>folder</i>...
+ mkdir ""<i>Name with spaces</i>",,https://ss64.com/bash/mkdir.html,System Administration,Disk/Volume Management
+mkfifo,Make FIFOs (named pipes)," mkfifo [<i>options</i>] NAME...
+",Not Available,https://ss64.com/bash/mkfifo.html,System Administration,
+mkfile,Make a file," mkfile [ -nv ] size[b|k|m|g] <i>filename</i> ...
+",Not Available,https://ss64.com/bash/mkfile.html,File Manipulation,
+mkisofs,Create a hybrid ISO9660/JOLIET/HFS filesystem,Not Available,Not Available,No link available,System Administration,Disk/Volume Management
+mknod,Make block or character special files," mknod [<i>options</i>]... <i>NAME </i><i>Type</i> [<i>Major Minor</i>]
+",Not Available,https://ss64.com/bash/mknod.html,File Manipulation,
+mktemp,Make a temporary file," mktemp [-d] [-q] [-t <i>prefix</i>] [-u] <i>template</i> ...
+ mktemp [-d] [-q] [-u] -t <i>prefix</i>
+",Not Available,https://ss64.com/bash/mktemp.html,System Administration,Disk/Volume Management
+more,Display output one screen at a time," more [-dlfpcsu] [-<i>num</i>] [+/ <i>pattern</i>] [+ <i>linenum</i>] [<i>file</i> ...]
+",Not Available,https://ss64.com/bash/more.html,System Utility,
+most,Browse or page through a text file," most [-1bCckMstvwz] [+lineno] [+c] [+d] [+s] [+/<i>string</i>] [<i>filename</i>...] 
+ Key
+ <h2> Configuration File Syntax </h2>
+"," -1 VT100 mode. This is meaningful only on VMS systems.
+ This option should be used if the terminal is strictly a VT100.
+ This implies that the terminal does not have the ability to delete and
+ insert multiple lines. VT102s and above have this ability.
+ -b Binary mode. Use this switch when you want to view files containing
+ 8 bit characters. most will display the file 16 bytes per line in
+ hexidecimal notation. A typical line looks like:
+ 01000000 40001575 9C23A020 4000168D ....@..u.#. @... 
+ When used with the -v option, the same line looks like:
+ ^A^@^@^@ @^@^U u 9C #A0 @^@^V8D ....@..u.#. @...
+ -k 'Kanji' option. Ordinarily, most will go into binary mode if the file
+ consists of non-ascii characters. Sometimes this feature is not
+ desirable since some terminals have a special interpretation for
+ eight bit characters. The -k option turns off the automatic sensing.
+ -C Disable color support.
+ -M Disable the use of mmap.
+ -s Squeeze. Replace multiple blank lines with a single blank line.
+ -z option turns off gunzip-on-the-fly.
+ -v Display control characters as in '^A' for control A.
+ Normally most does not interpret control characters.
+ -t Display tabs as '^I'. This option is meaningful only when used
+ with the -v option. +lineno Start up at lineno.
+ +c Make search case sensitive. By default, they are not.
+ +d This switch should only be used if you want the option to delete
+ a file while viewing it. This makes it easier to clean unwanted
+ files out of a directory. The file is deleted with the interactive
+ key sequence ':D' and then confirming with 'y'.
+ +/<i>string</i>
+ Start up at the line containing the first occurrence of string. </pre>
+",https://ss64.com/bash/most.html,System Utility,
+mount,Mount a file system,Not Available,Not Available,https://ss64.com/bash/mount.html,System Administration,Disk/Volume Management
+mtools,Manipulate MS-DOS files,Not Available,Not Available,https://ss64.com/bash/mtools.html,File Manipulation,
+mtr,Network diagnostics (traceroute/ping)," mtr [-hvrctglspni46] [--help] [--version] [--report] [--report-cycles <i>COUNT</i>]
+ [--curses] [--split] [--raw] [--no-dns] [--gtk] [--address <i>IP.ADD.RE.SS</i>]
+ [--interval <i>SECONDS</i>] [--psize <i>BYTES</i> | -s <i>BYTES</i>] <i>HOSTNAME</i> [<i>PACKETSIZE</i>]
+"," -c <i>COUNT</i>
+ --report-cycles <i>COUNT</i>
+ Use this option to set the number of pings sent to determine both the machines on the network and
+ the reliability of those machines. Each cycle lasts one second.
+ -s <i>BYTES</i>
+ --psize <i>BYTES</i>
+ <i>PACKETSIZE</i>
+ These options or a trailing PACKETSIZE on the commandline set the packet size (in Bytes
+ inclusive IP and ICMP headers) used for probing.
+ If set to a negative number, every iteration will use a different, random packetsize up to that number. 
+ -g
+ --gtk
+ Force mtr to use the GTK+ based X11 window interface (if available). GTK+ must have
+ been available on the system when mtr was built for this to work. See <a href=""https://www.gtk.org/"">GTK+</a>
+ -p
+ --split
+ Set mtr to spit out a format that is suitable for a split-user interface.
+ -h
+ --help
+ Print a summary of command line argument options. 
+ -l
+ --raw
+ Tell mtr to use the raw output format. This format is better suited for archival of the
+ measurement results. It could be parsed to be presented into any of the other display methods. 
+ -a <i>IP.ADD.RE.SS</i>
+ --address<i> IP.ADD.RE.SS</i>
+ Bind outgoing packets' socket to a specific interface, so that any packet will be sent
+ through this interface. NOTE that this option doesn't apply to DNS requests (which
+ could be and could not be what you want). 
+ -i <i>SECONDS</i>
+ --interval <i>SECONDS</i>
+ Use this option to specify the positive number of seconds between ICMP ECHO requests.
+ The default value for this parameter is one second. 
+ -t
+ --curses
+ Force mtr to use the curses based terminal interface (if available). 
+ -n
+ --no-dns
+ Force mtr to display numeric IP numbers and not try to resolve the host names. 
+ -r
+ --report
+ Put mtr into report mode. When in this mode, mtr will run for the number of cycles specified by
+ the -c option, and then print statistics and exit. 
+ This mode is useful for generating statistics about network quality.
+ Note that each running instance of mtr generates a significant amount of network traffic.
+ Using mtr to measure the quality of your network can result in decreased network performance.
+ -v
+ --version
+ Print the installed version of mtr.
+ -4 Use IPv4 only. 
+ -6 Use IPv6 only.</pre>
+",https://ss64.com/bash/mtr.html,"Enumeration, Networking",
+mv,Move or rename files or directories,Not Available,Not Available,https://ss64.com/bash/mv.html,System Administration,Disk/Volume Management
+mmv,Mass Move and rename (files)," mmv [<i>Source_Option</i>] [-h] [-d|p] [-g|t] [-v|n] [--] [<i>from</i> <i>to</i>] 
+",Not Available,https://ss64.com/bash/mmv.html,File Manipulation,
+nc,"Netcat, read and write data across networks"," nc [-46AcCdDhklnrStuUvz] [-b <i>boundif</i>] [-i <i>interval</i>] [-p <i>source_port</i>]
+ [-s <i>source_ip_address</i>] [-T ToS] [-w <i>timeout</i>] [-X <i>proxy_protocol</i>]
+ [-x <i>proxy_address</i>[:<i>port</i>]] [<i>hostname</i>] [<i>port</i>[s]]
+",Not Available,https://ss64.com/bash/nc.html,"File Manipulation, Remote Connectivity",File Transfer
+netstat,Networking connections/stats," netstat [<i>address_family_options</i>] [--tcp|-t] [--udp|-u] [--raw|-w] [--listening|-l]
+ [--all|-a] [--numeric|-n] [--numeric-hosts][--numeric-ports][--numeric-ports]
+ [--symbolic|-N] [--extend|-e[--extend|-e]] [--timers|-o] [--program|-p]
+ [--verbose|-v] [--continuous|-c] [delay]
+ netstat {--route|-r} [address_family_options] [--extend|-e[--extend|-e]]
+ [--verbose|-v] [--numeric|-n] [--numeric-hosts][--numeric-ports][--numeric-ports]
+ [--continuous|-c] [delay]
+ netstat {--interfaces|-I|-i} [iface] [--all|-a] [--extend|-e]
+ [--verbose|-v] [--program|-p] [--numeric|-n] [--numeric-hosts][--numeric-ports][--numeric-ports]
+ [--continuous|-c] [delay]
+ netstat {--groups|-g} [--numeric|-n] [--numeric-hosts][--numeric-ports][--numeric-ports]
+ [--continuous|-c] [delay]
+ netstat {--masquerade|-M} [--extend|-e] [--numeric|-n] [--numeric-hosts][--numeric-ports][--numeric-ports]
+ [--continuous|-c] [delay]
+ netstat {--statistics|-s} [--tcp|-t] [--udp|-u] [--raw|-w] [delay]
+ netstat {--version|-V}
+ netstat {--help|-h} 
+ address_family_options:
+ [--protocol={inet,unix,ipx,ax25,netrom,ddp}[,...]] [--unix|-x]
+ [--inet|--ip] [--ax25] [--ipx] [--netrom] [--ddp]</pre>
+"," FREE The socket is not allocated 
+ LISTENING The socket is listening for a connection request.
+ Such sockets are only included in the output if you specify the --listening (-l) or --all (-a) option. 
+ CONNECTING The socket is about to establish a connection. 
+ CONNECTED The socket is connected. 
+ DISCONNECTING The socket is disconnecting. 
+ (empty) The socket is not connected to another one. 
+ UNKNOWN This state should never happen.
+ PID/Program name Process ID (PID) and process name of the process that has the socket open.
+ More info available in Active Internet connections section written above.
+ Path This is the path name as which the corresponding processes attached to the socket. 
+ Active IPX sockets
+ Active NET/ROM sockets
+ Active AX.25 sockets</pre>
+",https://ss64.com/bash/netstat.html,"Enumeration, Networking",
+"nft"""," nft [ -nNscae ] [ -I <i>directory</i>] [ -f <i>filename</i> | -i | <i>cmd</i>...]
+ nft -h
+ nft -v
+"," -n, --numeric Show data numerically.
+ When used once (the default behaviour), skip lookup of addresses to symbolic names.
+ Use twice to also show Internet services (port numbers) numerically.
+ Use three times to also show protocols and UIDs/GIDs numerically.
+ -N, --reversedns Translate IP addresses to names. Usually requires network traffic for DNS lookup.
+ -s, --stateless Omit stateful information of rules and stateful objects.
+ -c, --check Check commands validity without actually applying the changes.
+ -a, --handle Show object handles in output.
+ -e, --echo When inserting items into the ruleset using <b>add</b>, <b>insert</b> or <b>replace</b> commands,
+ print notifications just like <b>nft monitor</b>.
+ -I, --includepath </b><i>directory</i>
+ Add the directory <i>directory</i> to the list of directories to be searched for included files.
+ This option may be specified multiple times.
+ -f, --file </b><i>filename</i> Read input from <i>filename</i>. If <i>filename</i> is -, read from stdin.
+ nft scripts must start #!/usr/sbin/nft -f
+ -i, --interactive Read input from an interactive readline CLI.
+ You can use <b>quit</b> to exit, or use the EOF marker, normally this is CTRL-D.
+ -h, --help Show help message and all options.
+ -v, --version Show version.</pre>
+ <p>The Linux kernel subsystem is known as <span class=""code"">nf_tables</span>, and 'nf' stands for Netfilter.</p>
+
+",https://ss64.com/bash/nft.html,,Networking,
+"nftables for packet filtering and classification""",Not Available,Not Available,No link available,,Networking,
+nice,Set the priority of a command or job,Not Available,Not Available,https://ss64.com/bash/nice.html,System Administration,Process management
+nl,Number lines and write files," nl [<i>options</i>]... [<i>File</i>]...
+",Not Available,https://ss64.com/bash/nl.html,System Utility,
+nohup,Run a command immune to hangups,Not Available,Not Available,https://ss64.com/bash/nohup.html,System Administration,Command Execution
+notify-send,Send desktop notifications," notify-send [<i>OPTIONS</i>] <i>summary</i> [<i>body</i>]
+ 
+"," -u, --urgency=<i>LEVEL
+ </i> The urgency level (low, normal, critical).
+ 
+ -t, --expire-time=<i>TIME</i>
+ The timeout in milliseconds at which to expire the
+ notification.
+ 
+ -i, --icon=<i>ICON</i>[,<i>ICON</i>...]
+ An icon filename or stock icon to display.
+ 
+ -c, --category=TYPE[,TYPE...]
+ Specifies the notification category.
+ 
+ -?, --help
+ Show a help message
+ 
+ -h, --hint=<i>TYPE</i>:<i>NAME</i>:<i>VALUE</i>
+ Pass extra data. Valid TYPEs are int, double, string and byte.
+ </pre>
+",https://ss64.com/bash/notify-send.html,System Utility,
+nslookup,Query Internet name servers interactively," nslookup
+ nslookup <i>host-to-find</i> 
+ nslookup <i>server</i> 
+ <b>nslookup is deprecated</b>; its functionality is replaced by the <a href=""dig.html"">dig</a> and <a href=""hostname.html"">host</a> commands.
+ nslookup may not be included in some distributions.
+",Not Available,https://ss64.com/bash/nslookup.html,Enumeration,DNS
+open,Open a file in its default application," open <i>Files</i>...
+",Not Available,https://ss64.com/bash/open.html,File Manipulation,
+op,Operator access," op <i>mnemonic</i> [arg] 
+"," -V Show version number.
+ 
+ -l List available commands.
+ Note that this will only display commands you are permitted to run.</pre>
+ <p><b> Configuration</b></p>
+ <p>Key:<br>
+",https://ss64.com/bash/op.html,System Administration,User/Group Management
+passwd,Modify a user password,Not Available,Not Available,https://ss64.com/bash/passwd.html,System Administration,User/Group Management
+paste,Merge lines of files," paste [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/paste.html,File Manipulation,
+pathchk,Check file name portability,Not Available,Not Available,No link available,Enumeration,
+Perf,Performance analysis tools for Linux,Not Available,Not Available,https://ss64.com/bash/perf.html,"Enumeration, System Administration",
+ping,Test a network connection,Not Available,Not Available,https://ss64.com/bash/ping.html,Networking,
+pgrep,List processes by name," pgrep [-flvx] [-d <i>delimiter</i>] [-n|-o] [-P <i>ppid</i>,...] [-g <i>pgrp</i>,...]
+ [-s <i>sid</i>,...] [-u <i>euid</i>,...] [-U <i>uid</i>,...] [-G gid,...]
+ [-t <i>term</i>,...] [<i>pattern</i>]
+ pkill [-signal] [-fvx] [-n|-o] [-P <i>ppid</i>,...] [-g <i>pgrp</i>,...]
+ [-s <i>sid</i>,...] [-u <i>euid</i>,...] [-U <i>uid</i>,...] [-G <i>gid</i>,...]
+ [-t <i>term</i>,...] [<i>pattern</i>]
+ Key
+ 3. Syntax error in the command line.<br>
+ 4. Fatal error: out of memory etc.</p>
+"," <i>pattern</i>
+ An Extended Regular Expression to match process names or command lines.
+ -d <i>delimiter</i>
+ Set the string used to delimit each process ID in the output
+ (by default a newline). (pgrep only.) 
+ -f
+ The pattern is normally only matched against the process name.
+ When -f is set, the full command line is used. 
+ -g <i>pgrp</i>,...
+ Only match processes in the process group IDs listed.
+ Process group 0 is translated into pgrep's or pkill's own process group. 
+ -G <i>gid</i>,...
+ Only match processes whose real group ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -l
+ List the process name as well as the process ID. (pgrep only.) 
+ -n
+ Select only the newest (most recently started) of the matching processes. 
+ -o
+ Select only the oldest (least recently started) of the matching processes. 
+ -P <i>ppid</i>,...
+ Only match processes whose parent process ID is listed. 
+ -s <i>sid</i>,...
+ Only match processes whose process session ID is listed.
+ Session ID 0 is translated into pgrep's or pkill's own session ID. 
+ -t <i>term</i>,...
+ Only match processes whose controlling terminal is listed.
+ The terminal name should be specified without the ""/dev/"" prefix. 
+ -u <i>euid</i>,...
+ Only match processes whose effective user ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -U <i>uid</i>,...
+ Only match processes whose real user ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -v
+ Negates the matching. 
+ -x
+ Only match processes whose name (or command line if -f is specified)
+ exactly match the pattern. 
+ -signal
+ Defines the signal to send to each matched process.
+ Either the numeric or the symbolic signal name can be used. (pkill only.)</pre>
+",https://ss64.com/bash/pkill.html,"Enumeration, System Administration",
+pkill,Kill processes by name," pgrep [-flvx] [-d <i>delimiter</i>] [-n|-o] [-P <i>ppid</i>,...] [-g <i>pgrp</i>,...]
+ [-s <i>sid</i>,...] [-u <i>euid</i>,...] [-U <i>uid</i>,...] [-G gid,...]
+ [-t <i>term</i>,...] [<i>pattern</i>]
+ pkill [-signal] [-fvx] [-n|-o] [-P <i>ppid</i>,...] [-g <i>pgrp</i>,...]
+ [-s <i>sid</i>,...] [-u <i>euid</i>,...] [-U <i>uid</i>,...] [-G <i>gid</i>,...]
+ [-t <i>term</i>,...] [<i>pattern</i>]
+ Key
+ 3. Syntax error in the command line.<br>
+ 4. Fatal error: out of memory etc.</p>
+"," <i>pattern</i>
+ An Extended Regular Expression to match process names or command lines.
+ -d <i>delimiter</i>
+ Set the string used to delimit each process ID in the output
+ (by default a newline). (pgrep only.) 
+ -f
+ The pattern is normally only matched against the process name.
+ When -f is set, the full command line is used. 
+ -g <i>pgrp</i>,...
+ Only match processes in the process group IDs listed.
+ Process group 0 is translated into pgrep's or pkill's own process group. 
+ -G <i>gid</i>,...
+ Only match processes whose real group ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -l
+ List the process name as well as the process ID. (pgrep only.) 
+ -n
+ Select only the newest (most recently started) of the matching processes. 
+ -o
+ Select only the oldest (least recently started) of the matching processes. 
+ -P <i>ppid</i>,...
+ Only match processes whose parent process ID is listed. 
+ -s <i>sid</i>,...
+ Only match processes whose process session ID is listed.
+ Session ID 0 is translated into pgrep's or pkill's own session ID. 
+ -t <i>term</i>,...
+ Only match processes whose controlling terminal is listed.
+ The terminal name should be specified without the ""/dev/"" prefix. 
+ -u <i>euid</i>,...
+ Only match processes whose effective user ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -U <i>uid</i>,...
+ Only match processes whose real user ID is listed.
+ Either the numerical or symbolical value can be used. 
+ -v
+ Negates the matching. 
+ -x
+ Only match processes whose name (or command line if -f is specified)
+ exactly match the pattern. 
+ -signal
+ Defines the signal to send to each matched process.
+ Either the numeric or the symbolic signal name can be used. (pkill only.)</pre>
+",https://ss64.com/bash/pkill.html,System Administration,Process management
+popd,Restore the previous value of the current directory," popd [+<i>N</i> | -<i>N</i>] [-n]
+"," +<i>N</i> Remove the <i>N</i>th directory (counting from the left of the list 
+ printed by dirs), starting with zero. 
+ -<i>N</i> Remove the <i>N</i>th directory (counting from the right of the list 
+ printed by dirs), starting with zero. 
+ -n Suppress the normal change of directory when removing directories from 
+ the stack, so that only the stack is manipulated. </pre>
+",https://ss64.com/bash/popd.html,System Administration,Disk/Volume Management
+pr,Prepare files for printing," pr [<i>options</i>] [<i>file</i> ...]
+",Not Available,https://ss64.com/bash/pr.html,Printing,
+printcap,Printer capability database,Not Available,Not Available,No link available,Printing,
+printenv,Print environment variables," printenv [<i>OPTION</i>]... [<i>VARIABLE</i>]... 
+ 
+"," <i>VARIABLE</i> The name of the environment variable.
+ -0, --null End each output line with 0 byte rather than newline.
+ --help Display this help and exit
+ --version Output version information and exit</pre>
+",https://ss64.com/bash/printenv.html,System Utility ,Variable
+printf,Format and print data •," printf [-v <i>var</i>] <i>format</i> [<i>argument</i>]...
+ printf --help
+ printf --version
+"," -v Cause the output to be assigned to the variable var rather than being printed to the standard output. 
+ The <i>format</i> characters and their meanings are:
+ \"" double quote
+ \0<i>NNN</i> character with octal value <i>NNN</i> (0 to 3 digits)
+ \\ backslash
+ \a alert (BEL)
+ \b backspace
+ \c produce no further output
+ \f form feed
+ \n new line
+ \r carriage return
+ \t horizontal tab
+ \v vertical tab
+ \x<i>NNN</i> byte with hexadecimal value <i>NNN</i> (1 to 3 digits)
+ \u<i>NNNN</i> character with hexadecimal value <i>NNNN</i> (4 digits)
+ \U<i>NNNNNNNN</i>
+ character with hexadecimal value <i>NNNNNNNN</i> (8 digits)
+ %% a single %
+ %<b>b</b> ARGUMENT as a string with '\' escapes interpreted
+ %<i>W</i><b>d</b> Integer '<i>W</i>' digits wide xxxx
+ %<i>W.D</i><b>e</b> Scientific notation x.xxxx e nnn. float, double
+ %<i>W.D</i><b>f</b> Fixed format xx.xxxx. float, double
+ %<i>W.D</i><b>g</b> Variable '<i>W</i>' digits wide,'<i>D</i>' decimals xxxx.xx
+ %<b>q</b> Output the corresponding <i>argument</i> in a format that can be
+ reused as shell input
+ %(<i>datefmt</i>)<b>T</b>
+ Output the date-time string resulting from using datefmt as a format string for strftime(3).
+ The corresponding argument is an integer representing the number of seconds since the epoch.
+ Two special argument values may be used: -1 represents the current time, and -2 represents
+ the time the shell was invoked.
+ If no argument is specified, conversion behaves as if -1 had been given.
+ This is an exception to the usual printf behavior. 
+ %<b>s</b> Character string char
+ and all C format specifications ending with one of diouxXfeEgGcs, with
+ ARGUMENTs converted to proper type first. Variable widths are handled.
+ e.g. '\0ooo' = an octal number, '\xhhh' = a hex number</pre>
+",https://ss64.com/bash/printf.html,System Utility ,
+ps,Process status," ps <i>option(s)</i>
+",Not Available,https://ss64.com/bash/ps.html,"System Administration, Enumeration",Process management
+pushd,Save and then change the current directory," pushd [<i>dir</i> | <i>+N</i> | <i>-N</i>] [-n]
+"," +<i>N</i> Brings the <i>N</i>th directory (counting from the left of the list printed by dirs,
+ starting with zero) to the top of the list by rotating the stack.
+ 
+ -<i>N</i> Brings the <i>N</i>th directory (counting from the right of the list printed by dirs,
+ starting with zero) to the top of the list by rotating the stack. 
+ -n Suppresses the normal change of directory when adding directories to the 
+ stack, so that only the stack is manipulated. 
+ dir Makes the current working directory be the top of the stack, and then executes 
+ the equivalent of 'cd dir'. cds to dir.</pre>
+",https://ss64.com/bash/pushd.html,System Administration,Disk/Volume Management
+pv,Monitor the progress of data through a pipe," pv [<i>OPTION</i>] [<i>FILE</i>]...
+ pv [-h|-V] 
+",Not Available,https://ss64.com/bash/pv.html,System Utility ,
+pwd,Print Working Directory," pwd [-LP]
+",Not Available,https://ss64.com/bash/pwd.html,System Utility ,
+quota,Display disk usage and limits," quota [ -guv | q ]
+ quota [ -uv | q ] <i>user</i>
+ quota [ -gv | q ] <i>group</i>
+",Not Available,https://ss64.com/bash/quota.html,Enuemration,
+quotacheck,Scan a file system for disk usage," quotacheck [ -gubcfinvdMmR ] [ -F <i>quota-format</i> ] -a | <i>filesystem</i>
+",Not Available,https://ss64.com/bash/quotacheck.html,Enuemration,
+ram,Ram is a block device to access the ram disk in raw mod,Not Available,Not Available,https://ss64.com/bash/ram.html,System Administration,
+rar,Archive files with compression," rar <i>command</i> [-<i>switch_1</i> -<i>switch_N</i>] <i>archive </i>[<i>files</i>...]</pre>
+",Not Available,https://ss64.com/bash/rar.html,File Manipulation,File Compression
+rcp,Copy files between two machines," rcp [<i>options</i>] <i>file1 file2</i>
+ rcp [<i>options</i>] <i>file</i> ... <i>directory</i>
+",Not Available,https://ss64.com/bash/rcp.html,"File Manipulation, Remote Connectivity",File Transfer
+read,Read a line from standard input •," read [-ers] [-a <i>aname</i>] [-d <i>delim</i>] [-i <i>text</i>] [-n <i>nchars</i>]
+ [-N <i>nchars</i>] [-p <i>prompt</i>] [-r] [-s] [-t <i>timeout</i>] [-u <i>fd</i>]
+ [<i>name</i>...]
+"," -a <i>aname</i><br> The <i>words</i> are assigned to sequential indices of the array variable <i>aname</i>, starting at 0.<br> aname is unset before any new values are assigned. Other name arguments are ignored.<br><br> -d <i>delim</i><br> The first character of <i>delim</i> is used to terminate the input line, rather than newline.
+",https://ss64.com/bash/read.html,System Utility ,
+readarray,Read from stdin into an array variable •," mapfile [-d <i>delim</i>] [-n <i>count</i>] [-O <i>origin</i>] [-s <i>count</i>] [-t] [-u <i>fd</i>] [-C <i>callback</i>] [-c <i>quantum</i>] [<i>array</i>]
+ readarray [-d <i>delim</i>] [-n <i>count</i>] [-O <i>origin</i>] [-s <i>count</i>] [-t] [-u <i>fd</i>] [-C <i>callback</i>] [-c <i>quantum</i>] [<i>array</i>]
+"," -d The first character of delim is used to terminate each input line, rather than newline.
+ If delim is the empty string, mapfile will terminate a line when it reads a NUL character. 
+ -n Copy at most <i>count</i> lines. If <i>count</i> is 0, all lines are copied.
+ -O Begin assigning to array at index <i>origin</i>. The default index is 0.
+ -s Discard the first <i>count</i> lines read.
+ -t Remove a trailing newline from each line read.
+ -u Read lines from file descriptor <i>fd</i> instead of the standard input.
+ -C Evaluate <i>callback</i> each time quantum lines are read. The -c option specifies quantum.
+ -c Specify the number of lines read between each call to callback. </pre>
+ 
+",https://ss64.com/bash/mapfile.html,System Utility ,
+readonly,Mark variables/functions as readonly," readonly [-aApf] [<i>name</i>] ... 
+"," -a Treat each <i>name</i> as an array variable.
+ -A restrict the variables to associative arrays.
+ -p Print a list of all readonly names (This is the default)
+ -f Mark shell functions corresponding to the <i>names</i> as read-only.</pre>
+",https://ss64.com/bash/readonly.html,System Administration,
+reboot,Reboot the system,Not Available,Not Available,No link available,System Administration,
+rename,Rename files," rename <i>from to file...</i></pre>
+",Not Available,https://ss64.com/bash/rename.html,File Manipulation,
+renice,Alter priority of running processes,Not Available,Not Available,No link available,System Administration,Process management
+remsync,Synchronize remote files via email,Not Available,Not Available,No link available,"File Manipulation, Remote Connectivity",File Transfer
+return,Exit a shell function," return [<i>n</i>] 
+",Not Available,https://ss64.com/bash/return.html,System Utility ,
+rev,Reverse lines of a file," rev [<i>file</i>]</pre>
+",Not Available,https://ss64.com/bash/rev.html,File Manipulation,
+rm,Remove files," rm [<i>options</i>]... <i>file</i>...
+",Not Available,https://ss64.com/bash/rm.html,File Manipulation,
+rmdir,Remove folder(s)," rmdir [<i>options</i>]... <i>folder(s)</i>...
+",Not Available,https://ss64.com/bash/rmdir.html,System Administration,Disk/Volume Management
+rsync,Remote file copy (Synchronize file trees)," Local file to Local file:
+ rsync [<i>option</i>]... <i>Source</i> [<i>Source</i>]... <i>Dest</i>
+ Local to Remote:
+ rsync [<i>option</i>]... <i>Source</i> [<i>Source</i>]... [<i>user</i>@]<i>host</i>:<i>Dest</i> #
+ rsync [<i>option</i>...] [<i>user</i>@]<i>host</i>::<i>Source</i>... [<i>Dest</i>]
+",Not Available,https://ss64.com/bash/rsync.html,"File Manipulation, Remote Connectivity",File Transfer
+screen,"Multiplex terminal, run remote shells via ssh"," 
+ Start a <i>screen</i> session:
+ screen [ -<i>options</i> ] [ <i>cmd</i> [<i>args</i>] ]
+ Resume a detached screen session:
+ screen -r [[<i>pid</i>.]<i>tty</i>[.<i>host</i>]]
+ screen -r <i>sessionowner</i>/[[<i>pid</i>.]<i>tty</i>[.<i>host</i>]]
+",Not Available,https://ss64.com/bash/screen.html,"System Administration, Remote Connectivity",ssh
+scp,Secure copy (remote file copy)," scp [-1246BCpqrv] [-c <i>cipher</i>] [-F <i>ssh_config</i>] [-i <i>identity_file</i>]
+ [-l <i>limit</i>] [-o <i>ssh_option</i>] [-P <i>port</i>] [-S <i>program</i>]
+ <b>[</b> [<i>user</i>@]<i>host1</i>:<b>]</b><i>file1</i> [...] <b>[</b> [<i>user</i>@]<i>host2</i>:<b>]</b><i>file2</i></pre>
+"," HostKeyAlias
+ HostName
+ IdentityFile
+ IdentitiesOnly
+ KbdInteractiveDevices
+ LogLevel
+ MACs
+ NoHostAuthenticationForLocalhost
+ NumberOfPasswordPrompts
+ PasswordAuthentication
+ Port
+ PreferredAuthentications
+ Protocol
+ ProxyCommand
+ PubkeyAuthentication
+ RekeyLimit
+ RhostsRSAAuthentication
+ RSAAuthentication
+ SendEnv
+ ServerAliveInterval
+ ServerAliveCountMax
+ SmartcardDevice
+ StrictHostKeyChecking
+ TCPKeepAlive
+ UsePrivilegedPort
+ User
+ UserKnownHostsFile
+ VerifyHostKeyDNS
+ -P <i>port</i>
+ The port to connect to on the remote host.
+ Note that this option is written with a capital 'P', because -p is already reserved for
+ preserving the times and modes of the file in rcp(1).
+ -p Preserves modification times, access times, and modes from the original file.
+ -q Disables the progress meter.
+ -r Recursively copy entire directories.
+ -S <i>program</i>
+ Name of program to use for the encrypted connection. The program must understand <a href=""ssh.html"">ssh</a> options.
+ 
+ -v Verbose mode.
+ Causes scp and <a href=""ssh.html"">ssh</a> to print debugging messages about their progress.
+ This is helpful in debugging connection, authentication, and configuration problems. </pre>
+",https://ss64.com/bash/scp.html,"File Manipulation, Remote Connectivity",File Transfer
+sdiff,Merge two files interactively," sdiff -o <i>outfile</i> [<i>options</i>] <i>from-file to-file</i>
+",Not Available,https://ss64.com/bash/sdiff.html,File Manipulation,
+sed,Stream Editor," sed [<i>options</i>]...
+"," -e <i>SCRIPT</i>
+ --expression=<i>SCRIPT</i>
+ Add the commands in <i>SCRIPT</i> to the set of commands to be run while
+ processing the input.
+ -f <i>SCRIPT-FILE</i>
+ --file=<i>SCRIPT-FILE</i>
+ Add the commands contained in the file SCRIPT-FILE to the set of
+ commands to be run while processing the input.
+ -n
+ --quiet
+ --silent
+ By default, SED will print out the pattern space at then end of
+ each cycle through the script. These options disable this
+ automatic printing, and SED will only produce output when
+ explicitly told to via the 'p' command.
+ -h
+ --help
+ Print a usage message and then exit.
+ -V
+ --version
+ Print out version info and exit.</pre>
+",https://ss64.com/bash/sed.html,System Utility,
+select,Accept user choices via keyboard input," select <i>name</i> [in <i>words</i> ...]; do <i>commands</i>; done</pre>
+",Not Available,https://ss64.com/bash/select.html,System Utility,
+seq,Print numeric sequences," seq [<i>options</i>]... [<i>FIRST</i> [<i>STEP</i>]] <i>LAST</i>...
+",Not Available,https://ss64.com/bash/seq.html,System Utility,
+set,Manipulate shell variables and functions," set [--abefhkmnptuvxBCEHPT] [-o <i>option-name</i>] [<i>argument</i> …]
+ set [+abefhkmnptuvxBCEHPT] [+o <i>option-name</i>] [<i>argument</i> …]
+",Not Available,https://ss64.com/bash/set.html,System Administration,
+setfacl,Set file access control lists.," setfacl [-bkndRLPvh] [{-m|-x} acl_spec] [{-M|-X} <i>acl_file</i>] <i>file</i> ...
+ setfacl --restore=<i>file</i>
+"," -b, --remove-all
+ Remove all extended ACL entries. The base ACL entries of the owner, group and others are retained.
+ -k, --remove-default
+ Remove the Default ACL. If no Default ACL exists, no warnings are issued. 
+ -n, --no-mask
+ Do not recalculate the effective rights mask. The default behavior of setfacl is to recalculate the ACL mask entry,
+ unless a mask entry was explicitly given. The mask entry is set to the union of all permissions of the owning group,
+ and all named user and group entries. (These are exactly the entries affected by the mask entry). 
+ --mask
+ Do recalculate the effective rights mask, even if an ACL mask entry was explicitly given. (See the -n option.) 
+ -d, --default
+ All operations apply to the Default ACL. Regular ACL entries in the input set are promoted to Default ACL entries.
+ Default ACL entries in the input set are discarded. (A warning is issued if that happens). 
+ --restore=file
+ Restore a permission backup created by 'getfacl -R' or similar.
+ All permissions of a complete directory subtree are restored using this mechanism.
+ If the input contains owner comments or group comments, setfacl attempts to restore the owner and owning group.
+ If the input contains flags comments (which define the setuid, setgid, and sticky bits), setfacl sets those
+ three bits accordingly; otherwise, it clears them. This option cannot be mixed with other options except '--test'. 
+ --test
+ Test mode. Instead of changing the ACLs of any files, the resulting ACLs are listed. 
+ -R, --recursive
+ Apply operations to all files and directories recursively. This option cannot be mixed with '--restore'. 
+ -L, --logical
+ Logical walk, follow symbolic links to directories. The default behavior is to follow symbolic link arguments, and
+ skip symbolic links encountered in subdirectories.
+ Only effective in combination with -R. This option cannot be mixed with '--restore'. 
+ -P, --physical
+ Physical walk, do not follow symbolic links to directories. This also skips symbolic link arguments.
+ Only effective in combination with -R. This option cannot be mixed with '--restore'. 
+ -v, --version
+ Print the version of setfacl and exit. 
+ -h, --help
+ Print help explaining the command line options.
+ -- End of command line options. All remaining parameters are interpreted as file names, even if they start with a dash.
+ - If the file name parameter is a single dash, setfacl reads a list of files from standard input.</pre>
+",https://ss64.com/bash/setfacl.html,System Administration,User/Group Management
+sftp,Secure File Transfer Program,Not Available,Not Available,No link available,"File Manipulation, Remote Connectivity",File Transfer
+sha256sum,"Compute and check SHA256 (256-bit) checksums""", sha256sum [<i>OPTION</i>]... [<i>FILE</i>]... ,Not Available,https://ss64.com/bash/sha256sum.html,File Manipulation,Hash
+shift,Shift positional parameters," shift [<i>n</i>]
+",Not Available,https://ss64.com/bash/shift.html,System Utility,
+shopt,Shell Options," shopt [-pqsu] [-o] [<i>optname</i> ...]
+",Not Available,https://ss64.com/bash/shopt.html,System Utility,
+shuf,Generate random permutations," shuf [<i>OPTION</i>]... [<i>FILE</i>]
+ shuf -e [<i>OPTION</i>]... [<i>ARG</i>]...
+ shuf -i LO-HI [<i>OPTION</i>]... 
+"," 
+ -e, --echo
+ Treat each <i>ARG</i> as an input line.
+ -i, --input-range=<i>LO</i>-<i>HI</i>
+ Treat each number <i>LO</i> through <i>HI</i> as an input line.
+ -n, --head-count=<i>COUNT</i>
+ Output at most <i>COUNT</i> lines.
+ This should be faster than piping all the output to <a href=""head.html"">head</a>.
+ -o, --output=<i>FILE</i>
+ Write result to <i>FILE</i> instead of standard output.
+ --random-source=<i>FILE</i>
+ Get random bytes from <i>FILE</i>.
+ -z, --zero-terminated
+ End lines with 0 byte, not newline.
+ --help Display help and exit.
+ To read the complete manual run: info coreutils aqshuf invocationaq
+ --version
+ Output version information and exit.</pre>
+",https://ss64.com/bash/shuf.html,System Utility,
+shutdown,Shutdown or restart linux," shutdown [<i>options</i>] <i>when</i> [<i>message</i>]
+",Not Available,https://ss64.com/bash/shutdown.html,System Administration,
+sleep,Delay for a specified time," sleep [<i>NUMBER</i> [smhd]]...
+"," s : seconds (default)
+ m : minutes
+ h : hours
+ d : days</pre>
+",https://ss64.com/bash/sleep.html,System Administration,
+slocate,Find files," slocate [-qi] [-d <i>path</i>] [--database=<i>path</i>] <i>search string</i>
+ slocate [-i] [-r <i>regexp</i>] [--regexp=<i>regexp</i>]
+ slocate [-qv] [-o <i>file</i>] [--output=<i>file</i>]
+ slocate [-e <i>dir1</i>,<i>dir2</i>,...] [-f <i>fstype1</i>,...] &lt;[-l <i>level</i>] [-c] &lt;[-U <i>path</i>] [-u]>
+ slocate [-Vh] [--version] [--help] 
+",Not Available,https://ss64.com/bash/slocate.html,System Utility,Search
+sort,Sort text files," sort [<i>options</i>] [<i>file</i>...]
+ sort [<i>options</i>]... --files0-from=<i>F</i>
+",Not Available,https://ss64.com/bash/sort.html,System Utility,
+source,Run commands from a file '.' •," . <i>filename</i> [<i>arguments</i>]
+ source <i>filename</i> [<i>arguments</i>]</pre>
+",Not Available,https://ss64.com/bash/source.html,System Administration,Command Execution
+split,Split a file into fixed-size pieces," split [<i>options</i>] [<i>INPUT</i> [<i>PREFIX</i>]]
+",Not Available,https://ss64.com/bash/split.html,File Manipulation,
+ss,Socket Statistics," ss [<i>options</i>] [<i>FILTER</i>]
+",Not Available,https://ss64.com/bash/ss.html,"Networking, Enumeration",
+ssh,Secure Shell client (remote login program)," ssh [-1246AaCfgKkMNnqsTtVvXxYy] [-b <i>bind_address</i>] [-c <i>cipher_spec</i>]
+ [-D [<i>bind_address</i>:]<i>port</i>] [-e <i>escape_char</i>] [-F <i>configfile</i>]
+ [-i <i>identity_file</i>] [-L [<i>bind_address</i>:]<i>port</i>:<i>host</i>:<i>hostport</i>]
+ [-l <i>login_name</i>] [-m <i>mac_spec</i>] [-O <i>ctl_cmd</i>] [-o <i>option</i>] 
+ [-p <i>port</i>] [-R [<i>bind_address</i>:]<i>port</i>:<i>host</i>:<i>hostport</i>]
+ [-S ctl_path] [-w <i>local_tun</i>[:<i>remote_tun</i>]]
+ [user@]hostname [<i>command</i>]</pre>
+"," HostKeyAlias
+ HostName
+ IdentityFile
+ IdentitiesOnly
+ KbdInteractiveDevices
+ LocalCommand
+ LocalForward
+ LogLevel
+ MACs
+ NoHostAuthenticationForLocalhost
+ NumberOfPasswordPrompts
+ PasswordAuthentication
+ PermitLocalCommand
+ Port
+ PreferredAuthentications
+ Protocol
+ ProxyCommand
+ PubkeyAuthentication
+ RekeyLimit
+ RemoteForward
+ RhostsRSAAuthentication
+ RSAAuthentication
+ SendEnv
+ ServerAliveInterval
+ ServerAliveCountMax
+ SmartcardDevice
+ StrictHostKeyChecking
+ TCPKeepAlive
+ Tunnel
+ TunnelDevice
+ UsePrivilegedPort
+ User
+ UserKnownHostsFile
+ VerifyHostKeyDNS
+ VisualHostKey
+ XAuthLocation
+ <b>-p</b> <u>port</u>
+ Port to connect to on the remote host. This can be specified on
+ a per-host basis in the configuration file.
+ <b>-q</b> Quiet mode. Causes most warning and diagnostic messages to be
+ suppressed. Only fatal errors are displayed. If a second <b>-q</b> is
+ given then even fatal errors are suppressed, except for those
+ produced due solely to bad arguments.
+ <b>-R</b> [<u>bind_address</u>:]<u>port</u>:<u>host</u>:<u>hostport</u>
+ Specifies that the given port on the remote (server) host is to
+ be forwarded to the given host and port on the local side. This
+ works by allocating a socket to listen to <u>port</u> on the remote
+ side, and whenever a connection is made to this port, the
+ connection is forwarded over the secure channel, and a connection
+ is made to <u>host</u> port <u>hostport</u> from the local machine.
+ Port forwardings can also be specified in the configuration file.
+ Privileged ports can be forwarded only when logging in as root on
+ the remote machine. IPv6 addresses can be specified by enclosing
+ the address in square braces or using an alternative syntax:
+ [<u>bind_address</u>/]<u>host</u>/<u>port</u>/<u>hostport</u>.
+ By default, the listening socket on the server will be bound to
+ the loopback interface only. This can be overridden by
+ specifying a <u>bind_address</u>. An empty <u>bind_address</u>, or the address
+ ‘*’, indicates that the remote socket should listen on all
+ interfaces. Specifying a remote <u>bind_address</u> will only succeed
+ if the server’s <b>GatewayPorts</b> option is enabled (see
+ sshd_config(5)).
+ If the <u>port</u> argument is ‘0’, the listen port will be dynamically
+ allocated on the server and reported to the client at run time.
+ <b>-S</b> <u>ctl_path</u>
+ Specifies the location of a control socket for connection
+ sharing, or the string “none” to disable connection sharing.
+ Refer to the description of <b>ControlPath</b> and <b>ControlMaster</b> in
+ ssh_config(5) for details.
+ <b>-s</b> Used to request invocation of a subsystem on the remote
+ system. Subsystems are a feature of the SSH2 protocol which
+ facilitate the use of SSH as a secure transport for other
+ applications (eg. sftp(1)). The subsystem is specified as the
+ remote command.
+ <b>-T</b> Disable pseudo-tty allocation.
+ <b>-t</b> Force pseudo-tty allocation. This can be used to execute
+ arbitrary screen-based programs on a remote machine, which can be
+ very useful, e.g. when implementing menu services. Multiple <b>-t</b>
+ options force tty allocation, even if <b>ssh</b> has no local tty.
+ <b>-V</b> Display the version number and exit.
+ <b>-v</b> Verbose mode. Causes <b>ssh</b> to print debugging messages about its
+ progress. This is helpful in debugging connection,
+ authentication, and configuration problems. Multiple <b>-v</b> options
+ increase the verbosity. The maximum is 3.
+ <b>-w</b> <u>local_tun</u>[:<u>remote_tun</u>]
+ Requests tunnel device forwarding with the specified tun(4)
+ devices between the client (<u>local_tun</u>) and the server
+ (<u>remote_tun</u>).
+ The devices can be specified by numerical ID or the keyword
+ “any”, which uses the next available tunnel device. If
+ <u>remote_tun</u> is not specified, it defaults to “any”. See also the
+ <b>Tunnel</b> and <b>TunnelDevice</b> directives in ssh_config(5). If the
+ <b>Tunnel</b> directive is unset, it is set to the default tunnel mode,
+ which is “point-to-point”.
+ <b>-X</b> Enables X11 forwarding. This can also be specified on a per-host
+ basis in a configuration file.
+ X11 forwarding should be enabled with caution. Users with the
+ ability to bypass file permissions on the remote host (for the
+ user’s X authorization database) can access the local X11 display
+ through the forwarded connection. An attacker could then perform
+ activities such as keystroke monitoring.
+ For this reason, X11 forwarding is subjected to X11 SECURITY
+ extension restrictions by default. Please refer to the <b>ssh</b> <b>-Y</b>
+ option and the <b>ForwardX11Trusted</b> directive in ssh_config(5) for
+ more information.
+ <b>-x</b> Disables X11 forwarding.
+ <b>-Y</b> Enables trusted X11 forwarding. Trusted X11 forwardings are not
+ subjected to the X11 SECURITY extension controls.
+ <b>-y</b> Send log information using the syslog(3) system module. By
+ default this information is sent to stderr.
+ <b>ssh</b> can additionally obtain configuration data from a per-user
+ configuration file and a system-wide configuration file. The file format
+ and configuration options are described in ssh_config(5).
+ <b>ssh</b> exits with the exit status of the remote command or with 255 if an
+ error occurred.</pre>
+ <h2>AUTHENTICATION</h2>
+ attacks, which could otherwise be used to circumvent the encryption. The <b>StrictHostKeyChecking</b> option can be used to control logins to machines
+ whose host key is not known or has changed.<br>
+ server’s public key is presented to the user (unless the option <b>StrictHostKeyChecking</b> has been disabled). Fingerprints can be determined 
+ using ssh-keygen(1):</p>
+ keys visually, using <u>random</u> <u>art</u>. By setting the <b>VisualHostKey</b> option to
+ “yes”, a small ASCII graphic gets displayed on every login to a server,
+ no matter if the session itself is interactive or not. By learning the
+ $ ssh -o ""VerifyHostKeyDNS ask"" host.example.com
+ [...]
+ Matching host key fingerprint found in DNS.
+ Are you sure you want to continue connecting (yes/no)?
+ See the <b>VerifyHostKeyDNS</b> option in ssh_config(5) for more information.</pre>
+",https://ss64.com/bash/ssh.html,"System Administration, Remote Connectivity",
+stat,Display file or file system status," stat [<i>OPTION</i>]... <i>FILE</i>...
+"," -L, --dereference
+ follow links
+ -f, --file-system
+ display file system status instead of file status
+ -c --format=<i>FORMAT</i>
+ use the specified FORMAT instead of the default; output a
+ newline after each use of FORMAT
+ --printf=<i>FORMAT</i>
+ like --format, but interpret backslash escapes, and do not
+ output a mandatory trailing newline; if you want a newline,
+ include \n in FORMAT
+ -t, --terse
+ print the information in terse form
+ --help display this help and exit
+ --version
+ output version information and exit
+",https://ss64.com/bash/stat.html,"Enumeration, File Manipulation",
+strace,Trace system calls and signals," strace [ -dDffhiqrtttTvVxx ] [ -a <i>column</i> ] [ -e <i>expr</i> ]... [ -o <i>file</i> ] [ -p <i>pid</i> ]... 
+ [ -s <i>strsize</i> ] [ -u <i>username</i> ] [ -E <i>var</i>=<i>val</i> ]... [ -E <i>var</i> ]... [ <i>command</i> [ <i>arg</i>... ] ]
+ strace -c [ -D ] [ -e <i>expr</i> ]... [ -O <i>overhead</i> ] [ -S <i>sortby</i> ] [ <i>command</i> [ <i>arg</i>... ] ] 
+"," -a <i>column
+",https://ss64.com/bash/strace.html,System Administration,
+su,Substitute user identity," su [<i>options</i>]... [<i>user</i> [<i>arg</i>]...]
+",Not Available,https://ss64.com/bash/su.html,System Administration,User/Group Management
+sudo,Execute a command as another user," sudo -K | -L | -V | -h | -k | -l | -v 
+ 
+ sudo [-HPSb] [-a <i>auth_type</i>] [-c <i>class</i>|-] [-p <i>prompt</i>]
+ [-u username|#<i>uid</i>] {-e <i>file</i> [...] | -i | -s | <i>command</i>}
+ sudoedit [-S] [-a <i>auth_type</i>] [-p <i>prompt</i>] [-u <i>username</i>|#<i>uid</i>] <i>file</i> [...] 
+",Not Available,https://ss64.com/bash/sudo.html,System Administration,User/Group Management
+sudoedit,Edit sudoers file," sudo -K | -L | -V | -h | -k | -l | -v 
+ 
+ sudo [-HPSb] [-a <i>auth_type</i>] [-c <i>class</i>|-] [-p <i>prompt</i>]
+ [-u username|#<i>uid</i>] {-e <i>file</i> [...] | -i | -s | <i>command</i>}
+ sudoedit [-S] [-a <i>auth_type</i>] [-p <i>prompt</i>] [-u <i>username</i>|#<i>uid</i>] <i>file</i> [...] 
+",Not Available,https://ss64.com/bash/sudo.html,System Administration,User/Group Management
+sum,Print a checksum for a file," sum [<i>options</i>]... [file]...
+",Not Available,https://ss64.com/bash/sum.html,System Utility,
+suspend,Suspend execution of this shell &bull;," suspend [-f]<br>
+",Not Available,https://ss64.com/bash/suspend.html,System Utility,
+sync,Synchronize data on disk with memory," sync</pre>
+",Not Available,https://ss64.com/bash/sync.html,System Administration,
+tail,Output the last part of a file," tail [<i>options</i>]... [<i>file</i>]...
+"," -c, --bytes=<i>K</i>
+ Output the last K bytes; alternatively, use -c +K to output bytes starting with the <i>K</i>th of each file.
+ -f, --follow[={<i>name</i>|<i>descriptor</i>}]
+ Output appended data as the file grows; -f, --follow, and --follow=descriptor are equivalent
+ -F
+ Same as --follow=<i>name</i> --retry 
+ -n, --lines=<i>K</i>
+ Output the last <i>K</i> lines, instead of the last 10; or use -n +K to output lines starting with the Kth 
+ --max-unchanged-stats=<i>N</i>
+ With --follow=name, reopen a FILE which has not changed size after N (default 5) iterations
+ to see if it has been unlinked or renamed (this is the usual case of rotated log files).
+ With inotify, this option is rarely useful. 
+ --pid=<i>PID</i>
+ With -f, terminate after process ID, <i>PID</i> dies 
+ -q, --quiet, --silent
+ Never output headers giving file names 
+ --retry
+ Keep trying to open a file even when it is or becomes inaccessible;
+ useful when following by name, i.e., with --follow=<i>name</i>
+ -s, --sleep-interval=<i>N</i>
+ With -f, sleep for approximately <i>N</i> seconds (default 1.0) between iterations. 
+ With inotify and --pid=<i>P</i>, check process <i>P</i> at least once every <i>N</i> seconds. 
+ -v, --verbose
+ Always output headers giving file names 
+ --help
+ Display this help and exit 
+ --version
+ Output version information and exit</pre>
+",https://ss64.com/bash/tail.html,System Utility,
+tar,"Store, list or extract files in an archive"," tar [[-]<i>function</i>] [<i>options</i>] <i>filenames</i>...
+ tar [[-]<i>function</i>] [<i>options</i>] -C <i>directory-name</i>...
+ Command-line arguments that specify files to add to, extract from,
+ or list from an archive can be given as shell pattern matching strings.
+",Not Available,https://ss64.com/bash/tar.html,File Manipulation,File Compression
+tee,Redirect output to multiple files," tee [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/tee.html,"System Utility, File Manipulation",
+test,Evaluate a conditional expression," test <i>expr</i>
+ [ <i>expr</i> ]
+ [[ <i>expr</i> ]]</pre>
+",Not Available,https://ss64.com/bash/test.html,System Utility,
+time,Measure Program running time," time [<i>option</i>...] <i>command</i> [<i>arg</i>...]
+",Not Available,https://ss64.com/bash/time.html,System Utility,
+timeout,Run a command with a time limit," timeout [<i>option</i>] <i>duration command</i> [<i>arg</i>]...<i>
+"," <i>command</i>
+ The command to execute, this must not be a special built-in utility.
+ Options must precede operands.
+ --preserve-status
+ Return the exit status of the managed command on timeout, rather than
+ a specific exit status indicating a timeout.
+ This is useful if the managed command supports running for an
+ indeterminite amount of time.
+ --foreground
+ Don't create a separate background program group, so that the
+ managed command can use the foreground TTY normally.
+ This is needed to support timing out commands not started directly
+ from an interactive shell, in two situations.
+ 1) <i>command </i>is interactive and needs to read from the terminal for example.
+ 2) The user wants to support sending signals directly
+ to <i>command </i>from the terminal (like Ctrl-C for example) 
+ Note in this mode of operation, any children of <i>command</i> will not be timed out.
+ -k <i>duration</i>
+ --kill-after=<i>duration</i>
+ Ensure the monitored command is killed by also sending a ‘KILL’ signal, after
+ the specified duration.
+ Without this option, if the selected signal proves not to be fatal, timeout
+ does not kill the command.
+ -s <i>signal</i>
+ --signal=<i>signal</i>
+ Send this signal to command on timeout, rather than the default ‘TERM’ signal.
+ signal can be a name like ‘HUP’ or a number. See Signal specifications. 
+ <i>duration</i> is a floating point number followed by an optional unit:
+ ‘s’ for seconds (the default)
+ ‘m’ for minutes
+ ‘h’ for hours
+ ‘d’ for days
+ A duration of 0 disables the associated timeout.
+ Note that the actual timeout duration is dependent on system conditions,
+ which should be especially considered when specifying sub-second timeouts.
+ --help
+ Print a usage message listing all available options, then exit successfully.
+ --version
+ Print the version number, then exit successfully.
+ -- Delimit the option list. Later arguments, if any, are treated as operands
+ even if they begin with -. For example, ‘sort -- -r’ reads from the file
+ named -r. 
+",https://ss64.com/bash/timeout.html,System Administration,Command Execution
+times,User and system times," times</pre>
+",Not Available,https://ss64.com/bash/times.html,System Utility,
+tmux,Terminal multiplexer," tmux [-28lquvV] [-c <i>shell-command</i>] [-f <i>file</i>] [-L <i>socket-name</i>] [-S <i>socket-path</i>] [<i>command</i> [<i>flags</i>]] 
+"," -2' Force tmux to assume the terminal supports 256 colours.
+ -8' Like -2, but indicates that the terminal supports 88 colours.
+ -c <i>shell-command
+ </i> Execute shell-command using the default shell.
+ <h2> Key Bindings<br>
+ </h2>
+ <p> Key bindings may be changed with the bind-key and unbind-key commands.</p>
+ </details>
+ <h2> Key Bindings </h2>
+ <blockquote>
+ List all key bindings. Without -t the primary key bindings - those executed when preceded by the prefix key - are printed. Keys bound without the prefix key (see bind-key -n) are marked with '(no prefix)'.</p>
+",https://ss64.com/bash/tmux.html,"System Utility, Logging",
+touch,Change file timestamps," touch [<i>options</i>]... <i>File</i>...
+",Not Available,https://ss64.com/bash/touch.html,"File Manipulation, Logging",
+top,List processes running on the system," top <i>options</i>
+",Not Available,https://ss64.com/bash/top.html,"System Administration, Enumeration",
+tput,"Set terminal-dependent capabilities, color, position"," tput [-T<i>type</i>] <i>capname</i> [<i>parms</i> ... ]
+ tput [-T<i>type</i>] init
+ tput [-T<i>type</i>] reset
+ tput [-T<i>type</i>] longname
+ tput -S &lt;&lt;
+ tput -V
+"," -Ttype Indicates the type of terminal. Normally this option is unnecessary
+ because the default is taken from the environment variable TERM.
+ f -T is specified, then the shell variables LINES and COLUMNS will be
+ ignored,and the operating system will not be queried for the actual screen size.
+ <i>capname</i>
+ Indicates the capability from the terminfo database.
+ When termcap support is compiled in, the termcap name for the capability
+ is also accepted.
+ Typical capabilities include:
+ tput setab <i>color</i> Set ANSI Background color
+ tput setaf <i>color</i> Set ANSI Foreground color
+ tput blink Set blink mode
+ tput bold Set bold mode
+ tput dim Set half-bright mode
+ tput smul Set underline mode
+ tput rmul Exit underline mode
+ tput rev Reverse mode
+ tput smso Set standout mode
+ tput rmso Exit standout mode
+ tput sgr0 Reset all attributes
+ tput cols Display the number of columns
+ tput lines Display the number of lines
+ <i>parms</i> If the capability is a string that takes parameters, the arguments
+ parms will be instantiated into the string.
+ -S Allow more than one capability per invocation of tput. The capabilities must
+ be passed to tput from the standard input instead of from the command
+ line (see example). Only one capname is allowed per line.
+ -V Reports the version of ncurses which was used in this program, and exits.
+ init If the terminfo database is present and an entry for the user's
+ terminal exists (see -Ttype, above), output the terminal's initialization strings
+ and turn tabs expansion on or off according to the specification in the entry
+ reset Instead of putting out initialization strings, the terminal's reset strings
+ will be output if present (rs1, rs2, rs3, rf). If the reset strings are not
+ present, but initialization strings are, the initialization strings will be
+ output. Otherwise, reset acts identically to init.
+ longname
+ If the terminfo database is present and an entry for the user's terminal exists
+ (see -Ttype above), then the long name of the terminal will be put out.
+ The long name is the last name in the first line of the terminal's description in
+ the terminfo database [see term(5)].
+ If tput is invoked by a link named reset, this has the same effect as
+ tput reset. See tset for comparison, which has similar behavior.</pre>
+",https://ss64.com/bash/tput.html,System Utility,
+traceroute,Trace Route to Host," traceroute [<i>options</i>] host [<i>packetsize</i>]
+",Not Available,https://ss64.com/bash/traceroute.html,Networking,
+trap,Execute a command when the shell receives a signal &bull;," trap [-lp] [[<i>arg</i>] <i>sigspec</i> ...]
+"," -p Display signal commands (or trap commands for <i>sigspec</i>)
+ -l Print a list of signal names and their corresponding numbers.
+ arg The command to be executed when the shell receives signal(s) <i>sigspec</i>.
+",https://ss64.com/bash/trap.html,System Administration,Command Execution
+tr,"Translate, squeeze, and/or delete characters"," tr [<i>options</i>]... <i>SET1</i> [<i>SET2</i>]
+",Not Available,https://ss64.com/bash/tr.html,File Manipulation,
+true,"Do nothing, successfully"," true</pre>
+",Not Available,https://ss64.com/bash/true.html,System Administration,Command Execution
+tsort,Topological sort," tsort [<i>options</i>] [<i>file</i>]
+",Not Available,https://ss64.com/bash/tsort.html,System Utility,
+tty,Print filename of terminal on stdin," tty [<i>option</i>]...
+",Not Available,https://ss64.com/bash/tty.html,System Administration,Command Execution
+type,Describe a command •," type [-aftpP] <i>name</i> [<i>name</i> ...]
+"," -a Print all the places that contain an executable named <i>name</i>. </pre>
+",https://ss64.com/bash/type.html,System Utility,
+ulimit,Limit user resources •," ulimit [-HS] -a
+ ulimit [-HS] [-bcdefiklmnpqrstuvxPRT] [<i>limit</i>]
+"," -S Set a soft limit for the given resource.
+ -H Set a hard limit for the given resource.
+ -a All current limits are reported.
+ -b The maximum socket buffer size.
+ -c The maximum size of core files created. 
+ -d The maximum size of a process's data segment.
+ -e The maximum scheduling priority (&quot;nice&quot;) 
+ -f The maximum size of files created by the shell(default option).
+ -i The maximum number of pending signals.
+ -k The maximum number of kqueues that may be allocated.
+ -l The maximum size that can be locked into memory. 
+ -m The maximum resident set size. 
+ -n The maximum number of open file descriptors. 
+ -p The pipe buffer size.
+ -P The maximum number of pseudoterminals.
+ -q The maximum number of bytes in POSIX message queues.
+ -r The maximum real-time scheduling priority.
+ -R The maximum time a real-time process can run before blocking, in microseconds.
+ -s The maximum stack size. 
+ -t The maximum amount of cpu time in seconds.
+ -T The maximum number of threads.
+ -u The maximum number of processes available to a single user.
+ -v The maximum amount of virtual memory available to the process.
+ -x The maximum number of file locks.</pre>
+",https://ss64.com/bash/ulimit.html,System Administration,
+umask,Users file creation mask," umask [-p] [-S] [<i>mode</i>]
+"," mode File creation mask
+ -S Print the mask in symbolic format
+ -p Output in a form that can be reused as input</pre>
+",https://ss64.com/bash/umask.html,System Administration,User/Group Management
+umount,Unmount a device,Not Available,Not Available,No link available,System Administration,Disk/Volume Management
+unalias,Remove an alias •," alias [-p] [<i>name</i>[=<i>value</i>] ...]
+ unalias [-a] [<i>name</i> ... ]
+"," -p Print the current values
+ -a Remove All aliases</pre>
+",https://ss64.com/bash/alias.html,System Administration,
+uname,Print system information," uname [<i>options</i>]...
+",Not Available,https://ss64.com/bash/uname.html,Enumeration,
+unexpand,Convert spaces to tabs," unexpand [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/unexpand.html,System Utility,
+uniq,Uniquify files," uniq [<i>options</i>]... [<i>InputFile</i> [<i>OutputFile</i>]]
+",Not Available,https://ss64.com/bash/uniq.html,File Manipulation,
+units,Convert units from one scale to another," units <i>options</i> [<i>FROM-UNIT</i> [<i>TO-UNIT</i>]]
+",Not Available,https://ss64.com/bash/units.html,System Utility,
+unix2dos,UNIX to Windows or MAC text file format converter," unix2dos [options] [-c <i>convmode</i>] [-o <i>file</i> ...] [-n <i>infile outfile</i> ...]
+"," -h --help Print online help. 
+ -k --keepdate Keep the date stamp of output file same as input file. 
+ -q --quiet Quiet mode. Suppress all warning and messages.
+ -V --version Prints version information.
+ -c --convmode <i>convmode</i>
+ Set conversion mode.
+ Where <i>convmode</i> is one of: ASCII, 7bit, ISO, Mac with ASCII being the default.
+ Simulates dos2unix under SunOS.
+ -o --oldfile <i>file</i> ...
+ Old file mode.
+ Convert the file and write output to it. The program defaults to run in this mode.
+ Wildcard names may be used.
+ -n --newfile <i>infile outfile</i> ...
+ New file mode. Convert the infile and write output to outfile.
+ File names must be given in pairs and wildcard names should NOT be used or you WILL lose your files.</pre>
+",https://ss64.com/bash/unix2dos.html,File Manipulation,
+unrar,Extract files from a rar archive," unrar <i>command</i> [-<i>switch_1</i> -<i>switch_N</i>] <i>archive</i> [<i>files</i>...] [<i>path</i>...]</pre>
+",Not Available,https://ss64.com/bash/unrar.html,File Manipulation,File Compression
+unset,Remove variable or function names," unset [-fv] [<i>name</i>]
+",Not Available,https://ss64.com/bash/unset.html,System Utility,
+unshar,Unpack shell archive scripts," unshar [<i>options</i>] ... [<i>file</i>... ]
+",Not Available,https://ss64.com/bash/unshar.html,File Manipulation,File Compression
+until,Execute commands (until error)," until <i>test-commands</i>; do <i>consequent-commands</i>; done</pre>
+",Not Available,https://ss64.com/bash/until.html,System Administration,Command Execution
+uptime,Show uptime,Not Available,Not Available,No link available,System Administration,
+useradd,Create new user account," useradd [<i>options</i>] <i>LOGIN</i>
+ useradd -D
+ useradd -D [<i>options</i>] </pre>
+",Not Available,https://ss64.com/bash/useradd.html,System Administration,User/Group Management
+userdel,Delete a user account," userdel [<i>options</i>] <i>LOGIN</i> </pre>
+",Not Available,https://ss64.com/bash/userdel.html,System Administration,User/Group Management
+usermod,Modify user account," usermod [<i>options</i>] [<i>user</i>]
+",Not Available,https://ss64.com/bash/usermod.html,System Administration,User/Group Management
+users,List users currently logged in," users [<i>OPTION</i>]... [<i>FILE</i>] 
+"," --help display this help and exit
+ --version output version information and exit</pre>
+",https://ss64.com/bash/users.html,System Administration,User/Group Management
+uuencode,Encode a binary file," uu<b>en</b>code [-m] [ <i>file</i> ] <i>name</i>
+ uu<b>de</b>code [-o <i>outfile</i>] [ <i>file</i> ]...
+"," <i>file</i> An input file to read.
+ -m Use base64 encoding instead of UU encoding.
+ <i>name</i> Output file.
+ -o Output the decoded string to the file <i>outfile</i>
+",https://ss64.com/bash/uuencode.html,File Manipulation,Encryption
+uudecode,Decode a file created by uuencode," uu<b>en</b>code [-m] [ <i>file</i> ] <i>name</i>
+ uu<b>de</b>code [-o <i>outfile</i>] [ <i>file</i> ]...
+"," <i>file</i> An input file to read.
+ -m Use base64 encoding instead of UU encoding.
+ <i>name</i> Output file.
+ -o Output the decoded string to the file <i>outfile</i>
+",https://ss64.com/bash/uuencode.html,File Manipulation,Encryption
+v,Verbosely list directory contents ('ls -l -b'),Not Available,Not Available,https://ss64.com/bash/vdir,"System Utility, Enumeration",
+vdir,Verbosely list directory contents ('ls -l -b'),Not Available,Not Available,https://ss64.com/bash/vdir,"System Utility, Enumeration",
+vmstat,Report virtual memory statistics," vmstat [-a] [-n] [<i>delay</i> [ <i>count</i>]]
+ vmstat [-f] [-s] [-m]
+ vmstat [-S unit]
+ vmstat [-d]
+ vmstat [-p <i>disk-partition</i>]
+ vmstat [-V] 
+",Not Available,https://ss64.com/bash/vmstat.html,"System Utility, Enumeration",
+w,Show who is logged on and what they are doing," w [-hi] [<i>user</i> ...]
+",Not Available,https://ss64.com/bash/w.html,Enumeration,
+wait,Wait for a process to complete &bull;," wait [<i>n</i> ...]
+"," n A process ID or a job specification</pre>
+",https://ss64.com/bash/wait.html,System Administration,Command Execution
+watch,Execute/display a program periodically," watch [<i>options</i>] <i>command</i> <i>options</i>
+",Not Available,https://ss64.com/bash/watch.html,System Administration,Command Execution
+wc,"Print byte, word, and line counts"," wc [<i>options</i>]... [<i>file</i>]...
+",Not Available,https://ss64.com/bash/wc.html,System Utility,
+whereis,"Search the user's $path, man pages and source files for a program"," whereis [<i>options</i>] <i>files</i>
+",Not Available,https://ss64.com/bash/whereis.html,System Utility,Search
+which,Search the user's $path for a program file," which [<i>options</i>] [--] <i>program_name</i> [...]
+",Not Available,https://ss64.com/bash/which.html,System Utility,Search
+while,Execute commands," while <i>test-commands</i>; do <i>consequent-commands</i>; done</pre>
+",Not Available,https://ss64.com/bash/while.html,System Administration,Command Execution
+who,Print all usernames currently logged in," who [<i>options</i>] [<i>file</i>] [am i]
+",Not Available,https://ss64.com/bash/who.html,Enumeration,
+whoami,Print the current user id and name ('id -un')," whoami [<i>options</i>]
+",Not Available,https://ss64.com/bash/whoami.html,Enumeration,
+wget,"Retrieve web pages or files via HTTP, HTTPS or FTP",Not Available,Not Available,No link available,"File Manipulation, Remote Connectivity","File Transfer, Web Request"
+write,Send a message to another user," write <i>user</i> [<i>ttyname</i>]</pre>
+",Not Available,https://ss64.com/bash/write.html,System Utility,
+xargs,"Execute utility, passing constructed argument list(s)"," xargs [<i>options</i>] [<i>command</i>]
+",Not Available,https://ss64.com/bash/xargs.html,System Administration,Command Execution
+xdg-open,Open a file or URL in the user's preferred application.," xdg-open <i>file
+ </i>xdg-open<i> URL</i>
+ xdg-open --help
+ xdg-open --manual
+ xdg-open --version 
+",Not Available,https://ss64.com/bash/xdg-open.html,"File Manipulation, Remote Connectivity","File Transfer, Web Request"
+xxd,Make a hexdump or do the reverse," xxd [<i>options</i>] [<i>infile</i> [<i>outfile</i>]]
+ xxd -r[evert] [<i>options</i>] [<i>infile</i> [<i>outfile</i>]]
+ xxd -h[elp]
+",Not Available,https://ss64.com/bash/xxd.html,System Utility,
+xz,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+unxz,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+xzcat,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+lzma,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+unlzma,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+lzcat,Compress or decompress .xz and .lzma files," xz [<i>option</i>]... [<i>file</i>]...
+ unxz is equivalent to xz --decompress.
+ xzcat is equivalent to xz --decompress --stdout.
+ lzma is equivalent to xz --format=lzma.
+ unlzma is equivalent to xz --format=lzma --decompress.
+ lzcat is equivalent to xz --format=lzma --decompress --stdout.
+",Not Available,https://ss64.com/bash/xz.html,File Manipulation,File Compression
+yes,Print a string until interrupted," yes <i>text</i>
+ yes --help
+ yes --version
+"," text The text to repeat
+ --help Display help
+ --version Display the version no.
+ If no arguments are given, prints 'y' followed by a newline forever until killed.</pre>
+",https://ss64.com/bash/yes.html,System Administration,Command Execution
+zip,Package and compress (archive) files," zip [-aABcdDeEfFghjklLmoqrRSTuvVwXyz!@$] [--longoption ...]
+ [-b <i>path</i>] [-n <i>suffixes</i>] [-t <i>date</i>] [-tt <i>date</i>]
+ [<i>zipfile</i> [<i>file</i> ...]] [-xi <i>list</i>] 
+",Not Available,https://ss64.com/bash/zip.html,File Manipulation,File Compression
+.,Run a command script in the current shell," . <i>filename</i> [<i>arguments</i>]
+ source <i>filename</i> [<i>arguments</i>]</pre>
+",Not Available,https://ss64.com/bash/source.html,System Administration,Command Execution
+!!,Run the last command again," !! Run the last command again
+ !<i>foo</i> Run the most recent command that starts with '<i>foo</i>' (e.g. !ls)
+ !<i>foo</i>:p Print out the command that !<i>foo</i> would run
+ also add it to the command <a href=""history.html"">history</a>
+ !$ Run the last word of the previous command (same as Alt + .)
+ !$:p Print out the word that !$ would substitute
+ !* Run the previous command except for the last word
+ !*:p Print out the previous command except for the last word
+ ^<i>foo</i>^<i>bar</i> Run the previous command replacing <i>foo</i> with <i>bar</i></pre>
+",Not Available,https://ss64.com/bash/bang.html,System Administration,Command Execution
