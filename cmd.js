@@ -28,10 +28,14 @@ function highlight() {
   console.log(psMatch);
   console.log(wincmdMatch);
   //create deduplicated list of commands.
-  var commandarray =  bashMatch.concat(wincmdMatch, psMatch);
-  console.log(commandarray);
-  var commandlist = [...new Set(commandarray)];
-  console.log(commandlist);
+  var commandtrans1 =  bashMatch.concat(wincmdMatch, psMatch);
+  console.log(commandtrans1);
+  var commandtrans2 = [...new Set(commandtrans1)];
+  console.log(commandtrans2);
+  var commandlist = commandtrans2.filter(elements => {
+    return elements !== null;
+   });
+  console.log(commandlist)
   //document.getElementById("commands").innerHTML = commandarray;
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
