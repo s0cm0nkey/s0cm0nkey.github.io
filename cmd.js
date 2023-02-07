@@ -36,6 +36,18 @@ function highlight() {
     return elements !== null;
    });
   console.log(commandlist)
+  //search commands against csv file
+  let resultArray = [];
+  const rows = Papa.parse('https://github.com/s0cm0nkey/CommandDB/blob/main/bashdb.csv', { download: true }).data;  //Read each line of csv
+  rows.shift(); //skip the first row of column names
+  for (let i = 0; i < rows.length; i++){ //Check each row of input csv against each item in source array
+    for (let j = 0; j < bashMatch.length; j++){
+      if(rows[i][0].includes(bashMatch[j])){
+        resultArray.push(rows[i]);
+      }
+    }
+  };
+  console.log(resultArray);
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
   Output = Output.replace(dnameRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
