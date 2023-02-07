@@ -23,15 +23,15 @@ function highlight() {
   var bashMatch = textInput.match(bashcmd);
   var gtfoMatch = textInput.match(gtfobins);
   var lolMatch = textInput.match(lolbas);
-  console.log(bashMatch);
-  console.log(typeof bashMatch)
-  console.log(psMatch);
-  console.log(wincmdMatch);
+  //console.log(bashMatch);
+  //console.log(typeof bashMatch)
+  //console.log(psMatch);
+  //console.log(wincmdMatch);
   //create deduplicated list of commands.
   var commandtrans1 =  bashMatch.concat(wincmdMatch, psMatch);
-  console.log(commandtrans1);
+  //console.log(commandtrans1);
   var commandtrans2 = [...new Set(commandtrans1)];
-  console.log(commandtrans2);
+  //console.log(commandtrans2);
   var commandlist = commandtrans2.filter(elements => {
     return elements !== null;
    });
