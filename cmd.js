@@ -36,7 +36,6 @@ function highlight() {
     return elements !== null;
    });
   console.log(commandlist)
-  //document.getElementById("commands").innerHTML = commandarray;
   //replace all items in the textInput with spans of highlighting
   Output = Output.replace(ipRegEx, (match) => `<mark style="background-color:yellow;">${match}</mark>`);
   Output = Output.replace(dnameRegEx, (match) => `<mark style="background-color:green;">${match}</mark>`);
@@ -48,16 +47,15 @@ function highlight() {
   Output = Output.replace(pscmd, (match) => `<mark style="background-color:deepskyblue;">${match}</mark>`);
   //return the output text
   document.getElementById("textOutput").innerHTML = Output;
+  document.getElementById("allCommands").innerHTML = commandlist;
   document.getElementById("ipAddresses").innerHTML = ipMatches;
   document.getElementById("uriStrings").innerHTML = uriStrings;
   document.getElementById("dNames").innerHTML = dname;
   document.getElementById("filePaths").innerHTML = pathMatch;
   document.getElementById("fileName").innerHTML = fileMatch;
-  document.getElementById("cmd").innerHTML = wincmdMatch;
-  document.getElementById("powershell").innerHTML = psMatch;
-  document.getElementById("bash").innerHTML = bashMatch;
-  document.getElementById("gtfobin").innerHTML = gtfoMatch;
-  document.getElementById("lolbas").innerHTML = lolMatch;
-  document.getElementById("allCommands").innerHTML = commandlist;
-
+  //document.getElementById("cmd").innerHTML = wincmdMatch;
+  //document.getElementById("powershell").innerHTML = psMatch;
+  //document.getElementById("bash").innerHTML = bashMatch;
+  //document.getElementById("gtfobin").innerHTML = gtfoMatch;
+  //document.getElementById("lolbas").innerHTML = lolMatch;
 }
