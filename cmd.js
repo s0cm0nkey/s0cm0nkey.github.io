@@ -38,7 +38,7 @@ function highlight() {
   console.log(commandlist)
   //search commands against csv file
   let resultArray = [];
-  const rows = Papa.parse('https://github.com/s0cm0nkey/CommandDB/blob/main/bashdb.csv', { download: true }).data;  //Read each line of csv
+  const rows = Papa.parse(bashdb.csv).data;  //Read each line of csv
   rows.shift(); //skip the first row of column names
   for (let i = 0; i < rows.length; i++){ //Check each row of input csv against each item in source array
     for (let j = 0; j < bashMatch.length; j++){
