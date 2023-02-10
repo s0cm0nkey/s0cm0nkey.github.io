@@ -59,3 +59,8 @@ function highlight() {
   //document.getElementById("gtfobin").innerHTML = gtfoMatch;
   //document.getElementById("lolbas").innerHTML = lolMatch;
 }
+function bashLookup() {
+  d3.csv("bashdb.csv").then(function (data) {
+  console.log(data);
+});
+}
