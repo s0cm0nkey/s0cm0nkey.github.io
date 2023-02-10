@@ -8,9 +8,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="cmd.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="cmd.css">-->
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=”sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=”anonymous”>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   </head>
 <body>
@@ -18,7 +19,7 @@
         <main>
             <h1>CMD Parse</h1>
             <p>This tool is a command line parser and analyzer that will identify and enrich different components of a command line entry.</p>
-            <form>
+            <form id="form">
                 Input Text: 
                 <br>
                 <textarea rows="3" cols="100" id="textInput" name="textInput"></textarea>
@@ -34,7 +35,23 @@
             <hr>
             <span  style="background-color:deepskyblue;">Identified Commands: </span>
             <br>
-            <span id="allCommands"></span>
+            <!--<span id="allCommands"></span>-->
+            <table class="table" cellpadding="10">
+              <thead>
+              <tr>
+              <th scope="col">Command</th>
+              <th scope="col">Description</th>
+              <th scope="col">Syntax</th>
+              <th scope="col">Parameter</th>
+              <th scope="col">Link</th>
+              <th scope="col">Category</th>
+              <th scope="col">Tags</th>
+              </tr>
+              </thead>
+              <tbody>
+              </div>
+              </div>
+              </div>
             <br>
             <br>
             <span  style="background-color:coral;">Identified File Names and Paths: </span>
